@@ -1,0 +1,56 @@
+﻿l_english:
+
+ mechanic_enables_pronoias_yes:0 "May establish §YAukuanunan Soyo Subjects§!."
+ num_of_pronoiars:0 "Number of Aukuanunan Soyo"
+ pronoia_base_modifiers:1 "Aukuanunan Soyo Subject"
+ pronoia_base_overlord_modifiers:1 "Aukuanunan Soyo Subject"
+ BYZ_not_enough_free_pronoia_slots:1 "§R- Not enough §YAukuanunan Soyo Slots§!.§!"
+ BYZ_too_much_liberty_desire:1 "§R- Liberty Desire of §Y[From.GetName]§! is not §Y0§!.§!"
+ 
+ hereditary_pronoia_subject_type:0 "Aukuanunan Soyo"
+ hereditary_pronoia_subject_type_long_desc:0 "An Aukuanunan Soyo ('Servant of the sky') is a special subject type exclusive to Kuenan Nirokyu. Land is granted to a Scion who is then expected to raise armies to support us in our wars. An Aukuanunan Soyo can be turned into a Banbe Soyo ('Eagle in the sky') or a Banbe Enyun ('Eagle of the land')."
+ 
+ 
+ 
+ hereditary_pronoia_subject_type_is_our:0 "$NAME|Y$ is our Aukuanunan Soyo."
+ hereditary_pronoia_subject_type_title:0 "Aukuanunan Soyo"
+ hereditary_pronoia_subject_type_title_plural:0 "Aukuanunan Soyo"
+ is_hereditary_pronoia_subject_type:0 "Is an Aukuanunan Soyo"
+ 
+ pronoia_subject_type:0 "Banbe Enyun"
+ pronoia_subject_type_is_our:0 "$NAME|Y$ is our Banbe Enyun."
+ pronoia_subject_type_title:0 "Banbe Enyun"
+ pronoia_subject_type_title_plural:0 "Banbe Enyun"
+ 
+ 
+ pronoia_subject_type_elevated_title:0 "Banbe Soyo"
+ pronoia_subject_type_elevated_title_plural:0 "Banbe Soyo"
+ is_pronoia_subject_type:0 "Is a Banbe Soyo"
+ 
+ 
+ create_pronoia:0 "Create an Aukuanunan Soyo"
+ create_pronoia_title:0 "Create an Aukuanunan Soyo"
+ 
+ create_pronoia_desc:1 "Are you sure you want to Create an Aukuanunan Soyo in §Y[From.GetName]§!?[Root.GetPronoiaInheritanceLaw]\n\nA nation can only have a limited amount of §YAukuanunan Soyo§! governed by the §YNumber of Aukuanunan Soyo§! modifier, attainable with §YIdea Groups§!, §YGovernment Reforms§! and for every §Y100§! Land Forcelimit. This also means §YAukuanunan Soyo§! do not cost §YDiplomatic Relations§!.\nAukuanunan Soyo are subject types based on converting and administrating newly conquered lands. Aukuanunan Soyo receive the following modifiers:\n§G-25%§! Culture Conversion Cost\n§G+2%§! Missionary Strength\n§R-33%§! Land Forcelimit Modifier\n§R+50.0%§! Core Creation Cost\n§R-20.0%§! Administrative Efficiency\n\n[Root.GetProniaAdvancedTooltip]"
+ extra_text_hereditary_proniar:0 "In order to annex an §Aukuanunan Soyo§! subject, the nation must be first turned into a  §YBanbe Soyo§! with the '§YElevate to the Sky§!' Diplomatic Action. When a your ruler dies, the §YBanbe Soyo§! will be inherited, with their ruler taking the title of Denunransun."
+ extra_text_proniar:0 "The Aukuanunan Soyo will be inherited by us on your Monarch's death."
+ 
+ create_pronoia_non_inherently:0 " You will not be able to inherit the Territory until you use the '§YDemote to the Land§! or §Elevate to the Sky§!' Diplomatic Actions."
+ create_pronoia_tooltip:1 "We will give the rule of the subject to a Aukuanunan Soyo, who will manage the territory from now on.\nAukuanunan Soyo are subjects which do not occupy a §YDiplomatic Relation§! and contribute to the Manpower and Sailors Pool of their overlord. Aukuanunan Soyo are inherited instead of being annexed."
+ release_pronia:0 "Release the Aukuanunan Soyo"
+ release_pronia_title:0 "Release the Aukuanunan Soyo"
+ release_pronia_desc:0 "Do you wish to release the Aukuanunan Soyo of §Y[From.GetName]§!?\nThis will cost us §R25.00§! Prestige.\n[From.GetLoyaltyHitTooltip]We will also lose any cores and claims we have on their provinces."
+ loyalty_opinion_hit:0 "Because they are loyal, their opinion of us will decrease by §R200§!.\n"
+ release_pronia_tooltip:0 "Cancel our relationship with our Aukuanunan Soyo and release their land of all of their services to us."
+ 
+ make_pronoia_inheritable:0 "Demote to the Land"
+ make_pronoia_inheritable_title:0 "Demote to the Land"
+ make_pronoia_inheritable_desc:0 "Are you sure you want to demote [From.GetName]? This will greatly upset the Aukuanunan Soyo in question but will allow you to inherit the country upon their death."
+ make_pronoia_inheritable_tooltip:0 "The Aukuanunan Soyo in [From.GetName] will no longer be able to pass on their land. This will cause a major spike in Liberty Desire but will return those lands to us once their ruler dies."
+
+ make_pronoia_inheritable_elevate:0 "Elevate to the Sky"
+ make_pronoia_inheritable_elevate_title:0 "Elevate to the Sky"
+ make_pronoia_inheritable_elevate_desc:0 "Are you sure you want to elevate [From.GetName]? This will greatly reduce the liberty desire of the Aukuanunan Soyo in question, but will increase the liberty desire of your other Aukuanunan Soyo, and will allow you to inherit the country upon your rulers death."
+ make_pronoia_inheritable_elevate_tooltip:0 "The Aukuanunan Soyo in [From.GetName] will be chosen as the next ruler of our country. This will greatly reduce Liberty Desire and you will inherit their lands once your ruler dies."
+ 
+ Ban_too_many_ele_tt:0 "Only once Aukuanunan Soyo may be elevated at a time"

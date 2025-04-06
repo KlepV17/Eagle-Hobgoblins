@@ -1,0 +1,502 @@
+Zoherin_missions_1_part_0 = { 
+	slot = 1
+	generic = no
+	ai = yes 
+	has_country_shield = yes
+	potential = {
+		tag = V20
+	}
+	
+	Zoherin_1_1 = {
+		icon = the_alpine_wall
+		position = 1
+		required_missions = { 
+		}
+		trigger = { 
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = Nire_harpy_hight_tt
+					6840 = {
+						current_institution_growth = 12
+					}
+				}
+				NOT = {
+					is_subject = yes
+				}
+			}
+		}
+		
+		effect = {
+			6840 = {
+				add_institution_embracement = {
+					which = feudalism
+					value = 50
+				}
+			}
+		}
+	}
+	Zoherin_1_2 = {
+		icon = mission_arca_ore
+		position = 2
+		required_missions = { 
+			Zoherin_1_1
+		}
+		provinces_to_highlight = {
+			province_id = 6841
+		}
+		trigger = { 
+			6841 = {
+				OR = {
+					owned_by = ROOT
+					AND = {
+						owned_by = V12
+						V12 = {
+							has_opinion = {
+								who = ROOT
+								value = 150
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			6841 = {
+				add_core = ROOT
+			}
+		}
+	}
+	Zoherin_1_3 = {
+		icon = mission_four_men
+		position = 3
+		required_missions = { 
+			Zoherin_1_2
+		}
+		provinces_to_highlight = {
+			religion = eagle_worship
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = { 
+			all_province = {
+				OR = {
+					NOT = {
+						religion = eagle_worship
+					}
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		
+		effect = {
+			add_ruler_modifier = { name = Honasyul_mod duration = -1 }
+		}
+	}
+	Zoherin_1_4 = {
+		icon = mission_approach_throne
+		position = 4
+		required_missions = {
+			Zoherin_1_3 Zoherin_2_3
+		}
+		provinces_to_highlight = {
+			region = nomsyulhan_region
+			NOT = {
+				religion = eagle_worship
+			}
+			is_city = yes
+		}
+		trigger = { 
+			nomsyulhan_region = {
+				type = all
+				OR = {
+					NOT = {
+						is_city = yes
+					}
+					religion = eagle_worship
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = { name = Nire_true_eagle duration = -1 }
+		}
+	}
+}
+
+Zoherin_missions_2_part_0 = { 
+	slot = 2
+	generic = no
+	ai = yes 
+	has_country_shield = yes
+	potential = {
+		tag = V20
+	}
+	
+	Zoherin_2_2 = {
+		icon = mission_expand_into_the_forest
+		position = 2
+		required_missions = { 
+			Zoherin_1_1 Zoherin_3_1
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 6840
+				province_id = 6828
+			}
+			NOT = {
+				development = 10
+				has_building = temple
+			}
+		}
+		trigger = { 
+			6840 = {
+				development = 10
+				has_building = temple
+			}
+			6828 = {
+				development = 5
+				has_building = temple
+			}
+		}
+		
+		effect = {
+			6828 = {
+				change_trade_goods = damestear
+				add_province_modifier = { name = harpy_feathers duration = -1 }
+			}
+		}
+	}
+	Zoherin_2_3 = {
+		icon = mission_consulate_of_the_sea
+		position = 3
+		required_missions = { 
+			Zoherin_2_2
+		}
+		provinces_to_highlight = {
+			province_id = 6840
+			NOT = {
+				has_building = mage_tower
+			}
+		}
+		trigger = { 
+			6840 = {
+				has_building = mage_tower
+			}
+			calc_true_if = {
+				amount = 2
+				all_owned_province = {
+					trade_goods = precursor_relics
+				}
+			}
+		}
+		effect = {
+			6840 = {
+				add_institution_embracement = {
+					which = renaissance
+					value = 50
+				}
+			}
+			custom_tooltip = eagle_magic_const_tt
+			country_event = { id = flavor_ban.8009 }
+		}
+	}
+}
+
+Zoherin_missions_3_part_0 = { 
+	slot = 3
+	generic = no
+	ai = yes 
+	has_country_shield = yes
+	potential = {
+		tag = V20
+	}
+	
+	Zoherin_3_1 = {
+		icon = mission_build_up_to_force_limit
+		position = 1
+		required_missions = { 
+		}
+		trigger = { 
+			NOT = {
+				is_subject_of_type_with_overlord = {
+					who = V12
+					type = march
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = { name = Nire_stab_war duration = 3650 }
+		}
+	}
+	
+	Zoherin_3_3 = {
+		icon = mission_rb_conquer_the_highlands
+		position = 3
+		required_missions = { 
+			Zoherin_3_1
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = lock_tormscith_area
+				area = desolate_plains_area
+				owned_by = V12
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = { 
+			NOT = {
+				exists = V12
+			}
+			lock_tormscith_area = {
+				type = all
+				owned_by = ROOT
+			}
+			desolate_plains_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			anb_add_accepted_culture_or_dip_power = { culture = eagle_command free = yes }
+		}
+	}
+	
+	Zoherin_3_4 = {
+		icon = friends_in_high_places
+		position = 4
+		required_missions = { 
+			Zoherin_2_3 Zoherin_3_3
+		}
+		provinces_to_highlight = {
+			region = nomsyulhan_region
+			NOT = {
+				OR = {
+					owned_by = ROOT
+					is_city = no
+				}
+			}
+		}
+		trigger = { 
+			nomsyulhan_region = {
+				type = all
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					is_city = no
+				}
+			}
+		}
+		
+		effect = {
+			khaashalg_region = {
+				add_permanent_claim = ROOT
+			}
+			add_government_reform = nomsyulhan_matriarchy_reform
+			hidden_effect = {
+				set_country_flag = Nire_mission_part_1
+			}
+			swap_non_generic_missions = yes
+		}
+	}
+}
+
+Zoherin_missions_4_part_0 = { 
+	slot = 4
+	generic = no
+	ai = yes 
+	has_country_shield = yes
+	potential = {
+		tag = V20
+	}
+	
+	Zoherin_4_2 = {
+		icon = mission_rb_import_potatoes
+		position = 2
+		required_missions = { 
+			Zoherin_3_1 Zoherin_5_1
+		}
+		provinces_to_highlight = {
+			region = nomsyulhan_region
+			owned_by = ROOT
+			nationalism = 1
+		}
+		trigger = { 
+			calc_true_if = {
+				amount = 10
+				all_owned_province = {
+					region = nomsyulhan_region
+					NOT = {
+						nationalism = 1
+					}
+				}
+			}
+		}
+		
+		effect = {
+			custom_tooltip = Nire_more_birds_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						region = nomsyulhan_region
+						NOT = {
+							has_harpy_minority_trigger = yes
+						}
+					}
+					add_harpy_minority_size_effect = yes
+				}
+			}
+		}
+	}
+	
+	Zoherin_4_4 = {
+		icon = mission_conquer_romania
+		position = 4
+		required_missions = { 
+			Zoherin_4_2
+		}
+		provinces_to_highlight = {
+			culture_group = hobgoblin
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = { 
+			development_in_provinces = {
+				value = 200
+				culture_group = hobgoblin
+			}
+		}
+		
+		effect = {
+			country_event = { id = flavor_ban.707 }
+		}
+	}
+}
+
+Zoherin_missions_5_part_0 = { 
+	slot = 5
+	generic = no
+	ai = yes 
+	has_country_shield = yes
+	potential = {
+		tag = V20
+	}
+	
+	Zoherin_5_1 = {
+		icon = mission_magnificent_castle
+		position = 1
+		required_missions = { 
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 6840
+				province_id = 6828
+			}
+			NOT = {
+				is_prosperous = yes
+			}
+		}
+		trigger = { 
+			6840 = {
+				is_prosperous = yes
+			}
+			6828 = {
+				is_prosperous = yes
+			}
+		}
+		
+		effect = {
+			6840 = {
+				add_province_modifier = { name = Nire_harpy_deso duration = -1 }
+			}
+			6828 = {
+				add_province_modifier = { name = Nire_harpy_deso duration = -1 }
+			}
+		}
+	}
+	
+	Zoherin_5_3 = {
+		icon = mission_harpy_diplomats
+		position = 3
+		required_missions = { 
+			Zoherin_4_2 Zoherin_5_1
+		}
+		provinces_to_highlight = {
+			culture_group = harpy
+			NOT = {
+				culture = nuzenapu_harpy
+				owned_by = ROOT
+			}
+		}
+		trigger = { 
+			development_in_provinces = {
+				value = 100
+				any_owned_province = {
+					culture_group = harpy
+					NOT = {
+						culture = nuzenapu_harpy
+					}
+				}
+			}
+		}
+		
+		effect = {
+			custom_tooltip = Nire_harpy_dev_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						region = nomsyulhan_region
+					}
+					if = {
+						limit = {
+							culture_group = harpy
+						}
+						add_base_tax = 3
+						add_base_production = 3
+						add_base_manpower = 3
+					}
+					if = {
+						limit = {
+							has_harpy_minority_trigger = yes
+						}
+						add_base_tax = 1
+						add_base_production = 1
+						add_base_manpower = 1
+					}
+				}
+			}
+		}
+	}
+	
+	Zoherin_5_5 = {
+		icon = mission_swear_fealty_knight
+		position = 5
+		required_missions = { 
+			Zoherin_4_4 Zoherin_5_3
+		}
+		provinces_to_highlight = {
+			owner = {
+				has_country_modifier = harpy_administration 
+				total_development = ROOT
+			}
+		}
+		trigger = { 
+			NOT = {
+				any_country = {
+					has_country_modifier = harpy_administration 
+					total_development = ROOT
+				}
+			}
+			government_rank = 3
+		}
+		
+		effect = {
+			add_government_reform = eagle_hobgoblin_republic_assimilation_reform
+		}
+	}
+}

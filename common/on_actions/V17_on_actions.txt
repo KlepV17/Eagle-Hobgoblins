@@ -1,0 +1,223 @@
+on_startup = {
+	events = {
+		flavor_ban.101
+	}
+}
+
+on_monarch_death = {
+	if = {
+		limit = {
+			is_subject_of_type = pronoia_subject_type
+			NOT = { liberty_desire = 50 }
+		}
+		overlord = {
+			inherit = ROOT
+			every_owned_province = {
+				remove_core = ROOT
+			}
+		}
+	}
+	if = {
+		limit = {
+			any_subject_country = {
+				is_subject_of_type = pronoia_subject_type_elevated
+			}
+		}
+		every_subject_country = {
+			limit = {
+				is_subject_of_type = pronoia_subject_type_elevated
+			}
+			set_global_flag = Kuenan_inherited_$COUNTRY$
+			exile_ruler_as = { name = prono_exiled }
+			overlord = {
+				inherit = PREV
+				set_ruler = prono_exiled
+			}
+		}
+	}
+}
+
+
+
+
+on_new_monarch = {
+	events = {
+		flavor_ban.204
+	}
+	events = {
+		flavor_ban.222
+	}
+	if = {
+		limit = {
+			culture = eagle_command
+		}
+		clear_witch_king_points = yes
+	}
+	if = {
+		limit = {
+			has_global_flag = Nire_all_mages_flag
+		}
+		add_ruler_personality = mage_personality 
+	}
+}
+
+on_new_heir = {
+	if = {
+		limit = {
+			has_global_flag = Nire_all_mages_flag
+		}
+		add_heir_personality = mage_personality 
+	}
+}
+	
+
+on_new_term_election = {
+	events = {
+		flavor_ban.201
+	}
+}
+
+on_death_election = {
+	events = {
+		flavor_ban.201
+	}
+}
+
+on_war_won = {
+	if = {
+		limit = {
+			mission_completed = Nire_2_16
+			R78 = {
+				is_subject_of_type_with_overlord = {
+					who = ROOT
+					type = tributary_state
+				}
+			}
+		}
+		change_variable = {
+			which = Nire_sir_war_won_var
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			has_reform = eagle_hobgoblin_monarchy_reform
+		}
+		export_to_variable = {
+			which = Total_dev_1
+			value = total_development
+			who = ROOT
+		}
+		subtract_variable = {
+			which = Total_dev_1
+			which = Total_dev_0
+		}
+		change_variable = {
+			which = Compounded_dev
+			which = Total_dev_1
+		}
+		if = {
+			limit = {
+				NOT = {
+					OR = {
+						has_country_modifier = Kezen_lvl1_oath
+						has_country_modifier = Kezen_lvl2_oath
+						has_country_modifier = Kezen_lvl3_oath
+					}
+				}
+				variable_arithmetic_trigger = {
+					check_variable = {
+						which = Compounded_dev
+						which = Needed_dev1
+					}
+				}
+			}
+			add_country_modifier = { name = Kezen_lvl1_oath duration = -1 }
+			remove_country_modifier = Kezen_lvl0_oath
+			subtract_variable = {
+				which = Compounded_dev
+				which = Needed_dev1
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					OR = {
+						has_country_modifier = Kezen_lvl2_oath
+						has_country_modifier = Kezen_lvl3_oath
+					}
+				}
+				variable_arithmetic_trigger = {
+					check_variable = {
+						which = Compounded_dev
+						which = Needed_dev2
+					}
+				}
+			}
+			add_country_modifier = { name = Kezen_lvl2_oath duration = -1 }
+			remove_country_modifier = Kezen_lvl0_oath
+			remove_country_modifier = Kezen_lvl1_oath
+			subtract_variable = {
+				which = Compounded_dev
+				which = Needed_dev2
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_country_modifier = Kezen_lvl3_oath
+				}
+				variable_arithmetic_trigger = {
+					check_variable = {
+						which = Compounded_dev
+						which = Needed_dev3
+					}
+				}
+			}
+			add_country_modifier = { name = Kezen_lvl3_oath duration = -1 }
+			set_country_flag = lvl3_oath
+			remove_country_modifier = Kezen_lvl0_oath
+			remove_country_modifier = Kezen_lvl1_oath
+			remove_country_modifier = Kezen_lvl2_oath
+		}
+		if = {
+			limit = {
+				has_country_modifier = Kezen_lvl0_oath
+			}
+			set_variable = {
+				which = Compare_dev
+				which = Needed_dev1
+			}
+			subtract_variable = {
+				which = Compare_dev
+				which = Compounded_dev
+			}
+		}
+		if = {
+			limit = {
+				has_country_modifier = Kezen_lvl1_oath
+			}
+			set_variable = {
+				which = Compare_dev
+				which = Needed_dev2
+			}
+			subtract_variable = {
+				which = Compare_dev
+				which = Compounded_dev
+			}
+		}
+		if = {
+			limit = {
+				has_country_modifier = Kezen_lvl2_oath
+			}
+			set_variable = {
+				which = Compare_dev
+				which = Needed_dev3
+			}
+			subtract_variable = {
+				which = Compare_dev
+				which = Compounded_dev
+			}
+		}
+	}
+}

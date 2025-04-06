@@ -1,0 +1,3 @@
+opinion_eagle_harpy_union = {
+	opinion = 200
+}

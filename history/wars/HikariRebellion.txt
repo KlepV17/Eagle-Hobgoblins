@@ -1,0 +1,17 @@
+
+name = "Hikari's Rebellion"
+war_goal = {
+	type = defend_capital_independence 
+	casus_belli = cb_independence_war 
+}
+
+
+1432.6.1 = {
+	add_attacker = V13
+	add_defender = V14
+}
+
+1442.6.1 = {
+	rem_attacker = V13
+	rem_defender = V14
+}

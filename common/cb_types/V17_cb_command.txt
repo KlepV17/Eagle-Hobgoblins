@@ -1,0 +1,13 @@
+cb_V17_anti_command = { 
+	valid_for_subject = no 
+	ai_peace_desire = -300
+
+	prerequisites = {
+		has_country_flag = Nire_command_war_flag 
+		FROM = {
+			tag = R62
+		}
+	}
+
+	war_goal = V17_nire_wargoal
+}

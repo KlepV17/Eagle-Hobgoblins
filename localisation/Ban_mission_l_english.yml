@@ -1,0 +1,849 @@
+﻿ l_english:
+
+ SCION:0 "Scion"
+ DRG_RLM:0 "Dragon Realm"
+ OVRL_LL:0 "Overlord"
+ 
+ HIGH_TEMPLE:0 "High Temple"
+ HIGH_SCION:0 "Denunransun"
+ 
+ CRA_FOL:0 "Followers of the Crane"
+ CRA_ORD:0 "Order of the Crane"
+ BLD_DNC:0 "Blind Dancer"
+ BLANK_NAME:0 " "
+ 
+ estate_eagle_mag_evo:0 "The Ever-Burning God"
+ estate_eagle_mag_abj:0 "The Heart of Fear"
+ estate_eagle_mag_con:0 "The Conduit of Equlibrium"
+ estate_eagle_mag_ill:0 "The Shatterd Sun"
+ estate_eagle_mag_enc:0 "The Patriot Act"
+ estate_eagle_mag_tra:0 "The Profane Dove"
+ estate_eagle_mag_nec:0 "The Goal of Life"
+ estate_eagle_mag_div:0 "The Mountain's Whisper"
+ 
+ nomsyulhan_matriarchy_reform:0 "Nomsyulhan Matriarchy"
+ 
+ estate_angry_philo_priv:0 "Kuson Konsun Rebellions"
+ 
+ hobgoblin_cheribrum_reform:0 "Assembly of Equals"
+ 
+ Nire_ban_gov_spell_tt:0 "Gain 2 random spell school levels."
+ Nire_mag_reg_tt:0 "Your ruler will gain 1 £adm£, £dip£, or £mil£ skill upon competing the study of a school of magic. The type of mana depends on the school researched."
+ 
+ Nire_test_dec_tt:0 "Relic Size: [Root.Relic_production_size.GetValue]\n\nRelic Store: [Root.Relic_production_stores.GetValue]"
+ 
+ 
+ NIRE_WAR_NAME:0 "Kehodanoa Rinon"
+ 
+ cb_V17_anti_command:0 "Kehodanoa Rinon"
+ 
+ Banbe_postwar_mod:0 "Recovering from Tyrany"
+ 
+ estate_mages_soulseeker_development:0 "Soulseeker Pacts"
+ estate_mages_soulseeker_war:0 "Soulseeker Pacts"
+ estate_nobles_monopoly_of_livestock_eagles:0 "Dragonnel Levies"
+ estate_mages_forbidden_lands_research:0 "Forbidden Lands Research"
+ estate_nobles_monopoly_of_livestock_eagles_effect_tooltip:0 "Every §Ylivestock§! province with greater than 4 £dip£ development will recieve the following modifiers:\nPossible Mythical Cavalry Regiments §G+0.2§!\nLocal Production Efficency §R-1000%§!\n\nThis does §Rnot§! apply to provinces in the Forbidden Lands subcontinent."
+ 
+ estate_mages_featherdust_tithe:0 "The Featherdust Tithe"
+ estate_mages_featherdust_tithe_desc:0 "Rather than pay taxes, harpies under the Rising Mountain are expexted to provide plumage to the state."
+ Soulseeker_featherdust_mod:0 "Plumage Tax"
+ 
+ estate_eagle_men_mages:0 "Yoyon Kuenan"
+ 
+ Nire_tired_mages:0 "Diverted Magical Resources"
+ Soulseeker_estate_mod:0 "Indipendent Soulseeker Magi"
+ 
+ precursor_fortress:0 "False Enlightened Ruins"
+ precursor_fortress_desc:0 "This province contains an abandoned settlement of the Precursor (False Enlightened) Empire."
+ 
+ Zugi_relic_mod:0 "Excavated False Enlightened Ruins"
+ Zugi_relic_mod_desc:0 "This province contains an abandoned settlement of the Precursor (False Enlightened) Empire."
+ 
+ 
+ Nire_convoke_mages:0 "Denunransunin Convocation Cooldown"
+ Nire_convoke_mages_desc:0 "Mages are a grumpy lot, and are only willing to gather once every 5 years."
+ 
+ harpy_feathers:0 "Featherdust Trade"
+ harpy_feathers_desc:0 "The Harpies of Nomsyulhan are known to pluck their own feathers to produce various magical goods."
+ Nire_more_birds_tt:0 "Every owned province in the §YNomsyulhan§! region will gain a §YHarpy§! minority"
+ Nire_harpy_deso:0 "Desolate Revitalization"
+ Nire_true_eagle:0 "Emulants of the Great Eagle"
+ 
+ Nire_magic_gain_tt:0 "Gain a level in a random magical school"
+ 
+ Kezen_hunt_mod:0 "Unodeke Hunting Grounds"
+ 
+ Ban_trade_mono:0 "Autarky"
+ 
+ Nire_idea_tt:0 "Have unlocked the national idea §YDenunransunin§!"
+ Nire_bianf_tt:0 "All cores of §YBianfang§! will be removed"
+ 
+ Honasyul_mod:0 "Restorer of The'as Aschur"
+ Interreg_mod:0 "The Crane's Last Dance"
+ Hikari_mod:0 "The Great Eagle"
+ Gaximo_mod:0 "Dragon of the Valley"
+ 
+ Kezen_cb_war:0 "Lightning Strike"
+ 
+ Ban_ogre_slave:0 "Ogre Processing Facility"
+ Ban_ogre_slave_desc:0 "In this province, DESC"
+ 
+ nire_man_mea:0 "The Exhaltation of Man"
+ 
+ education_of_the_eagle_reform:0 "Education of the Scholar"
+ 
+ Nire_mag_eng:0 "A Rising Chorus"
+ Nire_villian1:0 "March of the Hobgoblins"
+
+ Nire_ruin_1:0 "Defunct Instruments"
+ Nire_ruin_2:0 "A Merchants Complaint"
+ Nire_ruin_3:0 "The Sword of 999 Truths"
+ 
+ Nire_adm_magic:0 "ADM Focus"
+ Nire_dip_magic:0 "DIP Focus"
+ Nire_mil_magic:0 "MIL Focus"
+ 
+ Nire_sabo_1:0 "Utter Chaos"
+ Nire_sabo_2:0 "Sabotaged Fortifications"
+ Nire_sabo_3:0 "Sabotaged Armaments"
+ nire_fat_mod:0 "Fat Trimmings"
+ 
+ Ban_eagle_heart:0 "Latent Magical Energy"
+ Nire_merc1:0 "Swallow Contracts"
+ 
+ Eagle_Magic1:0 "Supremacy of Magic"
+ 
+ flavor_nire.0.a:0 "Zugi"
+ flavor_nire.0.b:0 "Kuenan"
+ flavor_nire.0.c:0 "Nusnan Banbe"
+ flavor_nire.0.e:0 "Nutean Kezen"
+ flavor_nire.0.f:0 "Nirenun Syul"
+ flavor_nire.0.g:0 "Zoherin"
+ flavor_nire.0.t:0 "Country Selection"
+ flavor_nire.0.d:0 "Who are you playing as today?"
+ 
+ flavor_ban.601.t:0 "Delving the Ruins"
+ flavor_ban.601.d:0 "DESC about going into the ruind and not finding much except..."
+ flavor_ban.601.a:0 "Defunct Instruments"
+ flavor_ban.601.b:0 "A Merchants Complaint"
+ flavor_ban.601.c:0 "The Sword of 999 Truths"
+ flavor_ban.601.e:0 "More useless relics, but they're made of gold"
+ 
+ flavor_ban.901.t:0 "The Orator's Speech"
+ flavor_ban.901.d:0 "The Orator's Speech"
+ flavor_ban.901.a:0 "A beautiful speech, well said"
+ flavor_ban.901.a:0 "Apologies, but your 'freedom' wasn't free."
+ 
+ flavor_ban.902.t:0 "At Our Command"
+ flavor_ban.902.d:0 "Which way?"
+ flavor_ban.902.a:0 "No Subject"
+ flavor_ban.902.b:0 "Subject"
+ 
+ 
+ flavor_ban.8008.t:0 "The Denunransunin Convocation of $YEAR$"
+ flavor_ban.8008.d:0 "Your ruler sits on a rock, thinks about life, and reieves a blessing from one of the High Gods of Magic"
+ flavor_ban.8008.a:0 "YOU get a War Wizard, and YOU get a War Wizard...""
+ flavor_ban.8008.b:0 "Knowledge is Power"
+ flavor_ban.8008.c:0 "Enhance our administrative focus"
+ flavor_ban.8008.e:0 "Enhance our diplomatic focus"
+ flavor_ban.8008.f:0 "Enhance our militaristic focus"
+ flavor_ban.8008.i:0 "Exit"
+ 
+ flavor_ban.8009.t:0 "The Denunransunin Convocation of $YEAR$"
+ flavor_ban.8009.d:0 "You now have access to the 'Convoke the Denunransunin' fervor action in the Religion tab. Activating it will cause an event to pop after a few in game days. The 'Can NOT build buildings' modifier is only for activation purposes as is not intended to impact gameplay. The fervor effect can be disabled once the Convocation event fires."
+ flavor_ban.8009.a:0 "I understand, on with the show."
+ 
+ eagle_hobgoblins_zugi_base:0 "Followers of the Black Crane"
+ eagle_hobgoblins_zugi_final:0 "Order of the Black Crane"
+ eagle_hobgoblin_republic_reform:0 "Unity and Order"
+ eagle_hobgoblin_monarchy_reform:0 "Dragon of Nomsyulhan"
+ eagle_hobgoblins_kuenan_reform:0 "High Temple of The'as Aschur"
+ eagle_hobgoblins_kuenan_reform_subject:0 "Paragon of Order"
+ 
+ Nire_gnome_bye_tt:0 "All §YGnomes§! will return to their roots and become §YHalflings§!"
+ 
+ Nire_enlighten:0 "Lessons of the Final Days"
+ 
+ eagle_hobgoblin_republic_assimilation_reform:0 "Elevate the Flightless"
+ Nun_gov_tt:0 "New rulers will trigger an event for those who lost their bid to become Denunransun."
+ 
+ 
+ eagle_magic_const_tt:0 "Constructing a §YMage Tower§! in our capital will enable the Denunransunin to convene."
+ Ban_own_nom_tt:0 "All provinces in the Nomsyulhan region except for Rift Bearer are owned by us."
+ ban_alliance_tt:0 "For a monsterous nation, there is but one path to order."
+ 
+ Banbe_death_Kezen_tt:0 "To end the treacherous rebels, Gaximo must face Hikari on the battlefield. Once she falls, the rest of the valley can be unified."
+ Banbe_death_Banbe_tt:0 "To end the dragon tyrants, Hikari must face Gaximo on the battlefield. Once she falls, the rest of the valley can be liberated."
+ Nire_drum_war_mod:0 "The Eagle Wars of Unification"
+ 
+ Nire_HP_Printer_mod:0 "High Philosophy Zealotry"
+ 
+ Zugi_fort_mod:0 "The Crane's Bastion"
+ Zugi_fort_temple_mod:0 "The Crane's Monastery"
+ Zugi_dev_sand:0 "Repopulating the Sands"
+ Zugi_expel_tt:0 "If you are §RExpelling§! Ogres: Four random §YSoulseeker Ogre§! provinces will gain §R25§! devastation and change to your primary culture and religion.\n"
+ Zugi_purge_tt:0 "If you are §RPurging§! Ogres: All §YSoulseeker Ogre§! provinces will gain §R100§! devastation be reduced to 3 total development, and change to your primary culture and religion."
+ Zugi_cheese_tt:0 "Up to 6 random provinces that produce livestock and have any manufactory gets '§YDacho: Liquid Gold§!' until the end of the game, giving the following effects:\nLocal Production Efficency: §G+200%§!\nLocal Trade Power: §G+10§!"
+ Zugi_spirit_tt:0 "\n10 Spirit Swarms will be released into Rahen, Yanshen, and Vimdatrong! At least they're no longer your concern."
+ Zugi_enlighten_tt:0 "Every country that borders us either: Has a truce, alliance, or is subject to us"
+ 
+ Zoherin_idea_tt:0 "Obtain empowered national ideas"
+ Nire_dak_bak_tt:0 "Immortal Lich §YDak Chaingrasper§! (6/6/6) becomes ruler of §YThe Triarchy§! at the age of §Y207§!"
+ Nire_fed_friend_tt:0 "Your lake federation ally will gain a massive amount of standing"
+ Nire_mages_united_tt:0 "Every subsidized country will unban their mages estate"
+ 
+ 
+ Zugi_gov_tt:0 "Winning a war §Ywith your ruler as a general§! has a 50% chance to increase each monarch skill of your heir by §G1§!.\n"
+ Zugi_gov_base_tt:0 "Winning a war will increase each monarch skill of your heir by §G1§!.\n"
+ Zugi_espi_tt:0 "We will unlock a pair of espionage actions that will weaken the commands control over their mages."
+ sabotage_kaorashi_zugi_title:0 "Sabotage Kaorashi Production"
+ sabotage_kaorashi_zugi_tooltip:0 "Sabotage the Commands production of Kaorashi (Black Damestear) to weaken their control over the mages of Haless."
+ sabotage_kaorashi_zugi_desc:0 "Sabotage the Commands production of Kaorashi (Black Damestear) to weaken their control over the mages of Haless.\n\nThe Command will recieve §YSabotaged Production§! for 20 years giving the following effects: Monthly Kaorashi Reserves: §R-2§!.\n\n§OThis modifier can be stacked up to 3 times§!."
+ Kezen_gov_tt:0 "Enables §YKezen's Oath§! monarch mechanic"
+ Kezen_place_decision_title:0 "Kezen's Oath"
+ Kezen_place_decision_desc:0 "This event displays the remaining development needed to fulfill your current monarchs §YKezen's Oath§!. Activating the event will refresh the values. A negative number indicates the Oath has been fulfilled."
+ kuenan_cent_pro_tt:0 "The Paragon that fulfills the mission requirements will have their usual Core Creation, Admin Efficency, and Overextension maluses removed."
+ Zugi_remove_min_tt:0 "Ogre and Harpy minorities will forcibly be removed from The'as Aschur."
+ Ferrous_tt:0 "Gain §G3§! base production and start the construction of a §YWorkshop§! in the developed province for 50% of the cost and build time."
+ Soulseeker_estate_mod_tt:0 "Every owned §YSoulseeker Ogre§! province gains the following modifier:"
+ Nire_outpose_tt:0 "Up to 3 Sedentarization §YOutposts§! will recieve '§YEagle Frontiersmen§!' until the end of the game, giving the following effects:\nMonthly Autonomy Change: §G-0.1§!\nLocal Defensiveness: §G+15%§!"
+ demonster_nire_tt:0 "If you are in the process of §YDemonsterization§!, you will lose a large amount of monsterization."
+ Nire_horn_V11_tt:0 "Every owned province with §YHorned Ogre§! culture will recieve the following effects:\nThe culture changes to §YEagle Hobgoblin§!\nThe religion changes to §YBanbe Anen§! \nLose §R2§! Base Tax \nLose §R2§! Base Production \nLose §R2§! Base Manpower \nGain §R75§! devastation, perhaps unintentionally.\n"
+ Nire_horn_tt:0 "Every owned province with §YHorned Ogre§! culture will recieve the following effects:\nThe culture changes to §YSoulseeker Ogre§!\nThe religion changes to §YBanbe Anen§! \nLose §R1§! Base Tax \nLose §R1§! Base Production \nLose §R1§! Base Manpower \nGain §R75§! devastation, perhaps unintentionally.\n"
+ Nire_spire_tt:0 "Every province in the §YNomsyulhan§! region gets §YA Rising Chorus§! for §Y50 years§!, giving the following effects:/nLocal Development Cost: §G-15.0%§!"
+ Nire_plant_tt:0 "Has the Mages Estate Spell §YPlant Growth§! active"
+ Nire_plant_grow_tt:0 "The Mages Estate Spell §YPlant Growth§! will no longer cause devastation."
+ Nire_plant_11_tt:0 "10 §YLivestock§! provinces in the Forbidden Lands Subcontinent with §YEagle Hobgoblin§! culture will now produce a random plant trade good. \n\nWhile the §YPlant Growth§! spell is active, other §YLivestock§! provinces with §YEagle Hobgoblin§! culture in the Forbidden Lands Subcontinent will slowly change their trade goods as well."
+ Nire_red_reg_tt:0 "The §YReduced Research Regulations§! estate privlidge will no longer reduce your diplomatic reputation."
+ Forbidden_estate_mod_tt:0 "Every owned §YEagle Hobgoblin§! or §YSoulseeker Ogre§! province in the Forbidden Lands Subcontinent which is not on Yarikhoi gains the following modifier:"
+ Not_mages_tt:0 "Provinces with a §YMage Tower§! will not revieve the monthly devastation."
+ Nire_mag_eng_tt:0 "Every province in the §YNomsyulhan§! region gets '§YA Rising Chorus§!' for §Y50 years§!, giving the following effects:\nLocal Development Cost: §G-15.0%§!"
+ Nire_integrate_cb_tt:0 "The §YIntegrate Command§! peace option will now be available whenever we are at war with §YThe Command§!, allowing us to dismantle them in a single war. More territory can be potentially be gained by completing the mission §YThe Enemy of my Enemy§! before the war."
+ Nire_90_improve_relations_tt:0 "The Command has at least §Y90§! opinion of us from §Yimprove relations§!"
+ Nire_kobold_therapy_e_tt:0 "Every province in the §YDragon Coast§! region that has §YKobold§! culture gets:\nGain §G1§! base Tax.\nLose §R2§! Base Production.\nGain §G1§! Base Manpower.\nThe religion changes to §YBanbe Anen§!."
+ Nire_fat_tt:0 "Every owned province with §YFathide Ogre§! culture will recieve the following effects:\nThe culture changes to §YSoulseeker Ogre§!\nThe religion changes to §YBanbe Anen§! \nLose §R1§! Base Tax \nLose §R1§! Base Production \nLose §R1§! Base Manpower \nGain §R100§! devastation, intentionally"
+ Nire_fat_V11_tt:0 "Every owned province with §YFathide Ogre§! culture will recieve the following effects:\nThe culture changes to §YEagle Hobgobli2§!\nThe religion changes to §YBanbe Anen§! \nLose §R2§! Base Tax \nLose §R2§! Base Production \nLose §R2§! Base Manpower \nGain §R100§! devastation, intentionally"
+ Nire_harpy_hight_tt:0 "Is recieving knowledge sharing for the §YFeudalism§! institution"
+ 
+ Nire_imperial_scum_tt:0 "Unlock the §YImperialism§! Casus Belli.\n"
+ 
+ Nire_insyaa_tt:0 "TBD when Insyaa releases in 2030"
+ Nire_insyaa_effect_tt:0 "Something cool and unbalanced probably will happen."
+ Nire_mine_tt:0 "We will gain §R10§! Agressive Expansion with every country in the §YRaheni§! religous group that has discovered us."
+ Nire_devour_tt:0 "We will lose §G15§! Agressive Expansion with every country in the §YHalessi§! religous group that has discovered us."
+ Nire_dragon_shape_tt:0 "Your ruler has very recently used the §YShapechange into Dragon§! Transmutation spell to win a siege"
+ 
+ Nire_kobold_therapy_t0_tt:0 "Every province in the §YDragon Coast§! region that has §YKobold§! culture must:"
+ Nire_kobold_therapy_t1_tt:0 "Be owned by §YNirenun Syul§!, the realest dragon they'll ever meet."
+ Nire_kobold_therapy_t2_tt:0 "Have the '§YEncourage Development§!' Edict active to encourage their personal growth."
+ Nire_kobold_therapy_t3_tt:0 "Have at least 2 regiments of §YCavalry§! present to help them with their abandonment issues."
+ 
+ 
+ Nire_star_tt:0 "This modifier will be removed after our war with The Command has ended."
+ Nire_school_hp_tt:0 "All provinces in the Raheni School Origin group are owned by §YNirenun Syul§! and are §YBanbe Anen§!."
+ Nire_evo_2_tt:0 "Your ruler is at least Renowned in Evocation."
+ Nire_command_1444_tt:0 "All provinces conquered by The Command in their origional invasion of Shamakhad are owned by §YNirenun Syul§!"
+ Nire_505_tt:0 "For every country with their capital in §YShamakhad§!, §YXianjie§!, or §YDhujat§! the event '§YOne Vilian for Another§!' happens.\n§TEvent Insight§!\nThe nations of Rahen prepare for our advance and get '§YMarch of the Hobgoblins§!' for §Y10§! years, giving the following effects:\nManpower Recovery Speed: §G+20%§!\nYearly Army Professionalism: §G+2.5%§!"
+ Nire_china_tt:0 "Now all of Haless knows you're here. Every country with their capital in §YRahen§!, §YYanshen§!, or §YVimdatrong§! will discover the §YNomsyulhan§! region."
+ Nire_trisect_tt:0 "The Command will be trisected into the Lion, Wolf, and Boar Commands who will fall under your rule.\nThe Lions, finding themselves in hostile territory have retreated to the foothills of the Jade Mines, bringing their warcamp along with them.\nThe goblins of the Jade Mines will gain their indipendence and, if not unified, will fight for control of the mines.\nDepending on your actions in the event '§YA Deal with the Devil§!', some of their territory will be transfered to you, the rest being released as indipendent nations.\n§YSir§!, still remembering the destruction wrought by their revolt many years ago, has quickly unified their local government and have pledged themselves to our cause. Whether or not they mean to help or hinder us remains to be seen."
+ Nire_dragon_command_tt:0 "We will gain access to the §YDragon Command§! estate." 
+ Nire_ward_tt:0 "Has the province modifier: '§YMagic Estate: Defensive Wards§!'"
+ 
+ Nire_non_agro1_tt:0 "The owner of Sramaya either: Has a spy network of size §Y30§! from us, has §Y100§! opinion of us, or the province is owned by us."
+ Nire_non_agro2_tt:0 "The owner of Bianfang either: Has a spy network of size §Y30§! from us, has §Y100§! opinion of us, or the province is owned by us."
+ Nire_non_agro3_tt:0 "The owner of Dhenijansar either: Has a spy network of size §Y30§! from us, has §Y100§! opinion of us, or the province is owned by us."
+ 
+ 
+ Nire_enemy_of_enemy1_tt:0 "Following our war with The Command, only the northern most areas of Shamakhad will be subject to us, with the three Commands falling under our rule. The rest of The Command will be released into indipendent states; however the Command remnants will be much easier to integrate."
+ Nire_enemy_of_enemy2_tt:0 "Following our war with The Command, all provinces in Shamakhad that fell to their invasion will be subject to us, with the three Commands falling under our rule. The rest of The Command will be released into indipendent states."
+ Nire_enemy_of_enemy3_tt:0 "Following our war with The Command, all provinces that fell to their invasion will be subject to us with, the three Commands falling under our rule. This will result in a large amout of §RAgressive Expansion§!, §ROverextension§!, and make it difficult to integrate the Command remnants."
+ 
+ Nire_ghen_peace1_tt:0 "The Command will suffer a great loss of internal stability, however the chaos wrought will worsen our relations with the non-Hobgoblin people of Shamakhad."
+ Nire_ghen_peace4_tt:0 "The Command will not recieve any penalties, but integrating the non-Hobgoblin people of Shamakhad will be easier"
+ 
+ Nire_portal_days_tt:0 "The event '§YThe Expedition Returns§!' happens in §Y10 years§!."
+ Nire_portal_done_tt:0 "The expedition through the Rift Bearer portal has returned"
+ Nire_portal_mod:0 "Rift Bearer Portal Complex"
+ Nire_equilibrium_terrain_tt:0 "All provinces in the §YNomsyulhan§! region will recieve a development cost reduction modifier. The modifier will offset the development cost malus from its terrain, effectively changing it to that of a §YFarmland§! terrain type."
+ Nire_leader_tt:0 "Our Denunransun is a War Wizard in command of an army"
+ 
+ Nire_convoke_mages1:0 "Arcane Miracles"
+ Nire_convoke_mages2:0 "The Art of War"
+ Nire_blank_tt:0 "The Convocation is not in session"
+ 
+ Ban_has_inherit_tt:0 "You can not Elevate the same country twice!"
+ 
+ Nire_iton1_tt:0 "§YIron§! will now be produced in §YChuguvho§! and §YÜnaitkuvhal§!."
+ Nire_iton2_tt:0 "(Töimurkhalkga, Chuguvho, & Ünaitkuvhal)\n Start construction of §YWorkshop§! for §Y0.0%§! of the cost, and §Y100.0%§! of the time."
+ Nire_iton3_tt:0 "Gain §G1§! Base Production.\nGain §G100§! support for §YFeudalism§!.\n     §GAdds/Increases§! §YHobgoblin Minority Size§!"
+ 
+ Nire_sarisung_flag_tt:0 "The estate spell §YScrying Neighbours§! no longer costs any mana and is significantly cheaper."
+ Nire_east_tree_tt:0 "All provinces in the §YEastern Tree of Stone§!:\nOwned by you or your non-tributary subjects."
+ Nire_project_mod:0 "Breach the Heavens"
+ Nire_movement_mod:0 "The Eagle Highway"
+ Nire_highway_tt:0 "All provinces in the §YEastern Tree of Stone§! gets '§YThe Eagle Highway§!' until the end of the game, giving the following effects:\nFriendly Movement Speed: §G+25%§!"
+ Nire_end_of_HP_Printing_tt:0 "§YBanbe Anen§! becomes the new state-religion of every §YHigh Philosophy§! nation.\nThis will also apply to their ruler and possible heirs."
+ Nire_adv_want_tt:0 "Every province in the §YShamakhad§! region that has a core from a self proclaimed '§YHeroic Realm§!' and is not of Hobgoblin culture gets '§YAdventurer Abolition§!' for §Y30 years§!, giving the following effects:\nLocal Manpower Modifier: §R-50.0%§!\nLocal Production Efficency: §G+15.0%§!"
+ Nire_adv_want:0 "Adventurer Abolition"
+ Nire_worthy_HP_Printing_tt:0 "The culture in every §YRoyal Harimari§! province will become §YWorthy Harimari§!."
+ Nire_dak_s:0 "The Skull of Dak Chaingrasper"
+ Nire_path_mod:0 "Zanguy's Path"
+ Nire_anti_slaves:0 "Economic Collapse"
+ Nire_slavery_bad_tt:0 "Every country with their capital in the §YRahen Superregion§Y! that currently owns a province producing §YSlaves§! gets '§YEconomic Collapse§! for §Y100 years§!, giving the following effects:\nTrade Efficency §R-80.0%§!"
+ Nire_fair_war:0 "Teaching the Truth"
+ 
+ unlock_merc_sir_anti_mages_tt:0 "Unlock the mercenary company §YSir Chaos Branded§! to recruit."
+ 
+ Nun_wood:0 "Ever-Burning Wood"
+ Ban_mis1:0 "The Eagle Guides"
+ Ban_cav1:0 "Room to Breathe"
+ nire_weapons:0 "Excess Iron Production"
+ Nire_outpost1:0 "Eagle Frontiersmen"
+ Forbidden_estate_mod:0 "Unfettered Magical Research"
+ Forbidden_estate_mod2:0 "Unfettered Controlled Magical Research"
+ nire_start_plant:0 "The first harvest"
+ nire_start_plant_desc:0 "This province recently started growing a new trade good thanks to your magical efforts, full production will resume after the first harvest"
+ nire_ae_china:0 "The Savior of Haless"
+ Nire_forbid_sea:0 "To Sail Forbidden Seas"
+ Nire_command_mages_tt:0 "The Three Commands will be forced to accept mages"
+ 
+ Nire_sir_war_won_tt:0 "Have won at least 5 wars with Sir as a march (Currently [Root.Nire_sir_war_won_var.GetValue])"
+ Nire_wuhyun_tt:0 "Provinces owned by §YSir§! that are of the §YBanbe Anen§! faith will slowly (MTTH of 1 year) convert to §YWuhyun§! culture."
+ 
+ Kezen_ogre_build:0 "Ogre Architects"
+ Kezen_gun_blade:0 "False Enlightened Gun Blades"
+ Kezen_witch_king_tt:0 "Your ruler is a Witch King"
+ Kezen_scorch_tt:0 "Every occupied province that either has the modifier '§YScorched Earth§!' or has §R50§! devastation will lose §R2§! base tax, §R1§! base production, and gain §R100§! devastation."
+ Nire_school1_tt:0 "Your ruler has a Simulacrum in their employ"
+ Nire_school2_tt:0 "Your ruler will go undercover at Muhaqaar to uncover the darkness within the Shadow Swamp. Your Simulacrum will nonchalantly rule in your place.\n"
+ 
+ Nire_gob_harpy_1:0 "Hobgoblin Officers"
+ Nire_gob_harpy_2:0 "Hobgoblin Administrators"
+ 
+ Kuenan_core_tt:0 "All Soulseeker, Harpy, and non-Kuenan Nirokyu Hobgoblin cores will be removed from Nomsyulhan.\n"
+ Kuenan_annex_tt:0 "If Nunsan Banbe or Nutean Kezen are our subject, they will be annexed for a price of 4 £dip£ per development.\n\nIf we directly own the land, lose 50 autonomy in the Overgrowth, Iona Saothar, and Sanctuary areas."
+ Featherdust_estate_mod_tt:0 "Every owned province with a §YHarpy§! culture or minority that follows the Banbe Anen faith gains the following modifier:"
+ Featherdust_revoke_estate_mod_tt:0 "This privlidge will be §YPermanently§! lost if your tolerance of harpies becomes §ROppressed§!"
+ Kuenan_heavens_mod:0 "Touching the Heavens"
+ Kuenan_sun_mod:0 "Army of Order"
+ Kuenan_V08_tt:0 "Sudokli will gain a core on all Soulseeker Ogre provinces not owned by us."
+ Kuenan_dev_mod:0 "Nomsyulhan Suginpunze"
+ Kuenan_annex_mod:0 "Unity of the Clans"
+ Kuenan_dip_rep_mod:0 "Leader of the Pact"
+ Nire_kora_mod:0 "Chaos Research"
+ Nire_kora_final_mod:0 "Harnessing Chaos"
+ Nire_command_gov:0 "The Universal Empire"
+ Soulseeker_estate_war_mod:0 "Mandatory Ogre Enlistment"
+ Soulseeker_estate_war_mod_desc:0 "All Soulseeker Ogres are required to be in service of the 
+ Nire_NO_COLONIZATION:0 "Isolationism"
+ Nire_NO_COLONIZATION_desc:0 "Modifier to prevent lake fed colonization during the Eagle Hobgoblin takeover of democracy"
+ Nire_lore_tt:0 "Your ruler has recently cast the §YLoreseeker§! Divination spell"
+ Nire_abandon_tt:0 "Every province that produces §YPrecursor Relics§! on the Cannor or Sarhal continents will now produce §YGrain§! instead."
+ Nire_eschaton_tt:0 "\nHas banned mages because of their investment in artificery\nIs embergoed by §YNirenun Syul§!\nHas been insulted by §YNirenun Syul§!"
+ Nire_jiang_tt:0 "We have harmonized with the Accretive Path"
+ Nire_jiang_mission_tt:0 "We will now be able to use and upgrade §YThe Jiangliubao§! Great Project\n\nEvery §YXia School Origin§! province will gain a Hobgoblin minority"
+ Nire_gate_tt:0 "Every province in the §YXianjie§! region that is not owned by you or your non-tributary subjects gets '§YA Broken Flow§!' for §Y30 years§!, giving the following effects:\nLocal Defensiveness: §R-30.0%§!"
+ Nire_gate:0 "A Broken Flow"
+ Nire_harmony_tt:0 "All §YXia School Origin§! provinces are §YBanbe Anen§! and have §Y0§! unrest"
+ Nire_stab_war:0 "Flight and Fight"
+ Nire_harpy_dev_tt:0 "Every province in the §YNomsyulhan§! region with a §YHarpy§! minority will gain §G+1§! base tax, production, and manpower. Provinces of §YHarpy§! culture will gain §G+3§! instead"
+ 
+ flavor_ban.2.t:0 "Subjugation of the Valley"
+ 
+ flavor_ban.201.t:0 "Election"
+ flavor_ban.201.d:0 "Election Desc"
+ flavor_ban.201.c:0 "A Master of Deception and Cunning."
+ Ban_il_en_tt:0 "They will be at least proficent in §YIllusion§! and §YEnchantment§!."
+ flavor_ban.201.b:0 "A Diviner of the Material Realm."
+ Ban_co_di_tt:0 "They will be at least proficent in §YConjuration§! and §YDivination§!."
+ flavor_ban.201.a:0 "A Battle Mage of Great Renown."
+ Ban_ev_ab_tt:0 "They will be at least proficent in §YEvocation§! and §YAbjuration§!."
+ flavor_ban.201.e:0 "An Overlord of Life and Death."
+ Ban_tr_ne_tt:0 "They will be at least proficent in §YTransmutation§! and §YNecromancy§!."
+
+ flavor_ban.707.t:0 "The The'as Aschur Petition"
+ flavor_ban.707.d:0 "desc"
+ flavor_ban.707.a:0 "Send them to support us on the front lines."
+ flavor_ban.707.b:0 "We need them in the administration of our army."
+ 
+ Eagle_fin1_tt:0 "All countries will be forced into mage only mode."
+ Eagle_fin2_tt:0 "Magical energy now permiates Halann. Every ruler of every country, present and future, will be a powerful mage.\n\nEvery country gets '§YSupremacy of Magic§!' until the end of the game, giving the following effects:\nShock Damage §G+75%§!\nFire Damage §R-75%§!"
+ Eagel_exarch_8_tt:0 "All 7 Paragons have been established."
+ 
+ Ban_204b_tt:0 "Failing to attain a level II Oath will grant: §R-1§! Stability on Monarch Death.\n"
+ Ban_204c_tt:0 "[Root.Monarch.GetName] must grow our development by §Y750§! before their death.\n\nSuccessfully completing this oath will grant: §G+1§! Stability and §G+100§! of each monarch power on Monarch Death.\n\nFailing to complete this oath will grant: §R-3§! Stability and §R+10§! Corruption on Monarch Death.\n"
+ Ban_204e_tt:0 "[Root.Monarch.GetName] must grow our development by §Y1500§! before their death.\n\nSuccessfully completing this oath will grant: §G+1§! Stability and §G+300§! of each monarch power on Monarch Death.\n\nFailing to complete this oath will grant: §R-6§! Stability, §R+20§! Corruption and §Rrelease ALL possible countries§!.\n\n(It might be a good idea to create a backup save before committing to this).\n"
+ 
+ Nire_exarch_En_tt:0 "Starts you on the path to establish a Paragon of §MThe Law of Sound§!, granting our empire benefits related to that area of magic."
+ Nire_exarch_Di_tt:0 "Starts you on the path to establish a Paragon of §YThe Law of Time§!, granting our empire benefits related to that area of magic."
+ Nire_exarch_Co_tt:0 "Starts you on the path to establish a Paragon of §OThe Law of Space§!, granting our empire benefits related to that area of magic."
+ Nire_exarch_Il_tt:0 "Starts you on the path to establish a Paragon of §VThe Law of Darkness§!, granting our empire benefits related to that area of magic."
+ Nire_exarch_Ab_tt:0 "Starts you on the path to establish a Paragon of §lThe Law of Light§!, granting our empire benefits related to that area of magic."
+ Nire_exarch_Ev_tt:0 "Starts you on the path to establish a Paragon of §RThe Law of Force§!, granting our empire benefits related to that area of magic."
+ Nire_exarch_Tr_tt:0 "Starts you on the path to establish a Paragon of §JThe Law of Shape§!, granting our empire benefits related to that area of magic."
+ 
+  
+ #Maker of Forms, Keeper of the Law of Shape - Magestrium
+
+ #Master of Chronourgy, Keeper of the Law of Time - Verkal Dromak
+
+ #She-Who-Is, Keeper of the Law of Space - Eordand
+
+ #Herald of Voice, Keeper of the Law of Sound - Lake fed magic tag
+
+ #Twin of Darkness, Keeper of the Law of Light - Bulwar magic tag
+
+ #Twin of Light, Keeper of the Law of Darkness - Swam toll genocide tag
+
+ #That-Which-Binds, Keeper of the Law of Force - Effelai
+
+ 
+ 
+ 
+ Kezen_war_tt:0 "Any §YEvocation War Magic§! spell is active"
+ 
+ flavor_ban.500.t:0 "Ascension"
+ 
+ flavor_ban.101.t:"An Age of Disorder"
+ flavor_ban.101.d:0 "Brother againts brother, clan against clan. Cut off from the world, the Hobgoblins and Ogres of the Forbidden Valley fight amongst themselves in ignorance and chaos, doomed to be subjugated by foerign powers. \n\nIn the north, the tyranical §YGaximo Narkez§! seeks to crush the rebellion started by §YHikari Banbe§! 12 years prior. Their clash only held back by a nascent peace, words in the winds before their raging thunder. To the south, the rising mountain clan under the devout §YHonasyul§! look down upon Nomsyulhan with ambition, not sated by his recent conquests. The rump state of §YZugi Yusan§! is but a shadow of its former self after being froced from the shores of Naze Syul: leaderless, powerless, and doomed to fall unless a hero rises. In the eastern deserts, the great Ogre §YFederation of Steel and Soul§! stands lead by §YSudokli§!, but the lingering animosity between §YShevhedil§! and §YOlkhalsy§! could end the last hope of the Soulseeker Ogres. \n\nTo end this dark age, the valley must be unified."
+ flavor_ban.101.b:0 "The mountain shall rise under one banner, our banner."
+ flavor_ban.101.c:0 "The dragon of §YNutean Kezen§! is poised to strike, peace will not last."
+ flavor_ban.101.e:0 "No treaty will stop us, the rebels of §YNunsan Banbe§! will be shattered today!"
+ flavor_ban.101.a:0 "Our order is shattered, it must rebuild it with blood."
+ flavor_ban.101.f:0 "But what if we didn't?"
+ flavor_ban.101.g:0 "We palce our faith in the Rising Mountain!"
+ 
+ 
+ Ban_lvl_1:0 "The Age of Disorder"
+ flavor_ban.102.t:"The Unification of Nomsyulhan"
+ Ban_lvl_2:0 "The Age of Unity"
+ flavor_ban.103.t:"An Empire of Order"
+ Ban_lvl_3:0 "An Empire of Order"
+ flavor_ban.104.t:"The Final Battle"
+ Ban_lvl_4:0 "The War for Halann"
+ 
+ flavor_ban.204.t:0 "The Oaths of Kezen"
+ flavor_ban.204.d:0 "As all before them, $MONARCH$ must swear Kezen's Oath before assuming control of the nation. To prove their Oath, the total development of your nation must grow. While acts such as integrating vassals and developing your provinces satisfy the Oath, only glorious conquest will advance your ruler to the next Oath level.\n\nLevel 1 Oath:\n -Development growth required [Root.Needed_dev1.GetValue]\n -Bonuses: -5% Core Creation Cost, +10% Average Monarch Lifespan\n\nLevel 2 Oath Dev:\n -Development growth required [Root.Needed_dev2.GetValue]\n -Bonuses: -10% Core Creation Cost, +25% Average Monarch Lifespan, -10% Province Warscore Cost\n\nLevel 3 Oath:\n -Development growth required [Root.Needed_dev3.GetValue]\n -Bonuses: -20% Core Creation Cost, +50% Average Monarch Lifespan, -30% Province Warscore Cost, -15% Agressive Expansion Impact\n\nAttaining a Level 3 Oath will set a new standard for your rulers, §Rincreasing§! the development growth required for each level by 10, 25, and 100 respectively."
+ 
+ flavor_ban.204.a:0 "We have no need for further conflict."
+ 
+ Kezen_point_tt:0 "Starting Development: [Root.Total_dev_0.GetValue] \n\nTotal Development Growth: [Root.Compounded_dev.GetValue]\n\nLevel 1 Oath Dev: [Root.Needed_dev1.GetValue]\n\nLevel 2 Oath Dev: [Root.Needed_dev2.GetValue]\n\nLevel 3 Oath Dev: [Root.Needed_dev3.GetValue]"
+ 
+ Kezen_lvl3_oath:0 "Kezen's Oath III"
+ Kezen_lvl3_oath_desc:0 "Your ruler has surpassed all before them, setting a new standard for Kezen's Oath."
+ Kezen_lvl2_oath:0 "Kezen's Oath II"
+ Kezen_lvl2_oath_desc:0 "Your ruler has embodied the spirit Kezen's Oath. They will need to conquer §Y[Root.Compare_dev.GetValue]§! more development to attain the next oath level."
+ Kezen_lvl1_oath:0 "Kezen's Oath I"
+ Kezen_lvl1_oath_desc:0 "Your ruler has fulfilled the most basic tenants of Kezen's Oath. They will need to conquer §Y[Root.Compare_dev.GetValue]§! more development to attain the next oath level."
+ Kezen_lvl0_oath:0 "Oathless Monarch"
+ Kezen_lvl0_oath_desc:0 "Your ruler has yet to fulfill even the most basic tenants of Kezen's Oath. They will need to conquer §Y[Root.Compare_dev.GetValue]§! more development to attain the next oath level."
+ 
+ flavor_ban.204.b:0 "Thus I Swear"
+ flavor_ban.204.c:0 "Kingdoms shall burn at my feet!"
+ flavor_ban.204.e:0 "I shall conquer us an empire!"
+ 
+ flavor_ban.401.t:0 "50 Nails"
+ 
+ flavor_ban.402.t:0 "Misplaced Faith"
+ 
+ flavor_ban.501.t:0 "A Deal with the Devil"
+ flavor_ban.501.d:0 "DESC"
+ flavor_ban.501.a:0 "The Command is our only enemy here"
+ flavor_ban.501.b:0 "Stability and order is our priority"
+ flavor_ban.501.c:0 "All of Haless is our birthright"
+ 
+ flavor_ban.502.t:0 "A Starless Night"
+ 
+ flavor_ban.503.t:0 "Meeting the Gerunai"
+ flavor_ban.503.a:0 ""
+ flavor_ban.503.a:0 "Cause as much chaos as you can."
+ flavor_ban.503.b:0 "Their fortifications should be our primary concern."
+ flavor_ban.503.c:0 "Battles win wars, sabotage their armaments."
+ flavor_ban.503.e:0 "You have suffered enough, we will defeat them while you rebuild."
+ 
+ flavor_ban.504.t:0 "The Three Commands"
+ 
+ flavor_ban.505.t:0 "One Vilian for Another"
+ 
+ flavor_ban.506.t:0 "A Friendly Face"
+ 
+ flavor_ban.707.t:0 "Wings to Spare"
+ 
+ 
+ fervor_magic:0 "Convoke the Denunransunin"
+ fervor_magic_short:0 "Convoke"
+ fervor_conversion:0 "Uplift the Fallen"
+ fervor_conversion_short:0 "Uplift"
+ fervor_enlighten:0 "Nourish the Soul"
+ fervor_enlighten_short:0 "Nourish"
+ fervor_crusade:0 "War For Order"
+ fervor_crusade_short:0 "Order"
+ 
+ 
+ Zoherin_1_1_title:0 "Knowledge from on High"
+ Zoherin_3_1_title:0 "The Betreyal"
+ Zoherin_5_1_title:0 "Desolate No More"
+ 
+ Zoherin_1_2_title:0 "A Second Home"
+ Zoherin_2_2_title:0 "Wings of Life"
+ Zoherin_4_2_title:0 "Spread the Flock"
+ 
+ Zoherin_1_3_title:0 "Heralds of Order"
+ Zoherin_2_3_title:0 "The Highest Roost"
+ Zoherin_3_3_title:0 "Forgiveness and Meaning"
+ Zoherin_5_3_title:0 "As Above, So Below"
+ 
+ Zoherin_1_4_title:0 "The Eagle's Chosen"
+ Zoherin_3_4_title:0 "The Age of Unity"
+ Zoherin_4_4_title:0 "Hobgoblin Militarism"
+ 
+ Zoherin_5_5_title:0 "Halann's Matriarch"
+ 
+ 
+ Zugi_1_1_title:0 "The Soulless North"
+ Zugi_3_1_title:0 "The Last Dance"
+ Zugi_5_1_title:0 "The Black Redoubt"
+ 
+ Zugi_1_2_title:0 "Reject Temptation"
+ Zugi_2_2_title:0 "The Spirit Complex"
+ Zugi_3_2_title:0 "Avalanche"
+ Zugi_4_2_title:0 "A Test of Faith"
+ Zugi_5_2_title:0 "The Crane's Guidance"
+ 
+ Zugi_1_3_title:0 "Purify the Lands"
+ Zugi_2_3_title:0 "The Holy City"
+ Zugi_3_3_title:0 "Order Restored"
+ Zugi_5_3_title:0 "A Balanced Breakfast"
+ 
+ Zugi_1_4_title:0 "Nomsyulhan Reborn"
+ Zugi_3_4_title:0 "The Age of Unity"
+ Zugi_4_4_title:0 "Honor in Service" 
+ 
+ Zugi_5_5_title:0 "The Stewards of Halann"
+ 
+ 
+ Kuenan_1_1_title:0 "Woe to the Vanquished"
+ Kuenan_3_1_title:0 "Finish the Unification"
+ Kuenan_5_1_title:0 "Red Sun"
+ Kuenan_5_1_desc:0 "“Golden rays of the glorious sunshine,\nSetting down a blood-red light,\nThe chaos slowly retreats,\nTo the shadows – out of sight.“\n\n- The Voyen Codices, Stele 9, Stanza 8."
+ 
+ Kuenan_1_2_title:0 "Steel and Soul"
+ Kuenan_2_2_title:0 "The Divine City"
+ Kuenan_4_2_title:0 "Expand the Suginpunze"
+ 
+ Kuenan_1_3_title:0 "Chieftain of Nomsyulhan"
+ Kuenan_2_3_title:0 "A Complex of Empire"
+ Kuenan_3_3_title:0 "Denunransun of Nomsyulhan"
+ Kuenan_5_3_title:0 "Heavensward"
+ 
+ Kuenan_1_4_title:0 "Ascension"
+ Kuenan_3_4_title:0 "The Age of Unity"
+ Kuenan_4_4_title:0 "Featherdust Tithe"
+ 
+ Kuenan_5_5_title:0 "The Mantle of Enlightenment"
+ 
+ Kezen_1_1_title:0 "The Center of Innovation"
+ Kezen_3_1_title:0 "The Dragon and The Eagle"
+ Kezen_4_1_title:0 "Roaring Thunder"
+ 
+ Kezen_1_2_title:0 "Making a Pact"
+ Kezen_2_2_title:0 "Broaden the Ward"
+ Kezen_3_2_title:0 "Kezen of the North"
+ Kezen_5_2_title:0 "Unodeke Hunts"
+ 
+ Kezen_1_3_title:0 "Empower the Warlocks"
+ Kezen_2_3_title:0 "The Uncorrupted"
+ Kezen_4_3_title:0 "Featherdust Liquidation"
+ Kezen_5_3_title:0 "What Haless has to Offer"
+ 
+ Kezen_1_4_title:0 "The Army of Tomorrow"
+ Kezen_3_4_title:0 "The Age of Unity"
+ Kezen_4_4_title:0 "Order from Chaos"
+ 
+ Kezen_5_5_title:0 "Lord Over All Reality"
+ 
+ 
+ Banbe_1_1_title:0 "Soulseeker Society"
+ Banbe_3_1_title:0 "The Dragon and The Eagle"
+ Banbe_4_1_title:0 "Excevating the Fortress"
+ Banbe_5_1_title:0 "Ferrous Acquisition"
+ 
+ Banbe_1_2_title:0 "Making a Pact"
+ Banbe_2_2_title:0 "False Enlightenment"
+ Banbe_3_2_title:0 "Dragonslayer"
+ Banbe_4_2_title:0 "Woodburning Arts"
+ 
+ Banbe_1_3_title:0 "Empower the Warlocks"
+ Banbe_2_3_title:0 "Excevating the Fortress"
+ Banbe_5_3_title:0 "The Measure of a Man"
+ 
+ Banbe_5_5_title:0 "Accepting Order"
+ 
+ Banbe_1_4_title:0 "Develop the Valley"
+ Banbe_3_4_title:0 "The Age of Unity"
+ Banbe_4_4_title:0 "The Harpy Question"
+ 
+ Nire_2_5_V11_title:0 "Sieze the Clockwork City"
+ Nire_2_5_V12_title:0 "Sieze the Clockwork City"
+ Nire_2_5_V13_title:0 "Sieze the Clockwork City"
+ Nire_2_5_V14_title:0 "Sieze the Clockwork City"
+ Nire_2_5_V20_title:0 "Sieze the Clockwork City"
+ 
+ Nire_3_5_V11_title:0 "No More Waiting"
+ Nire_3_5_V12_title:0 "No More Waiting"
+ Nire_3_5_V13_title:0 "No More Waiting"
+ Nire_3_5_V14_title:0 "No More Waiting"
+ Nire_3_5_V20_title:0 "No More Waiting"
+ 
+ Nire_1_6_V11_title:0 "Plunder Their Ruins"
+ Nire_1_6_V12_title:0 "Plunder Their Ruins"
+ Nire_1_6_V13_title:0 "Plunder Their Ruins"
+ Nire_1_6_V14_title:0 "Plunder Their Ruins"
+ Nire_1_6_V20_title:0 "Plunder Their Ruins"
+ 
+ Nire_4_6_title:0 "An Unexpected Foe"
+ Nire_5_6_title:0 "Aquire Livestock"
+ 
+ Nire_1_7_title:0 "Halt the Corruption"
+ Nire_3_7_title:0 "The Iron Basin"
+ Nire_5_7_title:0 "Hunt the Faceless"
+ 
+ Nire_1_8_title:0 "Shackels to Bind"
+ Nire_2_8_title:0 "Reorder The North"
+ Nire_4_8_title:0 "Spreading Our Wings"
+ Nire_5_8_title:0 "The Hill Troll Taishi"
+ 
+ Nire_2_9_title:0 "The Northern Flame"
+ Nire_3_9_title:0 "Look Down To The Nether"
+ Nire_4_9_title:0 "Dragonnel Roosts"
+ Nire_5_9_title:0 "The Zinan Accords"
+ 
+ Nire_1_10_title:0 "Souls to Empower"
+ Nire_2_10_title:0 "Kite Kezen"
+ Nire_4_10_title:0 "Preventative Measures"
+ 
+ Nire_2_11_title:0 "Beyond the Heavens"
+ Nire_4_11_title:0 "More Fuel for the Fire"
+ Nire_5_11_title:0 "Limitless Potential"
+ 
+ Nire_1_12_title:0 "The Eagle has Landed"
+ Nire_2_12_title:0 "Paradise Beckons"
+ Nire_3_12_title:0 "Chaos"
+ Nire_4_12_title:0 "A Magician's Dream"
+ Nire_5_12_title:0 "Bless the Rains"
+ 
+ Nire_1_13_title:0 "Snuff out the Flame"
+ Nire_2_13_title:0 "The Enemy of my Enemy"
+ Nire_3_13_title:0 "Contact the Shaman"
+ Nire_4_13_title:0 "Swallowing Pride"
+ Nire_5_13_title:0 "A Continent of Magic"
+ 
+ Nire_1_14_title:0 "The Yanshen Campaign"
+ Nire_3_14_title:0 "Let there be Light"
+ Nire_5_14_title:0 "A Chance for Revenge"
+ 
+ Nire_2_15_title:0 "The Lesser Evil"
+ Nire_3_15_title:0 "Homecoming"
+ Nire_4_15_title:0 "Zanguy's Path"
+ Nire_5_15_title:0 "Friendship Pays"
+ 
+ Nire_2_16_title:0 "Freedom in Purpose"
+ Nire_4_16_title:0 "Demonstrating Order"
+ 
+ Nire_1_17_title:0 "Men of Virtue"
+ Nire_2_17_title:0 "The Korashi Secret"
+ Nire_3_17_title:0 "One Villian..."
+ Nire_4_17_title:0 "Life Under the Eagle"
+ 
+ Nire_2_18_title:0 "Fire with Fire"
+ Nire_3_18_title:0 "...for Another"
+ Nire_4_18_title:0 "Loyalty Enforced"
+ Nire_5_18_title:0 "The Cheribrum"
+ 
+ Nire_1_19_title:0 "Glory"
+ Nire_2_19_title:0 "A Corrupted Path"
+ Nire_4_19_title:0 "The Profane Faith"
+ Nire_5_19_title:0 "Order of the Dragon"
+ 
+ Nire_1_20_title:0 "The Void's Whisper"
+ Nire_2_20_title:0 "Throw Wide the Gates"
+ Nire_3_20_title:0 "Crossroads of a Continent"
+ Nire_4_20_title:0 "An Early Retirement"
+ Nire_5_20_title:0 "Emancipate the Dragon King"
+ 
+ Nire_2_21_title:0 "Chi Harmony"
+ Nire_3_21_title:0 "Take Dak Down"
+ Nire_4_21_title:0 "Harimar's Due"
+ Nire_5_21_title:0 "The Western Garrison"
+ 
+ Nire_1_22_title:0 "Synthesis"
+ Nire_2_22_title:0 "Cosmic Anthesis"
+ Nire_3_22_title:0 "Highway to Haless"
+ Nire_5_22_title:0 "The Merchant of Death"
+ 
+ Nire_1_23_title:0 "Temple Excavation"
+ Nire_3_23_title:0 "The Empire of Haless"
+ Nire_4_23_title:0 "End Sophistry"
+ 
+ Nire_1_24_title:0 "Reap the Whirlwind"
+ Nire_2_24_title:0 "Equivalent Exchange"
+ Nire_3_24_title:0 "Eschaton"
+ 
+ Nire_1_25_title:0 "Domination"
+ Nire_2_25_title:0 "Entropy"
+ Nire_4_25_title:0 "The Bazuneizar Declaration"
+ Nire_5_25_title:0 "Abandoned by Truth"
+ 
+ Nire_1_26_title:0 "Eye of the Storm"
+ Nire_3_26_title:0 "Three Faces of Chaos"
+ Nire_4_26_title:0 "Terra Incognita"
+ 
+ Nire_2_27_title:0 "Caldera of the Heavens"
+ Nire_4_27_title:0 "The Dragons of Cannor"
+ 
+ Nire_1_28_title:0 "Skyfall"
+ Nire_2_28_title:0 "Trident"
+ Nire_4_28_title:0 "Kobold Therapy"
+ Nire_5_28_title:0 "A Return to Form"
+ 
+ Nire_1_29_title:0 "Containment"
+ Nire_2_29_title:0 "Bring Dak Back"
+ Nire_4_29_title:0 "Wizards of the Coast"
+ 
+ Nire_2_30_title:0 "The End of Chaos"
+ Nire_4_30_title:0 "The Age of Magic"
+ 
+ Nire_3_31_title:0 "Reehanviza"
+ 
+ #########################################
+ 
+ Nire_3_28a_title:0 "§RConflagrate§!"
+ Nire_3_28b_title:0 "§RIncinerate§!"
+ Nire_3_28c_title:0 "§RImmolate§!"
+ Nire_3_28d_title:0 "§RCataclysm§§!"
+ 
+ Nire_5_24a_title:0 "§lDisciples of Muhaqaar§!"
+ Nire_5_24b_title:0 "§lWizardry: 101§!"
+ Nire_5_24c_title:0 "§lAgainst the Council§!"
+ Nire_5_24d_title:0 "§lHag Minimization§!"
+ 
+ Nire_2_23a_title:0 "§VThe Shattered Sun§!"
+ Nire_2_23b_title:0 "§VDuty Calls§!"
+ Nire_2_23c_title:0 "§VEnter, the Deciever...§!"
+ Nire_2_23d_title:0 "§VSolaris§!"
+ 
+ Nire_5_10a_title:0 "§MThe Land Without Magic§!"
+ Nire_5_10b_title:0 "§MWings of Liberty§!"
+ Nire_5_10c_title:0 "§MCitizens United§!"
+ Nire_5_10d_title:0 "§MDemocracy Manifest§!"
+ Nire_5_10e_title:0 "§MFor the Greater Good§!"
+ 
+ Nire_1_11a_title:0 "§YThe Dark Below§!"
+ Nire_1_11b_title:0 "§YI'm Waking Up?§!"
+ Nire_1_11c_title:0 "§YTaking a Nap§!"
+ Nire_1_11d_title:0 "§YIs It That Time Again?§!"
+ 
+ Nire_5_26a_title:0 "§JAbsolute Power§!"
+ Nire_5_26b_title:0 "§JWizard vs Wizard§!"
+ Nire_5_26c_title:0 "§JCountdown to Extinction§!"
+ Nire_5_26d_title:0 "§JThe Last Emperor§!"
+ 
+ Nire_1_15a_title:0 "§OAcross the Sea§!"
+ Nire_1_15b_title:0 "§OEquilibrium§!"
+ Nire_1_15c_title:0 "§ORelativity§!"
+ Nire_1_15d_title:0 "§OThinking With Portals§!"
+ 
+ Banbe_3_8_title:0 "Beyond the Heavens"
+ 
+ flavor_ban.2.t:0 "The Final Flight of the Eagles"
+ 
+ flavor_ban.205.t:0 "The Fulfilment of an Oath"
+ 
+ Ban_tol_2:0 "The United Eagles"
+ Ban_drac_1:0 Dragonnel Cavalry"
+ Ban_eagle_roosts:0 "Dragonnel Roost"
+
+
+ 
+ V20_ideas1:0 "Zoherin Ideas"
+ V20_ideas1_start:0 "Zoherin Traditions"
+ V20_ideas1_bonus:0 "Zoherin Ambition"
+ V20_long_flight_north1:0 "Long Flight North"
+ V20_long_flight_north1_desc:0 "O’er peaks, through ice, haggard wings, no rest\nNot storm, nor spear, nor spell, can wrest\nThe barbs, loss marred, to sing, my loves\nThrough pain, in hope, so now I shove\nMy clutch to fly to brighter days, so fly, my loves, to Valley’s rays  \n\n- Unknown Nuzenapu Matriarch’s Lament, circa 40s-50s AA\n\nThe Day of Ashen Skies forever scarred Šad Siadan: mountains crumbled, killing clouds spanned the horizon, and the already harsh land unraveled into a desolate hellscape. The Siadan Matriarchy struggled to maintain order in its wake, yet they could not stave off decades of starvation, earthquakes, and falling fireballs. With nothing but a dying hope, several harpy flocks braved the world-ending zephyrs for a brighter future beyond their ancestral roosts. Up, up, up, they pressed through ice, flame, gale, and darkness to eclipse the very Serpentspine Mountains. Droves died in the exodus, but for those who arrived on the opposing cliffs, they found a valley as harsh as their homeland yet welcoming as a plush pillow: Nomsyulhan."
+ V20_new_friends_new_faces1:0 "New Friends, New Faces"
+ V20_new_friends_new_faces1_desc:0 "By tender dance and welcome song, we call to them, their desires want(ing)\nTo hold, to keep, to take to sky, in gentle talon, we do abide\nSo guide them home within your frock, red as blood and strong as rocs\nOn loving breeze, to roost again, to tend our nests with eagle men\n\n- Common Hunt Verse among Nuzenapu Harpies, circa late 1st century AA\n\nThe first generation of Nuzenapu Harpies arrived in the Valley around 50 AA, but the Day of Ashen Skies still blighted both land and sky. Preening their wounds in blessed rest, the harpies encountered at first only the monastic Soulseeker Ogres, beasts, and the terrifying unodeke. Lacking compatible reproduction, the remaining matriarchs rallied their flocks to search for suitable mates. As if guided by the same blessed winds that carried them from Siadan, the Nuzenapu Harpies observed an equally weary and scared group arriving upon the plateau: the Eagle Hobgoblins. By both loneliness and necessity, the two peoples bound together in destiny, forever changing the shape of Nomsyulhan."
+ V20_wings_of_another_kind1:0 "Wings of Another Kind"
+ V20_wings_of_another_kind1_desc:0 "Ten hard months upon the land, we trained hard in giddy wing and hand\nOh gorgeous sweat upon your nervous brow\nFor lovers just wish to hunt (Truth, truth!)\nThat is what we wish, to gracefully pitch\nThrough air and sky, two soldiers we fly\nFor lovers just wish to hunt (Truth, truth!)\n\n- Lovers Just Wish to Hunt by Songstress Larpandsi, circa 8th century AA\n\nAs the Day of Ashen Skies faded into nightmares and Siadan’s ancestral roosts became legend, the newly bound Nuzenapu Harpy and Eagle Hobgoblin cultures found themselves as strange bedfellows. By the end of the 1st century AA, they turned their struggling clans into a coalition of aerial and arcane supremacy that could challenge Soulseeker Ogres in their imposing Temple-Holdfasts. As the generations wore on, the Eagle Hobgoblins domesticated the unruly dragonnel and joined the skies, earning both respect and teasing from their feathery comrades. With harpy infantry and hobgoblin cavalry in loving tandem, the two established the premiere military power atop the Pillar of Heaven."
+ V20_magic_featherdust_trade1:0 "Magical Featherdust Trade"
+ V20_magic_featherdust_trade1_desc:0 "Mages and masters, attend your tempered minds to me\nHear of my tales and see if my wares, the curious trinkets do ward and impair\nAll monstrous beasts and vexing affairs, thieves best beware\nYes, mages and masters, weep not a tear for your faltering feats\nOf spells, and concoctions, and magical deeds, I offer my word to all that I see\nMasters and mages, behold the finest reagent matter\nA potent poultice of my feathers\n\n- Thatara’s Plumage Pitch by Renowned Merchant Thatara, 977-980 AA\n\nHarpy body parts possess varying arcane properties, so when Eagle Hobgoblin mages pined for a reliable supply of valuable reagents, savvy (and some say notorious) Nuzenapu Harpies hawked their own plumage. Dubbed the featherdust trade, these powder peddlers simultaneously served as magical mine and meister, plucking feathers and trimming nail-clippings to sell raw or as a damestear-infused poultice. These merchants, vibrant and boisterous about their own talents and lineages, spun their melodious pitches into cultural touchstones."
+ V20_aerial_hunts1:0 "Aerial Hunts"
+ V20_aerial_hunts1_desc:0 "On the hunt, as we fly\nIn our prey, we’ll weave a glory hide\nA moment, taste the sky\nIn our prey, we find joy or die\n\n- Aerial Hunts by Unodeke Hunters Dolak and Zarjia, 1273 AA\n\nWhen the Eagle Hobgoblins adopted dragonnel riding into their cultural fabric, the Nuzenapu Harpies reveled in companionship unlike any other - yet romance and wonder weren’t the only calls to fly. Throughout Nomsyulhan, the unodeke, or “strange beasts” as the hobgoblins learned from the ogres, plagued their new homelands; No place was safe from these deadly and territorial creatures. Hobgoblin and harpy warriors ranging from dedicated duos to entire hunting parties sought unodeke as an act of heroism and service for both societies. These aerial hunts also deepened harpy-hobgoblin relations and created a war-ready pool of deadly harpy infantry and dragonnel riders."
+ V20_northern_front1:0 "Northern Front of Kuenan Nirokyu"
+ V20_northern_front1_desc:0 "Upon the north, and atop the strand\nYou crave our touch, yet abandon the nest\nOur hearts find solitude's landing\nYou seek our might, yet abandon our nest\nOur hearts find solitude’s landing\n\n- Abandon the Nest by Matriarch Gyijol to High Mage Yinsi, Nerament 1419 AA\n\nSince their arrival, the Nuzenapu Harpies sought mates from a singular (albeit disunified) hobgoblin whole, yet as various claimants sought to rule over all Nomsyulhan, the harpy matriarchs struggled to navigate the tangled web of Eagle Hobgoblin mage-warlords. Over-preening with dread, a harpy coalition found allies with the ascendant Kuenan Nirokyu and their biracial capital of Waben Donpun; After their conquest of The’as Achur in 1419, these hobgoblins migrated from the mountain to settle a new capital in the Beacon of White-Gold. As matriarchs fumed and lamented their lost loves, Kuenan Nirokyu’s rulers formalized a pact with the harpies. In spring and fall, Kuenan Nirokyu would conscript eligible mates for a season, and in exchange, the Nuzenapu Harpies would be granted their own lands: Zoherin and the former capital Waben Donpun. In exchange, they were obliged to defend Kuenan Nirokyu’s northern frontier and fly beneath their ally’s warbanner when called."
+ V20_roost_of_waben_donpun1:0 "Roost of Waben Donpun"
+ V20_roost_of_waben_donpun1_desc:0 "I holdeth my love, and they’re red as a pepper\nHand in talon, oooh, that fire swelters\nIn that skyshaft beam, at the High Chamber\nSo hasten forth, and tend those charming feathers\n\nWaben Donpun is a grand old shelter\nWhere we can roost together\nWaben Donpun, pleadeth~\n\n- Waben Donpun Warmth by the 52nd Matron Musician Council, 1508 AA\n\nSituated in an ancient caldera capped by a porous peak, the dozen roosts of Waben Donpun house the largest harpy population in Nomsyulhan and serve as Zoherin’s heart. Unlike other harpy settlements built in cliffs or atop plateaus, Waben Donpun rests directly within the mountain, accessible only by ominous cavern breaches high up the ascent. Gargantuan enough to sport its own cool microclimate, magical pyres and sunbeams pouring through calcified sinkholes in the dome illuminate the enclosed city. Ornate cavern-hewn buildings and verdant common areas line Waben Donpun’s inner nooks, ledges, and pillars, and sprawling earth-shaped walkways used by flightless denizens connect the various districts. Mini-reservoirs of rain and melt runoff supply Waben Donpun via simple aqueducts, though the central cavern’s bottom also boasts a non-potable, metal-heavy basin that glistens like emerald."
+
+ 
+ 
+ 
+ mechanic_enables_pronoias_yes:0 "May establish §YParagons of Order§!."
+ 
+ 
+ Patch Notes
+ -Zugi: The Command but with magic
+ -Kuenan: Hobgoblins LARP as Rome
+ -Kezen: If it's magical, it's ethical
+ -Banbe: All are welcome under our order
+ 
+ -Disabled alliances for monsterous banbe nations
+ -Rebalanced vision for starting nations
+ -Added starting rulers and government reforms for eagle nations
+ -Moved Banbe into the "Supreme Spirit" religous group and added religous mechanics 
+ -Nerfed Nuugdan Tsarai starting conditions
+ -Added province modifiers, cores, and claims to the Nomsyulhan region
+ -Flavor pulse events 
+ -Mission trees for every nation in Nomsyulhan
+ -For Soulseekers, colonize not mars very slowly with magic and soultrapping things on halann. Once colonized make orbital space lazers
+ 
+ - Soyo = sky
+ - Rinon = war
+ - Banbe = eagle
+ - Kehodan = brother
+ - Oa = South
+ 
+ Kedohanoa Rinon
+
+ 
+ Yoyon Waga
+ 
+ Aukuanunan Soyo (servant of the sky)
+ 
+ Maker of Forms, Keeper of the Law of Shape - Magestrium
+    Transmutation - Shapechange into Dragon, Homunculus, Shapechange into Giant
+    Conjuration - Magical Fortress
+
+ Master of Chronourgy, Keeper of the Law of Time - Verkal Dromak
+    Transmutation - Rite of Conception, Plant Growth, Enhance Ability
+    Divination - Loreseeker, Foresight
+
+ She-Who-Is, Keeper of the Law of Space - Eordand
+    Conjuration - Thubderstorm, Elemental Summoning, Magnificent Feast, Magical Patron
+    Evocation - War Magic
+
+ Herald of Voice, Keeper of the Law of Sound/Word - Lake fed magic tag
+    Enchantment - Charm: Estates, Diplomats, Military, & Subjects
+    Enchantment - Alter Memories: Oversight, Subservience, & Erasure, Dominate to Surrender
+
+ Twin of Light, Keeper of the Law of Darkness - Bulwar magic tag
+    Illusion - Illusionary Marvels, Glamour
+    Necromancy - Undead Army, Lichdom
+    Abjuration - Ward
+
+ Twin of Darkness, Keeper of the Law of Light - Swam toll genocide tag
+    Abjuration - Field of: Freedom, Forbiddance, & Fortification
+    Divination - Scry: Neighbors, Internal Dissidents, & General Affairs
+
+ That-Which-Binds, Keeper of the Law of Force - Effelai
+    Evocation - Greater Fireball, Earthquake
+    Necromancy - Life Drain

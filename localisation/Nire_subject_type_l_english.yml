@@ -1,0 +1,7 @@
+﻿l_english:
+ order_empire:0 "Paragon of Order"
+ order_empire_title:0 "Paragon of Order"
+ order_empire_title_plural:0 "Paragon of Order"
+ order_empire_is_our:0 "$NAME|Y$ is our Paragon"
+ order_empire_long_desc:0 "The Paragons of Order pledge their absolute and undying loyalty to the only empire that can guide the world."
+

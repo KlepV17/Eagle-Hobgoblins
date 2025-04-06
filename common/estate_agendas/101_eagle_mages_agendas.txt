@@ -1,0 +1,17 @@
+estate_eagle_mag_enc_p1 = {
+	can_select = {
+		always = yes
+	}
+	selection_weight = {
+		factor = 1
+	}
+	task_requirements = {
+		diplomatic_reputation = 2
+	}
+    task_completed_effect = {
+		set_country_flag = eagle_mag_enc_p2
+    }
+    failing_effect = {
+		on_failed_agenda_effect = yes
+    }
+}

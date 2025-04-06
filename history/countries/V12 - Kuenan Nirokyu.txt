@@ -1,0 +1,31 @@
+setup_vision = yes
+government = theocracy
+add_government_reform = eagle_hobgoblins_rule_of_order_reform 
+government_rank = 2
+primary_culture = eagle_command
+add_accepted_culture = soulseeker_ogre
+religion = eagle_worship
+technology_group = tech_eagle_hobgoblin
+capital = 6841
+
+historical_rival = V11
+historical_rival = V14
+
+1444.11.11 = {
+	monarch = {
+		name = "Honansyul"
+		dynasty = " "
+		birth_date = 1384.7.7
+		adm = 4
+		mil = 3
+		dip = 4
+	}
+	add_ruler_personality = mage_personality
+	add_ruler_personality = zealot_personality 
+	add_ruler_personality = bold_fighter_personality
+	set_ruler_flag = enchantment_2
+	set_ruler_flag = enchantment_1
+	set_ruler_flag = transmutation_2
+	set_ruler_flag = transmutation_1
+}
+

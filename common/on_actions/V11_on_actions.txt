@@ -1,0 +1,33 @@
+on_war_won = {
+	if = {
+		limit = {
+			has_reform = eagle_hobgoblins_zugi_final 
+			has_leader_with = {
+				is_monarch_leader = yes
+			}
+		}
+		add_heir_claim = 15
+		random = {
+			chance = 50
+			change_heir_adm = 1
+		}
+		random = {
+			chance = 50
+			change_heir_dip = 1
+		}
+		random = {
+			chance = 50
+			change_heir_mil = 1
+		}
+	}
+
+	if = {
+		limit = {
+			has_reform = eagle_hobgoblins_zugi_base 
+		}
+			add_heir_claim = 20
+			change_heir_adm = 1
+			change_heir_dip = 1
+			change_heir_mil = 1
+	}
+}

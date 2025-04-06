@@ -1,0 +1,422 @@
+BYZ_enough_pronoia_slots = {
+	variable_arithmetic_trigger = {
+		export_to_variable = {
+			variable_name = current_amount_of_pronoiars
+			value = modifier:pronoia_amount_check_influence
+		}
+		export_to_variable = {
+			variable_name = max_amount_of_pronoiars
+			value = modifier:num_of_pronoiars
+		}
+		NOT = {
+			check_variable = {
+				which = current_amount_of_pronoiars
+				which = max_amount_of_pronoiars
+			}
+		}
+	}
+}
+
+BYZ_reached_pronia_slot_limit = {
+	variable_arithmetic_trigger = {
+		export_to_variable = {
+			variable_name = current_amount_of_pronoiars
+			value = modifier:pronoia_amount_check_influence
+		}
+		export_to_variable = {
+			variable_name = max_amount_of_pronoiars
+			value = modifier:num_of_pronoiars
+		}
+		check_variable = {
+			which = current_amount_of_pronoiars
+			which = max_amount_of_pronoiars
+		}
+	} 
+}
+
+sand_gate_area_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = sand_gate_area_trigger_tt
+		calc_true_if = {
+			amount = 4
+			all_owned_province = {
+				OR = {
+					province_id = 6845 
+					province_id = 6844 
+					province_id = 6847 
+					province_id = 6846
+				}
+			}
+		}
+	}
+}
+
+lock_tormscith_area_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = lock_tormscith_area_trigger_tt
+		calc_true_if = {
+			amount = 4
+			all_owned_province = {
+				OR = {
+					province_id = 6841 
+					province_id = 6842 
+					province_id = 6830 
+					province_id = 6824
+				}
+			}
+		}
+	}
+}
+
+desolate_plains_area_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = desolate_plains_area_trigger_tt
+		calc_true_if = {
+			amount = 4
+			all_owned_province = {
+				OR = {
+					province_id = 6839 
+					province_id = 6840 
+					province_id = 6828 
+					province_id = 6848
+				}
+			}
+		}
+	}
+}
+
+ascension_plateau_area_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = ascension_plateau_area_trigger_tt
+		calc_true_if = {
+			amount = 3
+			all_owned_province = {
+				OR = {
+					province_id = 6823 
+					province_id = 6822 
+					province_id = 6821
+				}
+			}
+		}
+	}
+}
+
+three_mountains_valley_area_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = three_mountains_valley_area_trigger_tt
+		calc_true_if = {
+			amount = 4
+			all_owned_province = {
+				OR = {
+					province_id = 6829 
+					province_id = 6827 
+					province_id = 6825 
+					province_id = 6826
+				}
+			}
+		}
+	}
+}
+
+portal_west_area_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = portal_west_area_trigger_tt
+		calc_true_if = {
+			amount = 3
+			all_owned_province = {
+				OR = {
+					province_id = 6837 
+					province_id = 6836 
+					province_id = 6835
+				}
+			}
+		}
+	}
+}
+
+
+portal_east_area_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = portal_east_area_trigger_tt
+		calc_true_if = {
+			amount = 4
+			all_owned_province = {
+				OR = {
+					province_id = 6834 
+					province_id = 6833 
+					province_id = 6832 
+					province_id = 6831
+				}
+			}
+		}
+	}
+}
+
+sanctuary_area_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = sanctuary_area_trigger_tt
+		calc_true_if = {
+			amount = 3
+			all_owned_province = {
+				OR = {
+					province_id = 5392 
+					province_id = 5391 
+					province_id = 5393
+				}
+			}
+		}
+	}
+}
+
+iona_saothar_area_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = iona_saothar_area_trigger_tt
+		calc_true_if = {
+			amount = 4
+			all_owned_province = {
+				OR = {
+					province_id = 5389 
+					province_id = 5387 
+					province_id = 5390 
+					province_id = 5388
+				}
+			}
+		}
+	}
+}
+
+overgrowth_area_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = overgrowth_area_trigger_tt
+		calc_true_if = {
+			amount = 3
+			all_owned_province = {
+				OR = {
+					province_id = 5386 
+					province_id = 5385 
+					province_id = 5384
+				}
+			}
+		}
+	}
+}
+
+bazuniezar_area_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = bazuniezar_area_trigger_tt
+		calc_true_if = {
+			amount = 5
+			all_owned_province = {
+				OR = {
+					province_id = 5200 
+					province_id = 6815 
+					province_id = 6816 
+					province_id = 6814 
+					province_id = 5175
+				}
+			}
+		}
+	}
+}
+
+northern_peaks_area_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = northern_peaks_area_trigger_tt
+		calc_true_if = {
+			amount = 5
+			all_owned_province = {
+				OR = {
+					province_id = 5380 
+					province_id = 6812 
+					province_id = 6817 
+					province_id = 6800 
+					province_id = 6801
+				}
+			}
+		}
+	}
+}
+
+southern_shield_area_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = southern_shield_area_trigger_tt
+		calc_true_if = {
+			amount = 4
+			all_owned_province = {
+				OR = {
+					province_id = 6818 
+					province_id = 6819 
+					province_id = 6813 
+					province_id = 5405
+				}
+			}
+		}
+	}
+}
+
+churgyund_area_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = churgyund_area_trigger_tt
+		calc_true_if = {
+			amount = 5
+			all_owned_province = {
+				OR = {
+					province_id = 5378 
+					province_id = 5383 
+					province_id = 5422 
+					province_id = 5381 
+					province_id = 5214
+				}
+	
+			}
+		}
+	}
+}
+
+ilabomar_area_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = ilabomar_area_trigger_tt
+		calc_true_if = {
+			amount = 3
+			all_owned_province = {
+				OR = {
+					province_id = 5193 
+					province_id = 5211 
+					province_id = 5169 
+				}
+			}
+		}
+	}
+}
+
+
+chaneuusk_area_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = chaneuusk_area_trigger_tt
+		calc_true_if = {
+			amount = 3
+			all_owned_province = {
+				OR = {
+					province_id = 5379 
+					province_id = 6803 
+					province_id = 6804
+				}
+			}
+		}
+	}
+}
+
+rushing_river_area_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = rushing_river_area_trigger_tt
+		calc_true_if = {
+			amount = 3
+			all_owned_province = {
+				OR = {
+					province_id = 5204 
+					province_id = 5377 
+					province_id = 6802
+				}
+			}
+		}
+	}
+}
+
+four_peaks_area_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = four_peaks_area_trigger_tt
+		calc_true_if = {
+			amount = 3
+			all_owned_province = {
+				OR = {
+					province_id = 5382 
+					province_id = 6806 
+					province_id = 6805
+				}
+			}
+		}
+	}
+}
+
+chunguvho_area_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = chunguvho_area_trigger_tt
+		calc_true_if = {
+			amount = 4
+			all_owned_province = {
+				OR = {
+					province_id = 6809 
+					province_id = 6810 
+					province_id = 5418 
+					province_id = 5421
+				}
+			}
+		}
+	}
+}
+
+huujoolgin_area_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = huujoolgin_area_trigger_tt
+		calc_true_if = {
+			amount = 3
+			all_owned_province = {
+				OR = {
+					province_id = 5203 
+					province_id = 6808 
+					province_id = 6807
+				}
+			}
+		}
+	}
+}
+
+iron_gate_area_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = iron_gate_area_trigger_tt
+		calc_true_if = {
+			amount = 4
+			all_owned_province = {
+				OR = {
+					province_id = 5336 
+					province_id = 5178 
+					province_id = 5206 
+					province_id = 6811
+				}
+			}
+		}
+	}
+}
+
+red_vale_area_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = red_vale_area_trigger_tt
+		calc_true_if = {
+			amount = 4
+			all_owned_province = {
+				OR = {
+					province_id = 4994 
+					province_id = 5325 
+					province_id = 6820 
+					province_id = 5182
+				}
+			}
+		}
+	}
+}
+
+yulunshoon_area_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = yulunshoon_area_trigger_tt
+		calc_true_if = {
+			amount = 3
+			all_owned_province = {
+				OR = {
+					province_id = 5337 
+					province_id = 5338 
+					province_id = 5375
+				}
+			}
+		}
+	}
+}

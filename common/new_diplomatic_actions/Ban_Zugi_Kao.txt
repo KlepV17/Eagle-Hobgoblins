@@ -1,0 +1,363 @@
+sabotage_kaorashi_zugi = {
+	category = covert
+	require_acceptance = no
+	is_visible = {
+		OR = {
+			has_country_flag = Command_sabo
+			tag = V11
+		}
+	}
+	is_allowed = {
+		hidden_trigger = {
+			FROM = {
+				tag = R62
+				has_spy_network_from = { 
+					who = ROOT 
+					value = 45
+				}
+				NOT = {
+					has_country_modifier = Zugi_sabo_1
+					has_country_modifier = Zugi_sabo_2
+					has_country_modifier = Zugi_sabo_3
+				}
+			}
+			ROOT = {
+				dip_power = 25
+				mil_power = 50
+			}
+		}
+	}
+	on_accept = {
+		ROOT = {
+			add_dip_power = -25
+			add_mil_power = -50
+		}
+		FROM = {
+			if = {
+				limit = { NOT = { has_country_modifier = Zugi_sabo_1 } }
+				add_country_modifier = { name = Zugi_sabo_1 duration = 7300 }
+			}
+			else_if = {
+				limit = { NOT = { has_country_modifier = Zugi_sabo_2 } }
+				add_country_modifier = { name = Zugi_sabo_2 duration = 7300 }
+			}
+			else_if = {
+				limit = { NOT = { has_country_modifier = Zugi_sabo_3 } }
+				add_country_modifier = { name = Zugi_sabo_3 duration = 7300 }
+			}
+			add_spy_network_from = {
+  				who = ROOT
+   				value = -45
+			}
+		}
+	}
+}
+
+
+create_pronoia = {
+	category = influence
+
+	alert_index = 17 #doesn't matter. it is forced onto the subject
+	alert_tooltip = sell_indulgence_alert_tooltip #doesn't matter. it is forced onto the subject
+
+	require_acceptance = no
+
+	is_visible = {
+		has_government_attribute = enables_pronoias
+		FROM = {
+			is_subject_of = ROOT
+			NOT = {
+				OR = {
+					is_subject_of_type = hereditary_pronoia_subject_type
+					is_subject_of_type = pronoia_subject_type
+				}
+			}
+			is_subject_other_than_tributary_trigger = yes
+		}
+	}
+	is_allowed = {
+		if = {
+			limit = { BYZ_reached_pronia_slot_limit = yes }
+			custom_trigger_tooltip = {
+				tooltip = BYZ_not_enough_free_pronoia_slots
+				BYZ_enough_pronoia_slots = yes
+			}
+		}
+		if = {
+			limit = { from = { liberty_desire = 1 } }
+			custom_trigger_tooltip = {
+				tooltip = BYZ_too_much_liberty_desire
+				from = { not = { liberty_desire = 1 } }
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					not = { is_subject_of_type = vassal }
+					not = { is_subject_of_type = client_vassal }
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = FROM_IS_NOT_VASSAL_OF_ROOT
+				FROM = {
+					OR = {
+						is_subject_of_type = vassal
+						is_subject_of_type = client_vassal
+					}
+				}
+			}
+		}
+	}
+	on_accept = {
+		from = { grant_independence = yes }
+		hidden_effect = {
+			country_event = { id = MEE_Byzantine_Events.56 }
+			FROM = {
+				change_government = theocracy
+				change_primary_culture = ROOT
+				change_religion = ROOT
+				add_government_reform = eagle_hobgoblins_kuenan_reform_subject
+				define_ruler = {
+					min_age = 30
+					max_age = 50
+					religion = ROOT
+					culture = ROOT
+				}
+				add_ruler_personality = mage_personality
+				capital_scope = {
+					FROM = {
+						add_accepted_culture = PREV
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = BYZ_hereditary_pronoiars
+			}
+			create_subject = {
+				subject_type = pronoia_subject_type
+				subject = FROM
+				keep_liberty_desire = yes
+			}
+		}
+		else = {
+			create_subject = {
+				subject_type = hereditary_pronoia_subject_type
+				subject = FROM
+				keep_liberty_desire = yes
+			}
+		}
+	}
+
+	ai_will_do = {
+		if = {
+			limit = {
+				NOT = {
+					OR = {
+						mission_completed = BYZ_decentralized_pronoia
+						mission_completed = BYZ_centralized_pronoia
+					}
+				}
+			}
+			always = yes
+		}
+		else_if = {
+			limit = {
+				is_subject_of_type = march
+			}
+			always = yes
+		}
+		else = {
+			always = no
+		}
+	}
+}
+release_pronia = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		FROM = {
+			is_subject_of = ROOT
+			OR = {
+				is_subject_of_type = hereditary_pronoia_subject_type
+				is_subject_of_type = pronoia_subject_type
+			}
+		}
+	}
+	is_allowed = {
+		always = yes
+	}
+	on_accept = {
+		from = {
+			if = {
+				limit = { not = { liberty_desire = 50 } }
+				add_opinion = {
+					who = root
+					modifier = vassal_abandoned
+				}
+			}
+			grant_independence = yes
+			every_owned_province = {
+				limit = {
+					or = {
+						is_claim = root
+						is_permanent_claim = root
+						is_core = root
+					}
+				}
+				if = {
+					limit = { is_permanent_claim = root }
+					remove_claim = root
+				}
+				if = {
+					limit = { is_claim = root }
+					remove_claim = root
+				}
+				if = {
+					limit = { is_core = root }
+					remove_core = root
+				}
+			}
+		}
+		add_prestige = -25
+	}
+	ai_will_do = {
+		always = no
+	}
+}
+
+#elevate
+make_pronoia_inheritable_elevate = {
+	category = influence
+
+	alert_index = 17 #doesn't matter. it is forced onto the subject
+	alert_tooltip = sell_indulgence_alert_tooltip #doesn't matter. it is forced onto the subject
+
+	require_acceptance = no
+
+	is_visible = {
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = hereditary_pronoia_subject_type
+		}
+	}
+	is_allowed = {
+		if = { 
+			limit = {
+				any_subject_country = {
+					is_subject_of_type = pronoia_subject_type_elevated
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = Ban_too_many_ele_tt
+				any_subject_country = {
+					is_subject_of_type = pronoia_subject_type_elevated
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = Ban_has_inherit_tt
+				NOT = {
+					any_subject_country = {
+						as_global_flag = Kuenan_inherited_$COUNTRY$
+					}
+				}
+			}
+		}
+	}
+	on_accept = {
+		ROOT = {
+			create_subject = {
+				subject_type = pronoia_subject_type_elevated
+				subject = FROM
+			}
+		}
+	}
+
+	ai_will_do = {
+		if = {
+			limit = {
+				NOT = {
+					OR = {
+						mission_completed = BYZ_decentralized_pronoia
+						mission_completed = BYZ_centralized_pronoia
+					}
+				}
+			}
+			always = no
+		}
+		else_if = {
+			limit = {
+				FROM = { development_of_overlord_fraction = 0.25 }
+			}
+			always = yes
+		}
+		else = {
+			always = no 
+		}
+	}
+}
+
+#demote
+make_pronoia_inheritable = {
+	category = influence
+
+	alert_index = 17 #doesn't matter. it is forced onto the subject
+	alert_tooltip = sell_indulgence_alert_tooltip #doesn't matter. it is forced onto the subject
+
+	require_acceptance = no
+
+	is_visible = {
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = hereditary_pronoia_subject_type
+		}
+	}
+	is_allowed = {
+		if = {
+			limit = { from = { liberty_desire = 15 } }
+			custom_trigger_tooltip = {
+				tooltip = BYZ_too_much_liberty_desire
+				from = { not = { liberty_desire = 15 } }
+			}
+		}
+	}
+	on_accept = {
+		ROOT = {
+			create_subject = {
+				subject_type = pronoia_subject_type
+				subject = FROM
+			}
+		}
+		every_known_country = {
+			limit = {
+				is_subject_of = ROOT
+				is_subject_of_type = hereditary_pronoia_subject_type
+			}
+			add_liberty_desire = 25
+		}
+	}
+
+	ai_will_do = {
+		if = {
+			limit = {
+				NOT = {
+					OR = {
+						mission_completed = BYZ_decentralized_pronoia
+						mission_completed = BYZ_centralized_pronoia
+					}
+				}
+			}
+			always = no
+		}
+		else_if = {
+			limit = {
+				FROM = { development_of_overlord_fraction = 0.25 }
+			}
+			always = yes
+		}
+		else = {
+			always = no 
+		}
+	}
+}

@@ -1,0 +1,36 @@
+V20_ideas1 = { #Zoherin Apunsorya ideas
+	start = {
+		tolerance_own = 2
+		general_cost = -0.2
+	}
+	bonus = {
+		mages_loyalty_modifier = 0.15
+	}
+	trigger = {
+		tag = V20
+		has_country_flag = Zoherin_idea_flag
+	}
+	free = yes
+
+	V20_long_flight_north1 = {
+		prestige = 1
+	}
+	V20_new_friends_new_faces1 = {
+		num_accepted_cultures = 2
+	}
+	V20_wings_of_another_kind1 = {
+		cav_to_inf_ratio = 0.4
+	}
+	V20_magic_featherdust_trade1 = {
+		trade_efficiency = 0.15
+	}
+	V20_aerial_hunts1 = {
+		cavalry_power = 0.15
+	}
+	V20_northern_front1 = {
+		garrison_size = 0.33
+	}
+	V20_roost_of_waben_donpun1 = {
+		build_cost = -0.2
+	}
+}

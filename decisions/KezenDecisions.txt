@@ -1,0 +1,32 @@
+country_decisions = {
+
+	Kezen_place_decision = {
+		major = yes
+		potential = {
+			always = no
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			custom_tooltip = Kezen_point_tt
+			export_to_variable = {
+				which = Total_dev_1
+				value = total_development
+				who = ROOT
+			}
+			subtract_variable = {
+				which = Total_dev_1
+				which = Total_dev_0
+			}
+			change_variable = {
+				which = Compounded_dev
+				which = Total_dev_1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_importance = 0
+	}
+}

@@ -1,0 +1,33 @@
+setup_vision = yes
+government = monarchy
+add_government_reform = harpy_matriarchy_reform
+government_rank = 2
+primary_culture = nuzenapu_harpy
+religion = eagle_worship
+technology_group = tech_nuzenapu_harpy
+capital = 6840
+
+
+1444.11.11 = {
+	monarch = {
+		name = "Raana"
+		dynasty = "Yunikinon"
+		birth_date = 1401.10.31
+		adm = 4
+		mil = 1
+		dip = 6
+		female = yes
+	}
+	add_ruler_personality = mage_personality
+	add_ruler_personality = charismatic_negotiator_personality 
+	set_ruler_flag = enchantment_2
+	set_ruler_flag = enchantment_2
+	set_ruler_flag = illusion_2
+	set_ruler_flag = illusion_1
+	update_roost_count = yes
+}
+
+add_country_modifier = { 
+	name = monstrous_nation
+	duration = -1 
+}

@@ -1,0 +1,434 @@
+eagle_hobgoblins_kuenan_reform = {
+	icon = "religious_harmony_reform"
+	potential = {
+		has_reform = eagle_hobgoblins_kuenan_reform 
+	}
+	trigger = {
+		culture = eagle_command
+		religion = eagle_worship
+	}
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	lock_level_when_selected = yes
+	modifiers = {
+		num_of_pronoiars = 2
+		missionaries = 1
+		all_power_cost = -0.05
+	}
+	heir = no
+	custom_attributes = {
+		locked_government_type = yes
+		always_mage = yes
+		enables_pronoias = yes
+	}
+}
+
+nomsyulhan_matriarchy_reform = {
+	lock_level_when_selected = yes
+	allow_normal_conversion = yes
+	icon = "harpy_matriarchy"
+	potential = {
+		ruler_is_harpy = yes
+		NOT = { has_reform = harpy_matriarchy_ayarallen_early_gov_mechanic_reform }
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	nation_designer_trigger = {
+		OR = {
+			ruler_culture = firanyan_harpy
+			ruler_culture = siadunan_harpy
+			ruler_culture = nzeri_harpy
+			ruler_culture = nuzenapu_harpy
+		}
+	}
+	legacy_equivalent = ottoman_government_legacy
+
+	modifiers = {
+		legitimacy = 0.5
+		stability_cost_modifier = -0.10
+		can_fabricate_for_vassals = yes
+		block_introduce_heir = yes
+	}
+
+	custom_attributes = {
+		queen = no
+		disabled_expelling_hobgoblin = yes
+		disabled_purging_hobgoblin = yes
+		always_mage = yes
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		has_harem = yes
+	}
+}
+
+eagle_hobgoblins_kuenan_reform_subject = {
+	icon = "religious_harmony_reform"
+	potential = {
+		has_reform = eagle_hobgoblins_kuenan_reform_subject 
+	}
+	trigger = {
+		religion = eagle_worship
+	}
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	lock_level_when_selected = yes
+	modifiers = {
+		missionaries = 1
+		global_missionary_strength = 0.03
+	}
+	heir = no
+	custom_attributes = {
+		locked_government_type = yes
+		always_mage = yes
+		disabled_expelling = yes
+		disabled_purging = yes
+	}
+}
+
+eagle_hobgoblins_zugi_base = {
+	icon = "ambush_tactics"
+	potential = {
+		has_reform = eagle_hobgoblins_zugi_base 
+	}
+	trigger = {
+		culture = eagle_command
+		religion = eagle_worship
+	}
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	lock_level_when_selected = yes
+	modifiers = {
+		monarch_admin_power = -6
+		monarch_diplomatic_power = -6
+		monarch_military_power = -6
+	}
+	fixed_rank = 2
+	heir = yes
+	effect = {
+		custom_tooltip = Zugi_gov_base_tt
+	}
+	custom_attributes = {
+		locked_government_type = yes
+		always_mage = yes
+		heirs_can_be_generals = no
+	}
+}
+
+eagle_hobgoblins_zugi_final = {
+	icon = "religious_harmony_reform"
+	potential = {
+		culture = eagle_command
+		religion = eagle_worship
+		has_reform = eagle_hobgoblins_zugi_final 
+	}
+	trigger = {
+		culture = eagle_command
+		religion = eagle_worship
+	}
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	lock_level_when_selected = yes
+	modifiers = {
+		discipline = 0.05
+		infantry_power = 0.15
+		governing_capacity_modifier = -0.2
+		administrative_efficiency = -0.15
+		monarch_admin_power = -6
+		monarch_diplomatic_power = -6
+		monarch_military_power = -6
+	}
+	heir = yes
+	effect = {
+		custom_tooltip = Zugi_gov_tt
+	}
+	custom_attributes = {
+		locked_government_type = yes
+		always_mage = yes
+		heirs_can_be_generals = no
+		rulers_can_be_generals = yes
+	}
+}
+
+eagle_hobgoblin_dictatorship_reform = {
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	icon = "parliament_hall"
+	potential = {
+		has_reform = eagle_hobgoblin_dictatorship_reform 
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 25
+	legacy_equivalent = military_dictatorship
+	has_term_election = no
+	modifiers = {
+		land_morale = 0.1
+	}
+	custom_attributes = {
+		locked_government_type = yes
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		always_mage = yes
+	}
+}
+
+eagle_hobgoblin_republic_reform = {
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	icon = "parliament_hall"
+	potential = {
+		has_reform = eagle_hobgoblin_republic_reform 
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 25
+	modifiers = {
+		diplomatic_reputation = 1
+		years_of_nationalism = -5
+		monarch_lifespan = 0.25
+	}
+	effect = {
+		custom_tooltip = Nun_gov_tt
+	}
+	heir = no
+	custom_attributes = {
+		locked_government_type = yes
+		rulers_can_be_generals = yes
+		always_mage = yes
+	}
+}
+
+eagle_hobgoblin_republic_assimilation_reform = {
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	icon = "parliament_hall"
+	potential = {
+		has_reform = eagle_hobgoblin_republic_assimilation_reform 
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 25
+	modifiers = {
+	}
+	assimilation_cultures = {
+		anbennarian = {
+			all_power_cost = -0.025
+		}
+		alenic = {
+			global_trade_goods_size_modifier = 0.1
+		}
+		businori = {
+			ship_durability = 0.1
+		}
+		escanni = {
+			governing_capacity_modifier = 0.1
+		}
+		dostanorian_g = {
+			fort_maintenance_modifier = -0.15
+		}
+		kheteratan = {
+			galley_power = 0.15
+		}
+		lencori = {
+			cavalry_power = 0.15
+		}
+		halfling = {
+			trade_efficiency = 0.1
+		}
+		gnomish = {
+			technology_cost = -0.05
+		}
+		gerudian = {
+			naval_forcelimit_modifier = 0.2
+		}
+		giantkind = {
+			build_cost = -0.1
+		}
+		elven = {
+			discipline = 0.05
+		}
+		dwarven = {
+			artillery_power = 0.1
+		}
+		kobold = {
+			hostile_attrition = 1
+		}
+		gnollish = {
+			unjustified_demands = -0.2
+		}
+		orcish = {
+			shock_damage = 0.1
+		}
+		goblin = {
+			land_attrition = -0.15
+		}
+		bulwari = {
+			core_creation = -0.1
+		}
+		harpy = {
+			manpower_recovery_speed = 0.1
+		}
+		upper_raheni = {
+			global_regiment_cost = -0.1
+		}
+		middle_raheni = {
+			idea_cost = -0.1
+		}
+		south_raheni = {
+			siege_ability = 0.1
+		}
+		hobgoblin = {
+			drill_gain_modifier = 0.5
+		}
+		harimari = {
+			administrative_efficiency = 0.05
+		}
+		centaur = {
+			cavalry_shock = 0.25
+		}
+		ogre = {
+			shock_damage_received = -0.1
+		}
+		triunic = {
+			improve_relation_modifier = 0.2
+		}
+		bom = {
+			garrison_size = 0.2
+		}
+		kai = {
+			movement_speed = 0.15
+		}
+		kelino = {
+			global_trade_power = 0.1
+		}
+		yanglam = {
+			yearly_absolutism = 1
+		}
+		yan = {
+			fire_damage = 0.10
+		}
+		khantaar = {
+			cavalry_cost = -0.15
+		}
+		odheongun = {
+			infantry_fire = 0.15
+		}
+		besholgi = {
+			global_foreign_trade_power = 0.10
+		}
+		akasi = {
+			trade_steering = 0.20
+		}
+		mengi = {
+			tolerance_own = 2
+		}
+		baashidi = {
+			possible_adm_policy = 1
+		}
+		inyaswarosa = {
+			infantry_shock = 0.15
+		}
+		west_sarhaly = {
+			all_estate_loyalty_equilibrium = 0.05
+		}
+		irsukuba = {
+			years_of_nationalism = -5
+		}
+		vurebindu = {
+			global_supply_limit_modifier = 0.25
+		}
+		lizardfolk = {
+			production_efficiency = 0.10
+		}
+		wuhyun = {
+			infantry_power = 0.10
+		}
+		reachman = {
+			merchants = 1
+		}
+		khudi = {
+			reinforce_speed = 0.10
+		}
+		tyvorkan = {
+			global_tariffs = 0.15
+		}
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
+hobgoblin_cheribrum_reform = {
+	icon = "soldiers_5"
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	potential = {
+		has_reform = hobgoblin_cheribrum_reform
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	nation_designer_trigger = {
+		culture_group = hobgoblin
+	}
+	modifiers = {
+		global_manpower_modifier = 0.1
+		land_maintenance_modifier = -0.1
+		monarch_military_power = 1
+		max_absolutism = 10
+		yearly_army_professionalism = 0.002
+	}
+}
+
+eagle_hobgoblin_monarchy_reform = {
+	icon = "landscape"
+	allow_normal_conversion = no
+	potential = {
+		has_reform = eagle_hobgoblin_monarchy_reform 
+	}
+	lock_level_when_selected = yes
+	heir = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 30
+	modifiers = {
+		max_absolutism = 10
+		monarch_military_power = 1
+	}
+	effect = {
+		custom_tooltip = Kezen_gov_tt
+	}
+	custom_attributes = {
+		locked_government_type = yes
+		always_mage = yes
+	}
+}
+
+education_of_the_eagle_reform = {
+	icon = "reformer"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_adventurer_reform = yes } # Anbennar
+		culture = eagle_command
+	}
+	modifiers = {
+		monarch_lifespan = 0.2
+		
+	}
+	effect = {
+		custom_tooltip = Nire_mag_reg_tt
+	}
+	removed_effect = {
+		hidden_effect = {
+			remove_country_modifier = sca_administrative_focus
+			remove_country_modifier = sca_diplomatic_focus
+			remove_country_modifier = sca_military_focus
+			remove_country_modifier = sca_administrative_focus_non_heir
+			remove_country_modifier = sca_diplomatic_focus_non_heir
+			remove_country_modifier = sca_military_focus_non_heir
+		}
+	}
+	custom_attributes = {
+		
+	}
+}

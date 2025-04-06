@@ -1,0 +1,526 @@
+namespace = flavor_nire
+
+
+country_event = {
+	id = flavor_nire.0
+	title = flavor_nire.0.t
+	desc = flavor_nire.0.d
+	picture = EXCALIBUR_eventPicture
+	
+	is_triggered_only = yes
+	trigger = { always = yes }
+	
+	option = {
+		name = flavor_nire.0.a
+		swap_non_generic_missions = yes
+	}
+}
+
+country_event = {
+	id = flavor_nire.1
+	title = flavor_nire.1.t
+	desc = flavor_nire.1.d
+	picture = EXCALIBUR_eventPicture
+	
+	is_triggered_only = yes
+	trigger = { always = yes }
+
+	option = {
+		name = flavor_nire.1.a	
+		define_ruler = {
+			name = "Taiji"
+			dynasty = ""
+			adm = 6
+			dip = 5
+			mil = 6
+			age = 19
+		}
+		hidden_effect = {
+			add_ruler_personality = mage_personality
+			add_ruler_personality = strict_personality
+			add_ruler_personality = conqueror_personality
+		}
+		capital_scope = {
+			add_institution_embracement = {
+				which = feudalism
+				value = 100
+			}
+		}
+	}
+}
+
+country_event = {
+	id = flavor_nire.2
+	title = flavor_nire.2.t
+	desc = flavor_nire.2.d
+	picture = BIG_STAR_IN_SKY_eventPicture
+	
+	is_triggered_only = yes
+	trigger = { always = yes }
+
+	option = {
+		name = flavor_nire.2.a
+		set_government_rank = 3
+		set_country_flag = ascendant_dragon
+		add_adm_power = 500
+		add_dip_power = 500
+		add_mil_power = 500
+		nuzurbokh_region = {
+			discover_country = ROOT
+			add_permanent_claim = ROOT
+		}
+		shuvuushudi_region = {
+			discover_country = ROOT
+			add_permanent_claim = ROOT
+		}
+		moduk_region = {
+			discover_country = ROOT
+			add_permanent_claim = ROOT
+		}
+		demon_hills_region = {
+			discover_country = ROOT
+			add_permanent_claim = ROOT
+			
+		}
+		swap_non_generic_missions = yes
+		add_government_reform = eagle_hobgoblins_will_of_order_reform
+	}
+}
+
+country_event = {
+	id = flavor_nire.3
+	title = flavor_nire.3.t
+	desc = flavor_nire.3.d
+	picture = CONSPIRACY_eventPicture
+	
+	is_triggered_only = yes
+	trigger = { always = yes }
+
+	option = {
+		name = flavor_nire.3.a
+		4533 = {
+			add_canal = godswall_tunnel
+			set_global_flag = godswall_tunnel_opened
+		}
+		6821 = {
+			add_canal = godswall_tunnel
+			set_global_flag = godswall_tunnel_opened
+		}
+		add_canal = godswall_tunnel
+		set_global_flag = godswall_tunnel_opened
+		asia = {
+			discover_country = ROOT
+		}
+	}
+}
+
+country_event = {
+	id = flavor_nire.4
+	title = flavor_nire.4.t
+	desc = flavor_nire.4.d
+	picture = BATTLE_eventPicture
+	
+	is_triggered_only = yes
+	trigger = { always = yes }
+
+	option = {
+		name = flavor_nire.4.a
+		R62 = {
+			declare_war_with_cb = {
+				who = V17
+				casus_belli = cb_annex
+				war_goal_province = 6821
+			}
+		}
+		4533 = {
+			add_core = ROOT
+		}
+		6821 = {
+			add_core = R62
+		}
+	}
+}
+
+country_event = {
+	id = flavor_nire.5
+	title = flavor_nire.5.t
+	desc = flavor_nire.5.d
+	picture = AMILAK_eventPicture
+	
+	is_triggered_only = yes
+	trigger = { always = yes }
+
+	option = {
+		name = flavor_nire.5.a
+		6821 = {
+			remove_building = fort_15th
+			remove_building = fort_16th
+			remove_building = fort_17th
+			remove_building = fort_18th
+		}
+		shamakhad_region = {
+			kill_units = {
+				who = R62
+				type = infantry
+				amount = 500
+            }
+			kill_units = {
+				who = R62
+				type = cavalry
+				amount = 500
+            }
+			kill_units = {
+				who = R62
+				type = artillery
+				amount = 500
+            }
+			add_base_tax = -2
+			add_base_production = -2
+			add_base_manpower = -2
+			add_devastation = 80
+		}
+		anti_command_area = {
+			kill_units = {
+				who = R62
+				type = infantry
+				amount = 500
+            }
+			kill_units = {
+				who = R62
+				type = cavalry
+				amount = 500
+            }
+			kill_units = {
+				who = R62
+				type = artillery
+				amount = 500
+            }
+			add_base_tax = -8
+			add_base_production = -8
+			add_base_manpower = -8
+			add_devastation = 100
+		}
+		4533 = {
+			cede_province = ROOT
+			add_core = ROOT
+			destroy_great_project = {
+				type = godswall
+			}
+		}
+		R62 = {
+			country_event = { id = flavor_nire.8 }
+		}
+	}
+}
+
+country_event = {
+	id = flavor_nire.6
+	title = flavor_nire.6.t
+	desc = flavor_nire.6.d
+	picture = DARK_EXPEDITION_eventPicture
+	
+	is_triggered_only = yes
+	trigger = { always = yes }
+
+	option = {
+		name = flavor_nire.6.a
+		set_country_flag = malachite_rebel
+		dromak_area = {
+			type = all
+			change_culture = malachite_dwarf
+			change_religion = ancestor_worship
+			add_core = I25
+		}
+		blastcrack_area = {
+			limit = { owned_by = ROOT }
+			type = all
+			add_core = I25
+		}
+		dromak_pass_area = {
+			limit = { owned_by = ROOT }
+			type = all
+			add_core = I25
+		}
+		4320 = {
+			limit = { owned_by = ROOT }
+			add_core = I25
+		}
+		4319 = {
+			limit = { owned_by = ROOT }
+			add_core = I25
+		}
+		ROOT = { 
+			release_with_religion_and_culture = { 
+				tag = Z73 
+				religion = dwarven_pantheon 
+				culture = malachite_dwarf 
+			} 
+		}
+		every_owned_province = {
+			limit = { is_core = I25 }
+			cede_province = I25
+		}
+		I25 = {
+			capital_scope = {
+				add_unit_construction = {
+					type = infantry
+					amount = 20
+					speed = 0.01
+					cost = 0
+				}
+				add_unit_construction = {
+					type = artillery
+					amount = 10
+					speed = 0.01
+					cost = 0
+				}
+			}
+			declare_war_with_cb = {
+				who = V17
+				casus_belli = cb_independence_war
+				war_goal_province = 4323
+			}
+		}
+		swap_non_generic_missions = yes
+	}
+}
+
+country_event = {
+	id = flavor_nire.7
+	title = flavor_nire.7.t
+	desc = flavor_nire.7.d
+	picture = BIG_STAR_IN_SKY_eventPicture
+	
+	is_triggered_only = yes
+	trigger = { always = yes }
+	
+	option = {
+		name = flavor_nire.7.a
+		ROOT = { 
+			release_with_religion_and_culture = { 
+				tag = Z73 
+				religion = dwarven_pantheon 
+				culture = malachite_dwarf 
+			} 
+		}
+		every_owned_province = {
+			limit = { is_core = I25 }
+			cede_province = I25
+		}
+		create_subject = {
+			subject_type = order_empire
+			subject = I25
+		}
+		set_country_flag = malachite_subject
+		swap_non_generic_missions = yes
+		hidden_effect = {
+			I25 = {
+				change_religion = eagle_worship
+				change_government_to_monarchy = yes
+				add_treasury = 2000
+				add_mil_power = 500
+				add_adm_power = 500
+				add_dip_power = 500
+				add_stability = 2
+				add_historical_friend = V17
+			}
+			
+		}
+	}
+}
+
+country_event = {
+	id = flavor_nire.8
+	title = flavor_nire.8.t
+	desc = flavor_nire.8.d
+	picture = BIG_STAR_IN_SKY_eventPicture
+	
+	is_triggered_only = yes
+	trigger = { always = yes }
+	
+	option = {
+		name = flavor_nire.8.a
+		Y09 = {
+			country_event = { id = flavor_nire.9 }
+		}
+		R38 = {
+			country_event = { id = flavor_nire.9 }
+		}
+		R51 = {
+			country_event = { id = flavor_nire.9 }
+		}
+		R07 = {
+			country_event = { id = flavor_nire.9 }
+		}
+		R81 = {
+			country_event = { id = flavor_nire.11 }
+		}
+	}
+}
+
+country_event = {
+	id = flavor_nire.9
+	title = flavor_nire.9.t
+	desc = flavor_nire.9.d
+	picture = BIG_STAR_IN_SKY_eventPicture
+	
+	is_triggered_only = yes
+	trigger = { always = yes }
+	
+	option = {
+		name = flavor_nire.9.a
+		ROOT = {
+			declare_war_with_cb = {
+				who = R62
+				casus_belli = cb_super_badboy
+			}
+			add_historical_rival = R62
+		}
+	}
+}
+
+country_event = { 
+	id = flavor_nire.10
+	title = flavor_nire.10.t
+	desc = flavor_nire.10.d
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	trigger = { always = yes }
+	
+	option = {
+		name = flavor_nire.10.a
+		custom_tooltip = magic_only_tt
+		artifice_magic_switch_to_magic_only_mode = yes
+		set_country_flag = magic_artificery_mage_only
+		clr_country_flag = magic_artificery_artificery_only
+		clr_country_flag = magic_artificery_mixed
+	}
+}
+
+country_event = {
+	id = flavor_nire.11
+	title = flavor_nire.11.t
+	desc = flavor_nire.11.d
+	picture = BIG_STAR_IN_SKY_eventPicture
+	
+	is_triggered_only = yes
+	trigger = { always = yes }
+	
+	option = {
+		name = flavor_nire.11.a
+		ROOT = {
+			declare_war_with_cb = {
+				who = R62
+				casus_belli = cb_independence_war
+			}
+			add_historical_rival = R62
+		}
+	}
+}
+
+country_event = {
+	id = flavor_nire.12
+	title = flavor_nire.12.t
+	desc = flavor_nire.12.d
+	picture = SPELL_LIST_eventPicture
+	
+	is_triggered_only = yes
+	trigger = { always = yes }
+	
+	option = {
+		name = flavor_nire.12.a
+		1001 = {
+				add_permanent_claim = ROOT
+				discover_country = ROOT
+			}
+		tebajik_area = {
+			add_permanent_claim = ROOT
+			discover_country = ROOT
+		}
+		tebolelmasi_area = {
+			add_permanent_claim = ROOT
+			discover_country = ROOT
+		}
+		ibibakely_area = {
+			add_permanent_claim = ROOT
+			discover_country = ROOT
+		}
+		northern_pass_region = {
+			add_permanent_claim = ROOT
+			discover_country = ROOT
+		}
+		set_country_flag = nire_art_war
+		swap_non_generic_missions = yes
+	}
+}
+
+country_event = {
+	id = flavor_nire.13
+	title = flavor_nire.13.t
+	desc = flavor_nire.13.d
+	picture = SPELL_LIST_eventPicture
+	
+	is_triggered_only = yes
+	trigger = { always = yes }
+
+	option = {
+		name = flavor_nire.13.a
+		ROOT = {
+			change_religion = eagle_worship
+			change_government = thoeocracy
+			change_country_color = {
+				country = V17
+			}
+			add_government_reform = eagle_hobgoblins_rule_of_order_reform
+			add_treasury = 2000
+			add_mil_power = 500
+			add_adm_power = 500
+			add_dip_power = 500
+			add_stability = 2
+			add_historical_friend = V17
+		}
+		domandrod_gladeway_1_area = {
+			cede_province = ROOT
+		}
+		domandrod_gladeway_2_area = {
+			cede_province = ROOT
+		}
+		domandrod_gladeway_3_area = {
+			cede_province = ROOT
+		}
+		domandrod_gladeway_4_area = {
+			cede_province = ROOT
+		}
+		domandrod_central_glade_area = {
+			cede_province = ROOT
+		}
+		6242 = {
+			cede_province = ROOT
+		}
+		6243 = {
+			cede_province = ROOT
+		}
+		6244 = {
+			cede_province = ROOT
+		}
+		6245 = {
+			cede_province = ROOT
+		}
+	}
+}
+
+country_event = {
+	id = flavor_nire.101
+	title = flavor_nire.101.t
+	desc = flavor_nire.101.d
+	picture = BIG_STAR_IN_SKY_eventPicture
+	
+	is_triggered_only = yes
+	trigger = { always = yes }
+
+	option = {
+		name = flavor_nire.101.a
+		add_government_reform = eagle_hobgoblins_will_of_order_reform
+	}
+}

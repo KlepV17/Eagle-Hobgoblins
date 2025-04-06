@@ -1,0 +1,39 @@
+on_battle_lost_unit_effect = { 
+	if = {
+		limit = { NOT = { is_year = 1465 } } 
+		if = {
+			limit = {
+				unit_owner = {
+					tag = V13
+				}
+				is_ruler_commanding_unit = yes
+				enemy_unit = {
+					unit_owner = {
+						tag = V14
+					}
+					is_ruler_commanding_unit = yes
+				}
+			}
+			V14 = {
+				country_event = { id = flavor_ban.10102 }
+			}
+		}
+		if = {
+			limit = {
+				unit_owner = {
+					tag = V14
+				}
+				is_ruler_commanding_unit = yes
+				enemy_unit = {
+					unit_owner = {
+						tag = V13
+					}
+					is_ruler_commanding_unit = yes
+				}
+			}
+			V13 = {
+				country_event = { id = flavor_ban.10101 }
+			}
+		}
+	}
+}

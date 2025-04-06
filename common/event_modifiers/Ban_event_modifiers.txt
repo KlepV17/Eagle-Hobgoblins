@@ -1,0 +1,544 @@
+precursor_fortress = {
+	trade_goods_size = 0.75
+}
+
+Zugi_relic_mod = {
+	trade_goods_size = 1.5
+}
+
+harpy_feathers = {
+	trade_value_modifier = 0.5
+	trade_goods_size_modifier = -0.25
+}
+
+harpy_feathers_kuenan = {
+	trade_value_modifier = 0.5
+	trade_goods_size_modifier = 0.25
+}
+
+Ban_inti = {
+	institution_growth = 1
+}
+
+Ban_lvl_1 = {
+	monthly_fervor_increase = -8
+	stability_cost_modifier = 0.15
+	relation_with_same_culture = -200
+}
+
+Ban_lvl_2 = {
+	monthly_fervor_increase = -6
+	warscore_cost_vs_other_religion = -0.15
+}
+
+Ban_lvl_3 = {
+	monthly_fervor_increase = -2
+	warscore_cost_vs_other_religion = -0.25
+	missionaries = 1
+}
+
+Ban_lvl_4 = {
+	warscore_cost_vs_other_religion = -0.5
+	missionaries = 2
+	tolerance_own = 3
+}
+
+Ban_tol_2 = {
+	tolerance_own = 2
+}
+
+Ban_ogre_mis = {
+	local_missionary_strength = -0.3
+}
+
+Nun_def = {
+	local_defensiveness = 0.25
+}
+
+Zugi_help_1 = {
+	monthly_korashi_reserves = 100
+}
+
+Zugi_sabo_1 = {
+	monthly_korashi_reserves = -2
+}
+
+Zugi_sabo_2 = {
+	monthly_korashi_reserves = -2
+}
+
+Zugi_sabo_3 = {
+	monthly_korashi_reserves = -2
+}
+
+Ban_eagle_heart = {
+	local_development_cost = -0.3
+}
+
+Ban_eagle_roosts = {
+	amount_of_hussars = 3
+	local_production_efficiency = -1
+}
+
+Ban_hob_leg = {
+	yearly_army_professionalism = 0.01
+	land_morale = 0.10
+	merc_maintenance_modifier = 1
+	mercenary_discipline = -0.10
+}
+
+Nun_prec_for = {
+	local_development_cost = -0.15
+	estate_mages_influence_modifier = 0.1
+}
+
+Ban_drac_1 = {
+	can_recruit_hussars = yes
+}
+
+Nun_wood = {
+	local_production_efficiency = 5
+	local_monthly_devastation = 0.1
+}
+
+Ban_emb1 = {
+	global_foreign_trade_power = -0.1
+}
+
+Kezen_lvl3_oath = {
+	ae_impact = -0.15
+	core_creation = -0.2
+	province_warscore_cost = -0.3
+	monarch_lifespan = 0.5
+}
+
+Kezen_lvl2_oath = {
+	core_creation = -0.1
+	province_warscore_cost = -0.1
+	monarch_lifespan = 0.25
+}
+
+Kezen_lvl1_oath = {
+	core_creation = -0.05
+	monarch_lifespan = 0.1
+}
+
+Kezen_lvl0_oath = {
+	global_unrest = 2
+	global_autonomy = 0.1
+}
+
+Kezen_cb_war = {
+	stability_cost_to_declare_war = -6
+}
+
+Honasyul_mod = {
+	global_missionary_strength = 0.03
+	land_morale = 0.1
+}
+
+Gaximo_mod = {
+	all_power_cost = -0.05
+	morale_damage = 0.1
+}
+
+Hikari_mod = {
+	cavalry_cost = -0.25
+	cav_to_inf_ratio = 0.25
+}
+
+Interreg_mod = {
+	infantry_power = 0.2
+	administrative_efficiency = -0.1
+}
+
+Kuenan_theas_1 = {
+	missionaries = 1
+}
+
+Nire_adm_magic = {
+	country_admin_power = 3
+	country_diplomatic_power = -1
+	country_military_power = -1
+}
+
+Nire_dip_magic = {
+	country_admin_power = -1
+	country_diplomatic_power = 3
+	country_military_power = -1
+}
+
+Nire_mil_magic = {
+	country_admin_power = -1
+	country_diplomatic_power = -1
+	country_military_power = 3
+}
+
+Kuenan_ica1 = {
+	infantry_power = 0.10
+}
+
+kuenan_cent_pro = {
+	core_creation = -1
+	overextension_impact_modifier = -1
+	administrative_efficiency = 0.2
+}
+
+Eagle_Magic1 = {
+	fire_damage = -0.75
+	shock_damage = 0.75
+}
+
+Nire_merc1 = {
+	mercenary_manpower = 0.5
+	merc_maintenance_modifier = -0.4
+	global_tax_income = -60
+}
+
+Nire_stab_war = {
+	stability_cost_to_declare_war = -3
+}
+
+Nire_gob_harpy_1 = {
+	yearly_army_professionalism = 0.015
+	discipline = 0.025
+}
+
+Nire_gob_harpy_2 = {
+	morale_damage = -0.15
+	manpower_recovery_speed = 0.05
+}
+
+Nire_harpy_deso = {
+	development_cost_modifier = -0.3
+}
+
+Nire_true_eagle = {
+	monthly_fervor_increase = 2
+}
+
+Nire_anti_slaves = {
+	trade_efficiency = -0.8
+}
+
+Nire_fair_war = {
+	shock_damage = -0.2
+	years_of_nationalism = -5
+}
+
+Soulseeker_estate_mod = {
+	local_manpower_modifier = -2
+	local_development_cost = -0.5
+}
+
+Soulseeker_estate_war_mod = {
+	local_manpower_modifier = -2
+}
+
+Soulseeker_featherdust_mod = {
+	local_tax_modifier = -0.5
+	trade_goods_size = 0.15
+}
+
+Kuenan_heavens_mod = {
+	monthly_fervor_increase = 2
+	build_time = -0.2
+}
+
+Kuenan_sun_mod = {
+	drill_gain_modifier = 0.5
+}
+
+Kuenan_dev_mod = {
+	development_cost = -0.05
+	development_cost_in_primary_culture = -0.05
+}
+
+Kuenan_annex_mod = {
+	diplomatic_annexation_cost = -0.4
+}
+
+Nire_NO_COLONIZATION = {
+	colonists = -10
+}
+
+Nire_HP_Printer_mod = {
+	local_tax_modifier = -0.5
+	trade_goods_size_modifier = -0.25
+	local_unrest = 5
+	local_missionary_strength = -0.03
+}
+
+Nire_project_mod = {
+	local_great_project_upgrade_time = -0.5
+}
+Nire_path_mod = {
+	movement_speed = -3
+}
+
+Nire_movement_mod = {
+	local_friendly_movement_speed = 0.25
+}
+
+Nire_adv_want = {
+	local_manpower_modifier = -0.5
+	local_production_efficiency = 0.15
+}
+
+Nire_dak_s = {
+	prestige_decay = -0.01
+}
+
+Kuenan_dip_rep_mod = {
+	diplomatic_reputation = 1
+}
+
+Kezen_gun_blade = {
+	infantry_fire = 0.2
+}
+
+Zugi_fort_mod = {
+	min_local_autonomy = 50
+	local_fort_maintenance_modifier = -1
+}
+
+Zugi_fort_temple_mod = {
+	missionaries = 1
+}
+
+Zugi_dev_sand = {
+	local_development_cost = -0.5
+}
+
+Zugi_cheese_mod = {
+	local_production_efficiency = 2
+	province_trade_power_value = 10
+}
+
+Ban_mis1 = {
+	local_missionary_strength = 0.02
+	local_development_cost = -0.1
+}
+
+Nire_live1 = {
+	local_production_efficiency = -0.5
+	local_development_cost = -0.3
+}
+
+estate_nobles_monopoly_of_livestock_eagles_mod = {
+	local_production_efficiency = -10
+	local_amount_of_hussars = 0.2
+}
+
+Ban_cav1 = {
+	cavalry_power = 0.10
+}
+
+Banbe_postwar_mod = {
+	global_manpower_modifier = -0.25
+	technology_cost = -0.1
+	build_cost = -0.15
+}
+	
+
+Nire_convoke_mages = {
+}
+
+#shape
+Nire_convoke_mages1 = {
+	build_cost = -0.075
+}
+
+#time
+Nire_convoke_mages2 = {
+	war_exhaustion = -0.05
+}
+
+#space
+Nire_convoke_mages3 = {
+	all_power_cost = -0.025
+}
+
+#sound
+Nire_convoke_mages4 = {
+	reform_progress_growth = 0.1
+}
+
+#dark
+Nire_convoke_mages5 = {
+	fire_damage_received = -0.05
+}
+
+#light
+Nire_convoke_mages6 = {
+	global_missionary_strength = 0.01
+}
+
+#force
+Nire_convoke_mages7 = {
+	shock_damage = 0.5
+}
+
+#eagle
+Nire_convoke_mages8 = {
+	administrative_efficiency = 0.25
+}
+
+Nire_enlighten = {
+	all_power_cost = -0.1
+}
+
+Nire_kora_mod = {
+	all_power_cost = 0.025
+}
+
+Nire_kora_final_mod = {
+	shock_damage_received = 0.05
+	fire_damage = 0.1
+}
+
+Nire_outpost1 = {
+	local_defensiveness = 0.15
+	local_autonomy = -0.1
+}
+
+Ban_ogre_slave = {
+	trade_goods_size = 2
+	min_local_autonomy = 50
+}
+
+Nire_mag_eng = {
+	local_development_cost = -0.15
+}
+
+Nire_ruin_1 = {
+	technology_cost = -0.075
+}
+
+Nire_ruin_2 = {
+	advisor_cost = -0.15
+}
+
+Nire_ruin_3 = {
+	fire_damage = 0.10
+}
+
+nire_weapons = {
+	land_maintenance_modifier = -0.15
+}
+
+Forbidden_estate_mod = {
+	local_monthly_devastation = 0.5
+	local_prosperity_growth = 5
+}
+
+Forbidden_estate_mod2 = {
+	local_prosperity_growth = 5
+}
+
+nire_start_plant = {
+	trade_goods_size = -0.5
+}
+
+Nire_sabo_1 = {
+	defensiveness = -0.15
+	fire_damage = -0.2
+}
+
+Nire_sabo_2 = {
+	defensiveness = -0.15
+}
+
+Nire_sabo_3 = {
+	fire_damage = -0.2
+}
+
+Nire_villian1 = {
+	manpower_recovery_speed = 0.10
+	yearly_army_professionalism = 0.025
+}
+
+nire_ae_china = {
+	ae_impact = -0.15
+}
+
+nire_fat_mod = {
+	trade_goods_size = 2
+}
+
+Nire_forbid_sea = {
+	range = 2
+	may_explore = yes
+	cb_on_overseas = yes
+}
+
+nire_man_mea = {
+	stability_cost_to_declare_war = 6
+	country_admin_power = 4
+	country_diplomatic_power = 4
+	country_military_power = 4
+}
+
+Nire_command_gov = {
+	state_governing_cost = -0.15
+}
+
+Nire_portal_mod = {
+	picture = "portal_nexus"
+	local_development_cost = -0.5
+	trade_goods_size = 5
+	local_unrest = -100
+	min_local_autonomy = 50
+}
+
+Nire_desert_equilibrium = {
+	local_development_cost = -0.55
+}
+
+Nire_glacier_equilibrium = {
+	local_development_cost = -0.55
+}
+
+Nire_drylands_equilibrium = {
+	local_development_cost = -0.15
+}
+
+Nire_ancient_forest_equilibrium = {
+	local_development_cost = -0.3
+}
+
+Nire_mountain_equilibrium = {
+	local_development_cost = -0.4
+}
+
+Nire_highlands_equilibrium = {
+	local_development_cost = -0.25
+}
+
+Nire_hills_equilibrium = {
+	local_development_cost = -0.3
+}
+
+Nire_tired_mages = {
+	all_power_cost = 0.025
+}
+
+Nire_drum_war_mod = {
+	monthly_fervor_increase = 10
+}
+
+Kezen_feathers = {
+	local_unrest = 5
+	local_monthly_devastation = 0.5
+	trade_goods_size = 1
+}
+
+Kezen_hunt_mod = {
+	province_trade_power_value = -10
+	trade_goods_size = 1
+	local_development_cost = 0.2
+}
+
+Kezen_ogre_build = {
+	build_cost = -0.25
+}

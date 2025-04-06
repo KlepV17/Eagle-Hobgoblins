@@ -1,0 +1,247 @@
+estate_eagle_mag_evo = {
+	icon = privilege_dominion_law_kobold_slave
+	influence = 0.0
+	loyalty = 0.0
+	is_valid = {
+		tag = V13
+	}
+	can_select = {
+		always = yes
+	}
+	can_revoke = {
+		always = no
+	}
+	on_revoked = {
+	}
+	on_granted = {
+		
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		max_general_shock = 1
+	}
+	mechanics = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_eagle_mag_abj = {
+	icon = privilege_dominion_law_ibevari
+	influence = 0.0
+	loyalty = 0.0
+	is_valid = {
+		tag = V13
+	}
+	can_select = {
+		always = yes
+	}
+	can_revoke = {
+		always = no
+	}
+	on_revoked = {
+	}
+	on_granted = {
+		
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		defensiveness = 0.15
+	}
+	mechanics = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_eagle_mag_con = {
+	icon = privilege_dominion_law_army_decentralisation
+	influence = 0.0
+	loyalty = 0.0
+	is_valid = {
+		tag = V13
+	}
+	can_select = {
+		always = yes
+	}
+	can_revoke = {
+		always = no
+	}
+	on_revoked = {
+	}
+	on_granted = {
+		
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		shock_damage = 0.10
+	}
+	mechanics = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_eagle_mag_ill = {
+	icon = privilege_dominion_law_cast_spell
+	influence = 0.0
+	loyalty = 0.0
+	is_valid = {
+		tag = V13
+	}
+	can_select = {
+		always = yes
+	}
+	can_revoke = {
+		always = no
+	}
+	on_revoked = {
+	}
+	on_granted = {
+		
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		improve_relation_modifier = 0.2
+	}
+	mechanics = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_eagle_mag_enc = {
+	icon = privilege_dominion_law_power_split
+	influence = 0.0
+	loyalty = 0.0
+	is_valid = {
+		tag = V13
+	}
+	can_select = {
+		always = yes
+	}
+	can_revoke = {
+		always = no
+	}
+	on_revoked = {
+	}
+	on_granted = {
+		
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		diplomatic_reputation = 1
+	}
+	mechanics = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_eagle_mag_tra = {
+	icon = privilege_dominion_law_absolute_power
+	influence = 0.0
+	loyalty = 0.0
+	is_valid = {
+		tag = V13
+	}
+	can_select = {
+		always = yes
+	}
+	can_revoke = {
+		always = no
+	}
+	on_revoked = {
+	}
+	on_granted = {
+		
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		global_trade_goods_size_modifier = 0.075
+	}
+	mechanics = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_eagle_mag_nec = {
+	icon = privilege_dominion_law_wardens
+	influence = 0.0
+	loyalty = 0.0
+	is_valid = {
+		tag = V13
+	}
+	can_select = {
+		always = yes
+	}
+	can_revoke = {
+		always = no
+	}
+	on_revoked = {
+	}
+	on_granted = {
+		
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		war_exhaustion = -0.05
+	}
+	mechanics = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_eagle_mag_div = {
+	icon = privilege_dominion_law_timed_research
+	influence = 0.0
+	loyalty = 0.0
+	is_valid = {
+		tag = V13
+	}
+	can_select = {
+		always = yes
+	}
+	can_revoke = {
+		always = no
+	}
+	on_revoked = {
+	}
+	on_granted = {
+		
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		all_power_cost = -0.025
+	}
+	mechanics = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}

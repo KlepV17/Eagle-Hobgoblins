@@ -1,0 +1,448 @@
+estate_mages_soulseeker_development = {
+	icon = privilege_development_efficiency
+	loyalty = 0.10
+	influence = 0.15
+	max_absolutism = 0
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	can_select = {
+		has_estate_privilege = estate_mages_soulseeker_development
+	}
+	is_valid = { 
+		has_estate_privilege = estate_mages_soulseeker_development
+	}
+	on_granted = {
+		custom_tooltip = Soulseeker_estate_mod_tt
+		tooltip = {
+			add_province_modifier = {
+				name = Soulseeker_estate_mod
+				duration = -1
+			}
+		}
+	}
+	can_revoke = {
+		always = no
+	}
+	on_revoked = {
+		custom_tooltip = estate_cossacks_freedom_of_the_steppes_rt
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				culture = soulseeker_ogre
+			}
+			add_province_modifier = {
+				name = Soulseeker_estate_mod
+				duration = -1
+			}
+		}
+	}
+	on_invalid_province = {
+		if = {
+			limit = { has_province_modifier = Soulseeker_estate_mod }
+			remove_province_modifier = Soulseeker_estate_mod
+		}
+	}
+	on_revoked_province = {
+		if = {
+			limit = { has_province_modifier = Soulseeker_estate_mod }
+			remove_province_modifier = Soulseeker_estate_mod
+		}
+	}
+
+	mechanics = {
+		no_estate_crownland_loss_from_developing
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_mages_soulseeker_war = {
+	icon = privilege_development_efficiency
+	loyalty = 0.10
+	influence = 0.15
+	max_absolutism = 0
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	can_select = {
+		has_estate_privilege = estate_mages_soulseeker_war
+	}
+	is_valid = { 
+		has_estate_privilege = estate_mages_soulseeker_war
+	}
+	on_granted = {
+		custom_tooltip = Soulseeker_estate_mod_tt
+		tooltip = {
+			add_province_modifier = {
+				name = Soulseeker_estate_war_mod
+				duration = -1
+			}
+		}
+	}
+	can_revoke = {
+		always = no
+	}
+	on_revoked = {
+		
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				culture = soulseeker_ogre
+			}
+			add_province_modifier = {
+				name = Soulseeker_estate_war_mod
+				duration = -1
+			}
+		}
+	}
+	on_invalid_province = {
+		if = {
+			limit = { has_province_modifier = Soulseeker_estate_war_mod }
+			remove_province_modifier = Soulseeker_estate_war_mod
+		}
+	}
+	on_revoked_province = {
+		if = {
+			limit = { has_province_modifier = Soulseeker_estate_war_mod }
+			remove_province_modifier = Soulseeker_estate_war_mod
+		}
+	}
+	benefits = {
+		all_power_cost = -0.025
+	}
+
+	mechanics = {
+		
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_angry_philo_priv = {
+	icon = privilege_weapon_ban
+	loyalty = 0.05
+	influence = 0.1
+	land_share = 0
+	max_absolutism = 10
+	
+	can_select = {
+	}
+	
+	can_revoke = {
+		always = no
+	}
+	
+	is_valid = {
+		has_estate_privilege = estate_angry_philo_priv
+		NOT = { has_estate_privilege = estate_angry_philo_priv }
+	}
+	
+	on_granted = {
+		custom_tooltip = "All High Philosophy provinces gain the following:"
+		tooltip = {
+			random_owned_province = {
+				limit = { religion = high_philosophy }
+				add_province_modifier = {
+					name = Nire_HP_Printer_mod
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	on_granted_province = {
+		if = {
+			limit = { religion = high_philosophy }
+			add_province_modifier = {
+				name = Nire_HP_Printer_mod
+				duration = -1
+			}
+		}
+	}
+	
+	on_revoked = {
+	}
+	
+	on_revoked_province = {
+		if = {
+			limit = { has_province_modifier = Nire_HP_Printer_mod }
+			remove_province_modifier = Nire_HP_Printer_mod
+		}
+	}
+	
+	on_invalid = {
+	}
+	
+	on_invalid_province = {
+		if = {
+			limit = { has_province_modifier = Nire_HP_Printer_mod }
+			remove_province_modifier = Nire_HP_Printer_mod
+		}
+	}
+	
+	penalties = {
+	}
+	
+	benefits = {
+		monthly_fervor_increase = 4
+	}
+
+	conditional_modifier = {
+		
+	}
+
+	loyalty_scaled_conditional_modifier = {
+		
+	}
+	
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_mages_featherdust_tithe = {
+	icon = privilege_development_efficiency
+	loyalty = 0.10
+	influence = 0.20
+	max_absolutism = 0
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	can_select = {
+		has_estate_privilege = estate_mages_featherdust_tithe
+	}
+	is_valid = { 
+		has_estate_privilege = estate_mages_featherdust_tithe
+		NOT = {
+			low_tolerance_harpy_race_trigger = yes
+		}
+	}
+	on_granted = {
+		custom_tooltip = Featherdust_estate_mod_tt
+		tooltip = {
+			add_province_modifier = {
+				name = Soulseeker_featherdust_mod
+				duration = -1
+			}
+		}
+	}
+	can_revoke = {
+		always = no
+	}
+	on_revoked = {
+		custom_tooltip = Featherdust_revoke_estate_mod_tt
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				OR = {
+					culture_group = harpy
+					has_any_harpy_pop_trigger = yes
+				}
+				religion = eagle_worship
+			}
+			add_province_modifier = {
+				name = Soulseeker_featherdust_mod
+				duration = -1
+			}
+		}
+	}
+	on_invalid_province = {
+		if = {
+			limit = { has_province_modifier = Soulseeker_featherdust_mod }
+			remove_province_modifier = Soulseeker_featherdust_mod
+		}
+	}
+	on_revoked_province = {
+		if = {
+			limit = { has_province_modifier = Soulseeker_featherdust_mod }
+			remove_province_modifier = Soulseeker_featherdust_mod
+		}
+	}
+	benefits = {
+		
+	}
+
+	mechanics = {
+		
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+
+estate_nobles_monopoly_of_livestock_eagles = {
+	icon = privilege_monopoly_of_goods_livestock
+	max_absolutism = 0
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	loyalty = 0.05
+	can_select = {
+		has_estate_privilege = estate_nobles_monopoly_of_livestock_eagles
+	}
+	is_valid = { 
+		has_estate_privilege = estate_nobles_monopoly_of_livestock_eagles
+	}
+	on_granted = {
+		if = {
+			limit = {
+				livestock = 1
+			}
+		}
+		custom_tooltip = estate_nobles_monopoly_of_livestock_eagles_effect_tooltip
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				trade_goods = livestock
+				base_production = 5
+				NOT = {
+					superregion = forbidden_lands
+				}
+			}
+			add_province_modifier = {
+				name = estate_nobles_monopoly_of_livestock_eagles_mod
+				duration = -1
+			}
+			add_hobgoblin_minority_size_effect = yes
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = estate_nobles_monopoly_of_livestock_eagles_mod
+			}
+			remove_province_modifier = estate_nobles_monopoly_of_livestock_eagles_mod
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_nobles_monopoly_of_livestock_revoke_tooltip
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_nobles_monopoly_of_livestock_eagles_mod
+			}
+			remove_province_modifier = estate_nobles_monopoly_of_livestock_eagles_mod
+		}
+	}
+	on_invalid = {
+		custom_tooltip = estate_nobles_monopoly_of_livestock_revoke_tooltip
+	}
+	on_invalid_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_nobles_monopoly_of_livestock_eagles_mod
+			}
+			remove_province_modifier = estate_nobles_monopoly_of_livestock_eagles_mod
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+		can_recruit_hussars = yes
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_mages_forbidden_lands_research = {
+	icon = privilege_development_efficiency
+	loyalty = 0.0
+	influence = 0.05
+	max_absolutism = 0
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	can_select = {
+		has_estate_privilege = estate_mages_forbidden_lands_research
+	}
+	is_valid = { 
+		has_estate_privilege = estate_mages_forbidden_lands_research
+	}
+	on_granted = {
+		custom_tooltip = Forbidden_estate_mod_tt
+		tooltip = {
+			add_province_modifier = {
+				name = Forbidden_estate_mod
+				duration = -1
+			}
+		}
+		custom_tooltip = Not_mages_tt
+	}
+	can_revoke = {
+		always = no
+	}
+	on_revoked = {
+		
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				superregion = forbidden_lands_superregion
+				NOT = {
+					OR = {
+						region = north_yarikhoi_region
+						region = south_yarikhoi_region
+					}
+				}
+				OR = {
+					culture = eagle_command
+					culture = soulseeker_ogre
+				}
+				NOT = {
+					has_building = mage_tower
+				}
+			}
+			add_province_modifier = {
+				name = Forbidden_estate_mod
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				superregion = forbidden_lands_superregion
+				NOT = {
+					OR = {
+						region = north_yarikhoi_region
+						region = south_yarikhoi_region
+					}
+				}
+				OR = {
+					culture = eagle_command
+					culture = soulseeker_ogre
+				}
+				has_building = mage_tower
+			}
+			add_province_modifier = {
+				name = Forbidden_estate_mod2
+				duration = -1
+			}
+		}
+	}
+	on_invalid_province = {
+		if = {
+			limit = { has_province_modifier = Forbidden_estate_mod }
+			remove_province_modifier = Forbidden_estate_mod
+		}
+		if = {
+			limit = { has_province_modifier = Forbidden_estate_mod2 }
+			remove_province_modifier = Forbidden_estate_mod2
+		}
+	}
+	on_revoked_province = {
+		if = {
+			limit = { has_province_modifier = Forbidden_estate_mod }
+			remove_province_modifier = Forbidden_estate_mod
+		}
+		if = {
+			limit = { has_province_modifier = Forbidden_estate_mod2 }
+			remove_province_modifier = Forbidden_estate_mod2
+		}
+	}
+	benefits = {
+		max_general_shock = 2
+		leader_land_shock = 2
+		max_general_siege = 2
+		leader_siege = 2
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}

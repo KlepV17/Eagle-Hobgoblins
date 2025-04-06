@@ -1,0 +1,122 @@
+eagle_hobgoblins_kuenan_reform = {
+	rank = {
+		1 = HIGH_TEMPLE
+		2 = HIGH_TEMPLE
+		3 = HIGH_TEMPLE
+	}
+	ruler_male = {
+		1 = HIGH_SCION
+		2 = HIGH_SCION
+		3 = HIGH_SCION
+	}
+	ruler_female = {
+		1 = HIGH_SCION
+		2 = HIGH_SCION
+		3 = HIGH_SCION
+	}
+	trigger = {
+		has_reform = eagle_hobgoblins_kuenan_reform
+	}
+}
+
+eagle_hobgoblin_republic_reform = {
+	rank = {
+		1 = MAGE_COUNCIL
+		2 = MAGE_COUNCIL
+		3 = MAGE_COUNCIL
+	}
+	
+	ruler_male = {
+		1 = DENUNRANSUN
+		2 = DENUNRANSUN
+		3 = DENUNRANSUN
+	}
+	
+	ruler_female = {
+		1 = DENUNRANSUN
+		2 = DENUNRANSUN
+		3 = DENUNRANSUN
+	}
+	trigger = {
+		has_reform = eagle_hobgoblins_republic_reform 
+	}
+}
+
+eagle_hobgoblin_monarchy_reform = {
+	rank = {
+		1 = DRG_RLM
+		2 = DRG_RLM
+		3 = DRG_RLM
+	}
+	ruler_male = {
+		1 = OVRL_LL
+		2 = OVRL_LL
+		3 = OVRL_LL
+	}
+	ruler_female = {
+		1 = OVRL_LL
+		2 = OVRL_LL
+		3 = OVRL_LL
+	}
+	trigger = {
+		has_reform = eagle_hobgoblin_monarchy_reform 
+	}
+}
+
+eagle_hobgoblins_zugi_base = {
+	rank = {
+		1 = CRA_FOL
+		2 = CRA_FOL
+		3 = CRA_FOL
+	}
+	ruler_male = {
+		1 = BLANK_NAME
+		2 = BLANK_NAME
+		3 = BLANK_NAME
+	}
+	ruler_female = {
+		1 = BLANK_NAME
+		2 = BLANK_NAME
+		3 = BLANK_NAME
+	}
+	trigger = {
+		has_reform = eagle_hobgoblins_zugi_base 
+	}
+}
+
+eagle_hobgoblins_zugi_final = {
+	rank = {
+		1 = CRA_ORD
+		2 = CRA_ORD
+		3 = CRA_ORD
+	}
+	ruler_male = {
+		1 = BLD_DNC
+		2 = BLD_DNC
+		3 = BLD_DNC
+	}
+	ruler_female = {
+		1 = BLD_DNC
+		2 = BLD_DNC
+		3 = BLD_DNC
+	}
+	trigger = {
+		has_reform = eagle_hobgoblins_zugi_final 
+	}
+}
+
+eagle_hobgoblins_kuenan_reform_subject = {
+	ruler_male = {
+		1 = SCION
+		2 = SCION
+		3 = SCION
+	}
+	ruler_female = {
+		1 = SCION
+		2 = SCION
+		3 = SCION
+	}
+	trigger = {
+		has_reform = eagle_hobgoblins_kuenan_reform
+	}
+}
