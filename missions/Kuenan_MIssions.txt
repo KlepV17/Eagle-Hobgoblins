@@ -1,0 +1,598 @@
+Kuenan_missions_1_part_0 = { 
+	slot = 1
+	generic = no
+	ai = yes 
+	has_country_shield = yes
+	potential = {
+		tag = V12
+	}
+	
+	Kuenan_1_1 = {
+		icon = mission_consulate_of_the_sea
+		position = 1
+		required_missions = { 
+		}
+		provinces_to_highlight = {
+			area = lock_tormscith_area
+			NOT = {
+				religion = eagle_worship
+			}
+		}
+		trigger = { 
+			has_institution = feudalism
+			lock_tormscith_area = {
+				type = all
+				religion = eagle_worship
+			}
+		}
+		effect = {
+			add_casus_belli = {
+				target = V08
+				type = cb_vassalize_mission 
+				months = 12
+			}
+		}
+	}
+	Kuenan_1_2 = {
+		icon = mission_expand_into_the_forest
+		position = 2
+		required_missions = { 
+			Kuenan_1_1
+		}
+		provinces_to_highlight = {
+			owned_by = V08
+		}
+		trigger = { 
+			V08 = {
+				is_subject_of = ROOT
+			}
+		}
+		effect = {
+			custom_tooltip = Kuenan_V08_tt
+			hidden_effect = {
+				nomsyulhan_region = {
+					if = {
+						limit = {
+							NOT = {
+								owned_by = ROOT
+							}
+							culture = soulseeker_ogre
+						}
+						add_core = V08
+					}
+				}
+			}
+			add_country_modifier = { name = Kuenan_dip_rep_mod duration = 7300 }
+		}
+	}
+	Kuenan_1_3 = {
+		icon = spread_the_von_wettins
+		position = 3
+		required_missions = { 
+			Kuenan_1_2
+		}
+		provinces_to_highlight = {
+			OR = {
+				owned_by = V09
+				owned_by = V10
+				owned_by = V07
+			}
+		}
+		trigger = { 
+			V08 = {
+				has_opinion = {
+					who = ROOT
+					value = 100
+				}
+				is_subject_of = ROOT
+			}
+			NOT = {
+				exists = V07
+				exists = V10
+				exists = V09
+			}
+		}
+		effect = {
+			nomsyulhan_region = {
+				remove_core = V07
+				remove_core = V10
+				remove_core = V09
+			}
+			add_historical_friend = V08
+			V08 = {
+				add_historical_friend = ROOT
+				change_religion = eagle_worship
+			}
+			add_country_modifier = { name = Kuenan_annex_mod duration = 7300 }
+		}
+	}
+	Kuenan_1_4 = {
+		icon = mission_norse_faith
+		position = 4
+		required_missions = { 
+			Kuenan_1_3 
+		}
+		provinces_to_highlight = {
+			region = nomsyulhan_region
+			NOT = {
+				OR = {
+					owned_by = ROOT
+					is_city = no
+				}
+			}
+		}
+		trigger = { 
+			nomsyulhan_region = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					is_city = no
+				}
+			}
+			all_owned_province = {
+				OR = {
+					NOT = {
+						culture = soulseeker_ogre
+					}
+					NOT = {
+						nationalism = 1
+					}
+				}
+			}
+		}
+		effect = {
+			add_stability = 1
+			create_war_wizard_effect = yes
+			create_war_wizard_effect = yes
+		}
+	}
+}
+
+Kuenan_missions_2_part_0 = { 
+	slot = 2
+	generic = no
+	ai = yes 
+	has_country_shield = yes
+	potential = {
+		tag = V12
+	}
+	
+	Kuenan_2_2 = {
+		icon = mission_colonial
+		position = 2
+		required_missions = { 
+			Kuenan_1_1 Kuenan_3_1
+		}
+		provinces_to_highlight = {
+			province_id = 6841
+		}
+		trigger = { 
+			6841 = {
+				num_of_times_expanded_infrastructure = 1
+				has_building = temple
+			}
+		}
+		effect = {
+			6841 = {
+				remove_building = temple
+				add_building = cathedral
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+		}
+	}
+	Kuenan_2_3 = {
+		icon = mission_arca_ore
+		position = 3
+		required_missions = { 
+			Kuenan_2_2
+		}
+		provinces_to_highlight = {
+			province_id = 6841
+			NOT = {
+				has_building = mage_tower
+			}
+		}
+		trigger = { 
+			6841 = {
+				has_building = mage_tower
+			}
+		}
+		effect = {
+			6841 = {
+				add_institution_embracement = {
+					which = renaissance
+					value = 50
+				}
+			}
+			custom_tooltip = eagle_magic_const_tt
+			country_event = { id = flavor_ban.8009 }
+		}
+	}
+
+}
+
+Kuenan_missions_3_part_0 = { 
+	slot = 3
+	generic = no
+	ai = yes 
+	has_country_shield = yes
+	potential = {
+		tag = V12
+	}
+	
+	Kuenan_3_1 = {
+		icon = mission_build_up_to_force_limit
+		position = 1
+		required_missions = { 
+		}
+		provinces_to_highlight = {
+			area = ascension_plateau_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = { 
+			ascension_plateau_area = {
+				type = all
+				owned_by = ROOT
+			}
+			NOT = {
+				exists = V11
+			}
+		}
+		
+		effect = {
+			nomsyulhan_region = {
+				remove_core = V11
+			}
+			create_subject = {
+				subject_type = vassal
+				subject = V20
+			}
+			if = {
+				limit = {
+					overgrowth_area = {
+						type = all
+						owned_by = ROOT
+					}
+					iona_saothar_area = {
+						type = all
+						owned_by = ROOT
+					}
+					sanctuary_area = {
+						type = all
+						owned_by = ROOT
+					}
+				}
+				add_manpower = 5
+			}
+			else = {
+				if = {
+					limit = {
+						exists = V13
+					}
+					V13 = {
+						country_event = { id = flavor_ban.2 days = 10 }
+					}
+				}
+				if = {
+					limit = {
+						exists = V14
+					}
+					V14 = {
+						country_event = { id = flavor_ban.2 days = 10 }
+					}
+				}
+			}
+		}
+	}
+	Kuenan_3_3 = {
+		icon = mission_empire
+		position = 3
+		required_missions = { 
+			Kuenan_3_1
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = overgrowth_area
+				area = iona_saothar_area
+				area = sanctuary_area
+			}
+		}
+		trigger = { 
+			overgrowth_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			iona_saothar_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			sanctuary_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			custom_tooltip = Kuenan_annex_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						V13 = {
+							is_subject_of = ROOT
+						}
+					}
+					V13 = {
+						hidden_effect = {
+							export_to_variable = {
+								which = moveTargetDevelopment
+								value = total_development
+								who = PREV
+							}
+							while = {
+								limit = {
+									check_variable = {
+										which = moveTargetDevelopment
+										value = 1
+									}
+								}
+								V12 = {
+									add_dip_power = -4
+								}
+								subtract_variable = {
+									which = moveTargetDevelopment
+									value = 1
+								}
+							}
+						}
+						every_owned_province = {
+							add_core = V12
+							cede_province = V12
+						}
+					}
+				}
+				if = {
+					limit = {
+						V14 = {
+							is_subject_of = ROOT
+						}
+					}
+					V14 = {
+						hidden_effect = {
+							export_to_variable = {
+								which = moveTargetDevelopment
+								value = total_development
+								who = PREV
+							}
+							while = {
+								limit = {
+									check_variable = {
+										which = moveTargetDevelopment
+										value = 1
+									}
+								}
+								V12 = {
+									add_dip_power = -4
+								}
+								subtract_variable = {
+									which = moveTargetDevelopment
+									value = 1
+								}
+							}
+						}
+						every_owned_province = {
+							add_core = V12
+							cede_province = V12
+						}
+					}
+				}
+				if = {
+					limit = {
+						overgrowth_area = {
+							type = all
+							owned_by = ROOT
+						}
+						iona_saothar_area = {
+							type = all
+							owned_by = ROOT
+						}
+						sanctuary_area = {
+							type = all
+							owned_by = ROOT
+						}
+					}
+					overgrowth_area = {
+						add_local_autonomy = -50
+					}
+					iona_saothar_area = {
+						add_local_autonomy = -50
+					}
+					sanctuary_area = {
+						add_local_autonomy = -50
+					}
+				}
+			}
+			nomsyulhan_region = {
+				remove_core = V13
+				remove_core = V14
+			}
+		}
+	}
+	
+	Kuenan_3_4 = {
+		icon = friends_in_high_places
+		position = 4
+		required_missions = { 
+			Kuenan_1_3 Kuenan_2_3 Kuenan_3_3
+		}
+		provinces_to_highlight = {
+			region = nomsyulhan_region
+			NOT = {
+				OR = {
+					owned_by = ROOT
+					is_city = no
+				}
+			}
+		}
+		trigger = { 
+			nomsyulhan_region = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					is_city = no
+				}
+			}
+		}
+		
+		effect = {
+			custom_tooltip = Kuenan_core_tt
+			khaashalg_region = {
+				add_permanent_claim = ROOT
+			}
+			add_government_reform = eagle_hobgoblins_kuenan_reform   
+			hidden_effect = {
+				nomsyulhan_region = {
+					remove_core = V07
+					remove_core = V08
+					remove_core = V09
+					remove_core = V10
+					remove_core = V11
+					remove_core = V13
+					remove_core = V14
+					remove_core = V20
+				}
+			}
+			hidden_effect = {
+				set_country_flag = Nire_mission_part_1
+			}
+			swap_non_generic_missions = yes
+		}
+	}
+}
+
+Kuenan_missions_4_part_0 = { 
+	slot = 4
+	generic = no
+	ai = yes 
+	has_country_shield = yes
+	potential = {
+		tag = V12
+	}
+	
+	Kuenan_4_2 = {
+		icon = mission_early_game_buildings
+		position = 2
+		required_missions = { 
+			Kuenan_3_1 Kuenan_4_1
+		}
+		provinces_to_highlight = {
+			culture = soulseeker_ogre
+		}
+		trigger = { 
+			development_in_provinces = {
+				value = 100
+				culture = soulseeker_ogre
+			}
+		}
+		
+		effect = {
+			add_country_modifier = { name = Kuenan_dev_mod duration = -1 }
+		}
+	}
+	
+	Kuenan_4_4 = {
+		icon = mission_harpy_diplomats
+		position = 4
+		required_missions = { 
+			Kuenan_4_2 
+		}
+		provinces_to_highlight = {
+			owned_by = V20
+		}
+		trigger = { 
+			V20 = {
+				exists = no
+			}
+			6840 = {
+				development = 15
+				has_building = temple
+			}
+		}
+		
+		effect = {
+			set_estate_privilege = estate_mages_featherdust_tithe
+		}
+	}
+}
+
+
+Kuenan_missions_5_part_0 = { 
+	slot = 5
+	generic = no
+	ai = yes 
+	has_country_shield = yes
+	potential = {
+		tag = V12
+	}
+	
+	Kuenan_5_1 = {
+		icon = mission_sunset
+		position = 1
+		required_missions = { 
+			
+		}
+		trigger = { 
+			army_size = 40
+		}
+		effect = {
+			add_country_modifier = { name = Kuenan_sun_mod duration = 7300 }
+		}
+	}
+	
+	Kuenan_5_3 = {
+		icon = the_alpine_wall
+		position = 3
+		required_missions = { 
+			Kuenan_4_2 Kuenan_5_1
+		}
+		provinces_to_highlight = {
+			has_terrain = mountain
+			NOT = {
+				has_building = mage_tower
+				has_fort_building_trigger = yes
+			}
+		}
+		trigger = { 
+			calc_true_if = {
+				amount = 15
+				all_owned_province = {
+					has_terrain = mountain
+					has_building = mage_tower
+					has_fort_building_trigger = yes
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = { name = Kuenan_heavens_mod duration = 18250 }
+		}
+	}
+	
+	Kuenan_5_5 = {
+		icon = mission_swear_fealty_knight
+		position = 5
+		required_missions = { 
+			Kuenan_4_4 Kuenan_5_3
+		}
+		trigger = { 
+			NOT = {
+				great_power_rank = 2
+			}
+			religious_unity = 0.99
+		}
+		effect = {
+			add_government_reform = eagle_hobgoblin_republic_assimilation_reform
+		}
+	}
+}

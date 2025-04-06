@@ -1,0 +1,545 @@
+Banbe_missions_1_part_0 = { 
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = V13
+			AND = {
+				tag = V17
+				was_tag = V13
+			}
+		}
+	}
+	
+	Banbe_1_1 = {
+		icon = standardize_relazioni
+		position = 1
+		required_missions = { 
+		}
+		provinces_to_highlight = {
+			culture = soulseeker_ogre
+		}
+		trigger = { 
+			OR = {
+				calc_true_if = {
+					amount = 5
+					all_owned_province = {
+						culture = soulseeker_ogre
+					}
+				}
+				any_known_country = {
+					primary_culture = soulseeker_ogre
+					has_spy_network_from = {
+						who = ROOT
+						value = 30
+					}
+				}
+			}
+		}
+		effect = {
+			capital_scope = {
+				add_institution_embracement = {
+					which = feudalism
+					value = 100
+				}
+			}
+		}
+	}
+	Banbe_1_2 = {
+		icon = mission_approach_throne
+		position = 2
+		required_missions = { 
+			Banbe_1_1
+		}
+		provinces_to_highlight = {
+			culture = soulseeker_ogre
+		}
+		trigger = { 
+			development_in_provinces = {
+				value = 40
+				culture = soulseeker_ogre
+			}
+			accepted_culture = soulseeker_ogre
+		}
+		effect = {
+			large_increase_of_ogre_tolerance_effect = yes
+			define_advisor = {
+				type = court_mage
+				skill = 2
+				culture = soulseeker_ogre
+				discount = yes
+			}
+		}
+	}
+	Banbe_1_3 = {
+		icon = mission_dark_book
+		position = 3
+		required_missions = { 
+			Banbe_1_2
+		}
+		provinces_to_highlight = {
+			culture = soulseeker_ogre
+			num_of_times_improved_by_owner = 3
+		}
+		trigger = { 
+			calc_true_if = {
+				all_owned_province = {
+					culture = soulseeker_ogre
+					num_of_times_improved_by_owner = 3
+				}
+				amount = 5
+			}
+			any_owned_province = {
+				culture = soulseeker_ogre
+				has_building = mage_tower
+			}
+		}
+		effect = {
+			set_estate_privilege = estate_mages_soulseeker_development
+		}
+	}
+	Banbe_1_4 = {
+		icon = mission_che_botanical_exports
+		position = 4
+		required_missions = { 
+			Banbe_1_3 Banbe_2_3
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = overgrowth_area
+				area = iona_saothar_area
+				area = sanctuary_area
+			}
+			NOT = {
+				development = 7
+			}
+			devastation = 1
+		}
+		trigger = { 
+			overgrowth_area = {
+				type = all
+				NOT = {
+					devastation = 1
+				}
+				development = 7
+			}
+			iona_saothar_area = {
+				type = all
+				NOT = {
+					devastation = 1
+				}
+				development = 7
+			}
+			sanctuary_area = {
+				type = all
+				NOT = {
+					devastation = 1
+				}
+				development = 7
+			}
+		}
+		effect = {
+			overgrowth_area = {
+				add_province_modifier = { name = Ban_eagle_heart duration = 3650 }
+			}
+			iona_saothar_area = {
+				add_province_modifier = { name = Ban_eagle_heart duration = 3650 }
+			}
+			sanctuary_area = {
+				add_province_modifier = { name = Ban_eagle_heart duration = 3650 }
+			}
+			custom_tooltip = Nire_plant_grow_tt
+			hidden_effect = {
+				set_country_flag = better_plant_growth
+			}
+		}
+	}
+}
+
+Banbe_missions_2_part_0 = { 
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = V13
+			AND = {
+				tag = V17
+				was_tag = V13
+			}
+		}
+	}
+	Banbe_2_2 = {
+		icon = mission_magnificent_castle
+		position = 2
+		required_missions = { 
+			Banbe_1_1
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5387
+				province_id = 5392
+			}
+			NOT = {
+				has_tax_building_trigger = yes
+			}
+		}
+		trigger = { 
+			5387 = {
+				has_tax_building_trigger = yes
+			}
+			5392 = {
+				has_tax_building_trigger = yes
+			}
+		}
+		effect = {
+			5387 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+			5392 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+		}
+	}
+	Banbe_2_3 = {
+		icon = mission_early_game_buildings
+		position = 3
+		required_missions = { 
+			Banbe_2_2
+		}
+		provinces_to_highlight = {
+			province_id = 5392
+			NOT = {
+				has_building = mage_tower
+			}
+		}
+		trigger = { 
+			5392 = {
+				has_building = mage_tower
+			}
+		}
+		effect = {
+			5392 = {
+				add_institution_embracement = {
+					which = renaissance
+					value = 50
+				}
+			}
+			custom_tooltip = eagle_magic_const_tt
+			country_event = { id = flavor_ban.8009 }
+		}
+	}
+	
+}
+
+Banbe_missions_3_part_0 = { 
+	slot = 3
+	generic = no
+	ai = yes 
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = V13
+			AND = {
+				tag = V17
+				was_tag = V13
+			}
+		}
+	}
+	
+	Banbe_3_1 = {
+		icon = mission_destroyed_city
+		position = 1
+		required_missions = { 
+		}
+		trigger = { 
+			is_at_war = yes
+		}
+		
+		effect = {
+			add_country_modifier = { name = Nire_drum_war_mod duration = 1825 }
+		}
+	}
+	
+	Banbe_3_2 = {
+		icon = mission_conquer_romania
+		position = 2
+		required_missions = { 
+			Banbe_3_1
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = overgrowth_area
+				area = iona_saothar_area
+				area = sanctuary_area
+			}
+			NOT = { is_core = ROOT }
+		}
+		trigger = { 
+			overgrowth_area = {
+				type = all
+				is_core = ROOT
+			}
+			iona_saothar_area = {
+				type = all
+				is_core = ROOT
+			}
+			sanctuary_area = {
+				type = all
+				is_core = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = { name = Banbe_postwar_mod duration = 5475 }
+		}
+	}
+	Banbe_3_4 = {
+		icon = friends_in_high_places
+		position = 4
+		required_missions = { 
+			Banbe_2_3 Banbe_3_2
+		}
+		provinces_to_highlight = {
+			region = nomsyulhan_region
+			NOT = {
+				OR = {
+					owned_by = ROOT
+					is_city = no
+				}
+			}
+		}
+		trigger = { 
+			nomsyulhan_region = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					is_city = no
+				}
+			}
+		}
+		
+		effect = {
+			add_government_reform = eagle_hobgoblin_republic_reform 
+			khaashalg_region = {
+				add_permanent_claim = ROOT
+			}
+			hidden_effect = {
+				set_country_flag = Nire_mission_part_1
+			}
+			swap_non_generic_missions = yes
+		}
+	}
+}
+
+Banbe_missions_4_part_0 = { 
+	slot = 4
+	generic = no
+	ai = yes 
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = V13
+			AND = {
+				tag = V17
+				was_tag = V13
+			}
+		}
+	}
+	Banbe_4_2 = {
+		icon = mission_burning_castle
+		position = 2
+		required_missions = { Banbe_5_1
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5391
+				province_id = 5389
+			}
+			NOT = {
+				has_building = workshop
+				num_of_units_in_province = {
+					who = ROOT
+					type = cavalry
+					amount = 3
+				}
+			}
+		}
+		trigger = { 
+			5391 = {
+				has_building = workshop
+				num_of_units_in_province = {
+					who = ROOT
+					type = cavalry
+					amount = 3
+				}
+			}
+			5389 = {
+				has_building = workshop
+				num_of_units_in_province = {
+					who = ROOT
+					type = cavalry
+					amount = 3
+				}
+			}
+		}
+		effect = {
+			5391 = {
+				add_devastation = 10
+				add_province_modifier = { name = Nun_wood duration = -1 }
+			}
+			5389 = {
+				add_devastation = 10
+				add_province_modifier = { name = Nun_wood duration = -1 }
+			}
+		}
+	}
+	Banbe_4_4 = {
+		icon = mission_harpy_diplomats
+		position = 4
+		required_missions = { 
+			Banbe_4_2
+		}
+		provinces_to_highlight = {
+			province_id = 6840
+			NOT = {
+				development = 10
+			}
+		}
+		trigger = { 
+			6840 = {
+				development = 10
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			sand_gate_area = {
+				type = all
+				has_state_edict = edict_encourage_development
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			largest_increase_of_harpy_tolerance_effect = yes
+			anb_add_accepted_culture_or_dip_power = { culture = nuzenapu_harpy free = yes }
+			6845 = {
+				add_harpy_minority_size_effect = yes
+				add_harpy_minority_size_effect = yes
+			}
+			6844 = {
+				add_harpy_minority_size_effect = yes
+				add_harpy_minority_size_effect = yes
+			}
+			6828 = {
+				change_culture = ROOT
+			}
+		}
+	}
+}
+Banbe_missions_5_part_0 = { 
+	slot = 5
+	generic = no
+	ai = yes 
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = V13
+			AND = {
+				tag = V17
+				was_tag = V13
+			}
+		}
+	}
+	Banbe_5_1 = {
+		icon = mission_armor_choice
+		position = 1
+		required_missions = { 
+		}
+		provinces_to_highlight = {
+			region = nomsyulhan_region
+			OR = {
+				trade_goods = iron
+				trade_goods = copper
+			}
+		}
+		trigger = { 
+			any_owned_province = {
+				OR = {
+					trade_goods = iron
+					trade_goods = copper
+				}
+				num_of_times_improved_by_owner = 3
+			}
+			treasury = 50
+		}
+		effect = {
+			custom_tooltip = Ferrous_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						OR = {
+							trade_goods = iron
+							trade_goods = copper
+						}
+						num_of_times_improved_by_owner = 3
+					}
+					add_building_construction = {
+						building = workshop
+						speed = 0.5
+						cost = 0.5
+					}
+					add_base_production = 3
+				}
+			}
+		}
+	}
+	
+	Banbe_5_3 = {
+		icon = mission_che_principal_peole 
+		position = 3
+		required_missions = { Banbe_4_2
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5387
+				province_id = 6836
+				province_id = 6841
+				province_id = 6821
+			}
+			NOT = {
+				has_building = marketplace
+				province_has_center_of_trade_of_level = 2
+			}	
+		}
+		trigger = { 
+			calc_true_if = {
+				amount = 75
+				all_owned_province = {
+					religion = eagle_worship
+					culture_is_human = yes
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = { name = nire_man_mea duration = 1825 }
+		}
+	}
+	Banbe_5_5 = {
+		icon = mission_swear_fealty_knight
+		position = 5
+		required_missions = { 
+			Banbe_4_4 Banbe_5_3
+		}
+		trigger = { 
+			NOT = { has_country_modifier = monstrous_nation }
+			NOT = { has_country_modifier = monstrous_nation }
+		}
+		effect = {
+			add_government_reform = eagle_hobgoblin_republic_assimilation_reform
+		}
+	}
+}
