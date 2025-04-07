@@ -200,12 +200,12 @@ Nire_stab_war = {
 }
 
 Nire_gob_harpy_1 = {
-	yearly_army_professionalism = 0.015
+	yearly_army_professionalism = 0.0015
 	discipline = 0.025
 }
 
 Nire_gob_harpy_2 = {
-	morale_damage = -0.15
+	morale_damage = 0.15
 	manpower_recovery_speed = 0.05
 }
 
