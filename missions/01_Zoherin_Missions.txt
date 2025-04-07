@@ -373,7 +373,7 @@ Zoherin_missions_4_part_0 = {
 		}
 		
 		effect = {
-			country_event = { id = flavor_ban.707 }
+			country_event = { id = flavor_ban.708 }
 		}
 	}
 }
