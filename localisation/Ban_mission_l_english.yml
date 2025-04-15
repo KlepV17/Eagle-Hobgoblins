@@ -28,7 +28,7 @@
  hobgoblin_cheribrum_reform:0 "Assembly of Equals"
  
  Nire_ban_gov_spell_tt:0 "Gain 2 random spell school levels."
- Nire_mag_reg_tt:0 "Your ruler will gain 1 £adm£, £dip£, or £mil£ skill upon competing the study of a school of magic. The type of mana depends on the school researched."
+ Nire_mag_reg_tt:0 "Your ruler will §Ggain§! 1 £adm£, 1 £dip£, or 1 £mil£ skill upon competing the study of a school of magic. The type of mana depends on the school researched."
  
  Nire_test_dec_tt:0 "Relic Size: [Root.Relic_production_size.GetValue]\n\nRelic Store: [Root.Relic_production_stores.GetValue]"
  
@@ -254,6 +254,9 @@
  Nire_non_agro2_tt:0 "The owner of Bianfang either: Has a spy network of size §Y30§! from us, has §Y100§! opinion of us, or the province is owned by us."
  Nire_non_agro3_tt:0 "The owner of Dhenijansar either: Has a spy network of size §Y30§! from us, has §Y100§! opinion of us, or the province is owned by us."
  
+ Nire_kobold_tt:0 "§TEvent Insight§!\nKobolds will be able to attain their true destiny with the power of magic and will rightfully lend us their new founds power."
+ Nire_gnome_2_tt:0 "§TEvent Insight§!\nWe will finally cure all §YGnomes§! of their affliction and return them to their natural §YHalfling§! state."
+ Nire_ggk_tt:0 "[Root.GetName] gains a permanent claim on all provinces of §YGnomish§!, §YKobold§!, or §YGoblin§! culture that is not on the §YSerpentspine§! continent."
  
  Nire_enemy_of_enemy1_tt:0 "Following our war with The Command, only the northern most areas of Shamakhad will be subject to us, with the three Commands falling under our rule. The rest of The Command will be released into indipendent states; however the Command remnants will be much easier to integrate."
  Nire_enemy_of_enemy2_tt:0 "Following our war with The Command, all provinces in Shamakhad that fell to their invasion will be subject to us, with the three Commands falling under our rule. The rest of The Command will be released into indipendent states."
@@ -290,8 +293,10 @@
  Nire_dak_s:0 "The Skull of Dak Chaingrasper"
  Nire_path_mod:0 "Zanguy's Path"
  Nire_anti_slaves:0 "Economic Collapse"
- Nire_slavery_bad_tt:0 "Every country with their capital in the §YRahen Superregion§Y! that currently owns a province producing §YSlaves§! gets '§YEconomic Collapse§! for §Y100 years§!, giving the following effects:\nTrade Efficency §R-80.0%§!"
+ Nire_slavery_bad_tt:0 "Every country with their capital in the §YRahen Superregion§! that currently owns a province producing §YSlaves§! gets '§YEconomic Collapse§! for §Y100 years§!, giving the following effects:\nTrade Efficency: §R-80.0%§!"
  Nire_fair_war:0 "Teaching the Truth"
+ Nire_discover_all_tt:0 "[Root.GetName] will discover §YHalann§!"
+ Nire_gnome_tt:0 "Has accepted any §YGnomish§! culture"
  
  unlock_merc_sir_anti_mages_tt:0 "Unlock the mercenary company §YSir Chaos Branded§! to recruit."
  
@@ -307,6 +312,8 @@
  nire_ae_china:0 "The Savior of Haless"
  Nire_forbid_sea:0 "To Sail Forbidden Seas"
  Nire_command_mages_tt:0 "The Three Commands will be forced to accept mages"
+ 
+ Nire_20_mages_tt:0 "Every ruler has a 20% chance to become a §YPowerful Mage§!. §YPowerful Mages§! will now be much more common." 
  
  Nire_sir_war_won_tt:0 "Have won at least 5 wars with Sir as a march (Currently [Root.Nire_sir_war_won_var.GetValue])"
  Nire_wuhyun_tt:0 "Provinces owned by §YSir§! that are of the §YBanbe Anen§! faith will slowly (MTTH of 1 year) convert to §YWuhyun§! culture."
@@ -340,7 +347,7 @@
  Nire_NO_COLONIZATION_desc:0 "Modifier to prevent lake fed colonization during the Eagle Hobgoblin takeover of democracy"
  Nire_lore_tt:0 "Your ruler has recently cast the §YLoreseeker§! Divination spell"
  Nire_abandon_tt:0 "Every province that produces §YPrecursor Relics§! on the Cannor or Sarhal continents will now produce §YGrain§! instead."
- Nire_eschaton_tt:0 "\nHas banned mages because of their investment in artificery\nIs embergoed by §YNirenun Syul§!\nHas been insulted by §YNirenun Syul§!"
+ Nire_eschaton_tt:0 "\n -Has banned mages because of their investment in artificery\n -Is embergoed by §YNirenun Syul§!\n -Has been insulted by §YNirenun Syul§!"
  Nire_jiang_tt:0 "We have harmonized with the Accretive Path"
  Nire_jiang_mission_tt:0 "We will now be able to use and upgrade §YThe Jiangliubao§! Great Project\n\nEvery §YXia School Origin§! province will gain a Hobgoblin minority"
  Nire_gate_tt:0 "Every province in the §YXianjie§! region that is not owned by you or your non-tributary subjects gets '§YA Broken Flow§!' for §Y30 years§!, giving the following effects:\nLocal Defensiveness: §R-30.0%§!"
@@ -361,6 +368,9 @@
  Ban_ev_ab_tt:0 "They will be at least proficent in §YEvocation§! and §YAbjuration§!."
  flavor_ban.201.e:0 "An Overlord of Life and Death."
  Ban_tr_ne_tt:0 "They will be at least proficent in §YTransmutation§! and §YNecromancy§!."
+
+
+ Nire_gnome_wait:0 "Diagnosis"
 
  flavor_ban.707.t:0 "The The'as Aschur Petition"
  flavor_ban.707.d:0 "desc"
@@ -398,12 +408,14 @@
 
  #That-Which-Binds, Keeper of the Law of Force - Effelai
 
- 
+ Nire_Mission_Vis_title:0 "Mission Preview Unlock"
+ Nire_Mission_Vis_desc:0 "Decision to unlock visibility of missions imediately, rather than as the MT progresses."
  
  
  Kezen_war_tt:0 "Any §YEvocation War Magic§! spell is active"
  
  flavor_ban.500.t:0 "Ascension"
+ flavor_ban.500.d:0 "Ascension"
  
  flavor_ban.101.t:"An Age of Disorder"
  flavor_ban.101.d:0 "Brother againts brother, clan against clan. Cut off from the world, the Hobgoblins and Ogres of the Forbidden Valley fight amongst themselves in ignorance and chaos, doomed to be subjugated by foerign powers. \n\nIn the north, the tyranical §YGaximo Narkez§! seeks to crush the rebellion started by §YHikari Banbe§! 12 years prior. Their clash only held back by a nascent peace, words in the winds before their raging thunder. To the south, the rising mountain clan under the devout §YHonasyul§! look down upon Nomsyulhan with ambition, not sated by his recent conquests. The rump state of §YZugi Yusan§! is but a shadow of its former self after being froced from the shores of Naze Syul: leaderless, powerless, and doomed to fall unless a hero rises. In the eastern deserts, the great Ogre §YFederation of Steel and Soul§! stands lead by §YSudokli§!, but the lingering animosity between §YShevhedil§! and §YOlkhalsy§! could end the last hope of the Soulseeker Ogres. \n\nTo end this dark age, the valley must be unified."
@@ -469,6 +481,23 @@
  flavor_ban.506.t:0 "A Friendly Face"
  
  flavor_ban.707.t:0 "Wings to Spare"
+ 
+ flavor_ban.5005.t:0 "Eureka"
+ 
+ flavor_ban.5006.t:0 "The Miracle of Flight"
+ 
+ 
+ flavor_ban.1111.t:0 "Missions"
+ flavor_ban.1111.d:0 " "
+ flavor_ban.1111.a:0 "Missions Part 1 (Post Nomsyulhan missions)"
+ flavor_ban.1111.b:0 "Missions Part 2 (War on The Command)"
+ flavor_ban.1111.c:0 "Missions Part 3 (Conquest of Haless)"
+ flavor_ban.1111.e:0 "Missions Part 4 (The War on Artificery)"
+ flavor_ban.1111.f:0 "Missions Part Rending (Rending)"
+ flavor_ban.1111.g:0 "Missions Part ALL (Shows all missions, Paragon not included)"
+ flavor_ban.1111.h:0 "Disable this decision"
+ flavor_ban.1111.i:0 "Exit"
+ 
  
  
  fervor_magic:0 "Convoke the Denunransunin"
@@ -700,16 +729,17 @@
  Nire_4_26_title:0 "Terra Incognita"
  
  Nire_2_27_title:0 "Caldera of the Heavens"
- Nire_4_27_title:0 "The Dragons of Cannor"
+ Nire_4_27_title:0 "The Duty to Uplift"
  
  Nire_1_28_title:0 "Skyfall"
  Nire_2_28_title:0 "Trident"
- Nire_4_28_title:0 "Kobold Therapy"
- Nire_5_28_title:0 "A Return to Form"
+ Nire_4_28_title:0 "The Hermit"
+ Nire_5_28_title:0 "Dyscrasia"
  
  Nire_1_29_title:0 "Containment"
- Nire_2_29_title:0 "Bring Dak Back"
- Nire_4_29_title:0 "Wizards of the Coast"
+ Nire_2_29_title:0 "Covenant"
+ Nire_4_29_title:0 "Temperance"
+ Nire_5_29_title:0 "Physis"
  
  Nire_2_30_title:0 "The End of Chaos"
  Nire_4_30_title:0 "The Age of Magic"
@@ -761,7 +791,7 @@
  flavor_ban.205.t:0 "The Fulfilment of an Oath"
  
  Ban_tol_2:0 "The United Eagles"
- Ban_drac_1:0 Dragonnel Cavalry"
+ Ban_drac_1:0 "Dragonnel Cavalry"
  Ban_eagle_roosts:0 "Dragonnel Roost"
 
 

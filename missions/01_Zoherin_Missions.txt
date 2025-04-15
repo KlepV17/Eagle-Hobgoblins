@@ -4,7 +4,7 @@ Zoherin_missions_1_part_0 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
-		tag = V20
+		is_or_was_tag = { tag = V20 }
 	}
 	
 	Zoherin_1_1 = {
@@ -131,7 +131,7 @@ Zoherin_missions_2_part_0 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
-		tag = V20
+		is_or_was_tag = { tag = V20 }
 	}
 	
 	Zoherin_2_2 = {
@@ -210,7 +210,7 @@ Zoherin_missions_3_part_0 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
-		tag = V20
+		is_or_was_tag = { tag = V20 }
 	}
 	
 	Zoherin_3_1 = {
@@ -311,7 +311,7 @@ Zoherin_missions_4_part_0 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
-		tag = V20
+		is_or_was_tag = { tag = V20 }
 	}
 	
 	Zoherin_4_2 = {
@@ -373,7 +373,7 @@ Zoherin_missions_4_part_0 = {
 		}
 		
 		effect = {
-			country_event = { id = flavor_ban.708 }
+			country_event = { id = flavor_ban.707 }
 		}
 	}
 }
@@ -384,7 +384,7 @@ Zoherin_missions_5_part_0 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
-		tag = V20
+		is_or_was_tag = { tag = V20 }
 	}
 	
 	Zoherin_5_1 = {

@@ -72,26 +72,150 @@ country_event = {
 	
 	option = {
 		name = flavor_ban.01.a
-		create_subject = {
-			subject_type = hereditary_pronoia_subject_type 
-			subject = V20
+		complete_mission = Nire_2_8
+		complete_mission = Nire_4_8
+	}
+
+}
+
+country_event = {
+	id = flavor_ban.5005
+	title = flavor_ban.5005.t
+	desc = flavor_ban.5005.d
+	picture = EXCALIBUR_eventPicture
+	
+	is_triggered_only = yes
+	trigger = { always = yes }
+	
+	option = {
+		name = flavor_ban.5005.a
+		custom_tooltip = Nire_gnome_bye_tt
+		hidden_effect = {
+			every_province = {
+				if = {
+					limit = {
+						culture = cliff_gnome 
+					}
+					change_culture = bluefoot_halfling 
+				}
+				if = {
+					limit = {
+						culture = creek_gnome  
+					}
+					change_culture = redfoot_halfling 
+				}
+				if = {
+					limit = {
+						culture = glacier_gnome  
+					}
+					change_culture = towerfoot_halfling 
+				}
+				if = {
+					limit = {
+						culture = imperial_gnome  
+					}
+					change_culture = imperial_halfling 
+				}
+				if = {
+					limit = {
+						culture = delta_gnome  
+					}
+					change_culture = newfoot_halfling 
+				}
+				if = {
+					limit = {
+						culture = tinker_gnome  
+					}
+					change_culture = towerfoot_halfling 
+				}
+				if = {
+					limit = {
+						culture = frontier_gnome   
+					}
+					change_culture = towerfoot_halfling 
+				}
+			}
+			every_country = {
+				if = {
+					limit = {
+						culture = cliff_gnome 
+					}
+					change_primary_culture = bluefoot_halfling 
+					set_ruler_culture = bluefoot_halfling 
+				}
+				if = {
+					limit = {
+						culture = creek_gnome  
+					}
+					change_primary_culture = redfoot_halfling 
+					set_ruler_culture = redfoot_halfling 
+				}
+				if = {
+					limit = {
+						culture = glacier_gnome  
+					}
+					change_primary_culture = towerfoot_halfling 
+					set_ruler_culture = towerfoot_halfling 
+				}
+				if = {
+					limit = {
+						culture = imperial_gnome  
+					}
+					change_primary_culture = imperial_halfling 
+					set_ruler_culture = imperial_halfling 
+				}
+				if = {
+					limit = {
+						culture = delta_gnome  
+					}
+					change_primary_culture = newfoot_halfling 
+					set_ruler_culture = newfoot_halfling 
+				}
+				if = {
+					limit = {
+						culture = tinker_gnome  
+					}
+					change_primary_culture = towerfoot_halfling 
+					set_ruler_culture = towerfoot_halfling 
+				}
+				if = {
+					limit = {
+						culture = frontier_gnome   
+					}
+					change_primary_culture = towerfoot_halfling 
+					set_ruler_culture = towerfoot_halfling 
+				}
+			}
 		}
 	}
+
+}
+
+country_event = {
+	id = flavor_ban.5006
+	title = flavor_ban.5006.t
+	desc = flavor_ban.5006.d
+	picture = EXCALIBUR_eventPicture
+	
+	is_triggered_only = yes
+	trigger = { always = yes }
+	
 	option = {
-		name = flavor_ban.01.b
-		create_subject = {
-			subject_type = pronoia_subject_type  
-			subject = V20
+		name = flavor_ban.5006.a
+		4976 = {
+			add_harpy_minority_size_effect = yes
+			change_trade_goods = damestear
 		}
-	}
-	option = {
-		name = flavor_ban.01.c
-		create_subject = {
-			subject_type = pronoia_subject_type_elevated  
-			subject = V20
+		hidden_effect = {
+			4976 = {
+				set_province_flag = permanent_damestear 
+			}
 		}
+		large_increase_of_kobold_tolerance_effect = yes
+		add_country_modifier = { name = Nire_kobolds duration = -1 }
 	}
 }
+
 
 country_event = {
 	id = flavor_ban.1111
@@ -103,40 +227,55 @@ country_event = {
 	trigger = { always = yes }
 	
 	option = {
-		name = flavor_ban.01.a
+		name = flavor_ban.1111.a
 		set_country_flag = Nire_mission_part_1
 		swap_non_generic_missions = yes
 	}
 	option = {
-		name = flavor_ban.01.b
+		name = flavor_ban.1111.b
+		set_country_flag = Nire_mission_part_1
 		set_country_flag = Nire_mission_part_2
 		swap_non_generic_missions = yes
 	}
 	option = {
-		name = flavor_ban.01.c
+		name = flavor_ban.1111.c
+		set_country_flag = Nire_mission_part_1
+		set_country_flag = Nire_mission_part_2
 		set_country_flag = Nire_mission_part_3
 		swap_non_generic_missions = yes
 	}
 	option = {
-		name = flavor_ban.01.c
+		name = flavor_ban.1111.e
+		set_country_flag = Nire_mission_part_1
+		set_country_flag = Nire_mission_part_2
+		set_country_flag = Nire_mission_part_3
 		set_country_flag = Nire_mission_part_4
 		swap_non_generic_missions = yes
 	}
 	option = {
-		name = flavor_ban.01.c
+		name = flavor_ban.1111.f
 		set_country_flag = Nire_mission_part_rend
 		swap_non_generic_missions = yes
 	}
 	option = {
-		name = flavor_ban.01.c
+		name = flavor_ban.1111.g
 		set_country_flag = Nire_mission_part_1
 		set_country_flag = Nire_mission_part_2
 		set_country_flag = Nire_mission_part_3
 		set_country_flag = Nire_mission_part_4
 		set_country_flag = Nire_mission_part_rend
 		swap_non_generic_missions = yes
+	}
+	option = {
+		name = flavor_ban.1111.h
+		set_country_flag = Nire_no_peaking
+		add_prestige = 3
+	}
+	option = {
+		name = flavor_ban.1111.i
 	}
 }
+
 
 country_event = {
 	id = flavor_ban.8008
@@ -379,7 +518,7 @@ country_event = {
 	
 	option = {
 		name = flavor_nire.3.a
-		add_presige = 25
+		add_prestige = 25
 	}
 }
 
@@ -884,10 +1023,10 @@ country_event = {
 						has_ruler_flag = evocation_2
 					}
 				}
-				add_adm_power = 300
-				add_dip_power = 300
-				add_mil_power = 300
 			}
+			add_adm_power = 300
+			add_dip_power = 300
+			add_mil_power = 300
 		}
 		else = {
 			add_adm_power = 150
@@ -966,8 +1105,8 @@ country_event = {
 					area = munlanan_area
 					area = raghajandi_area
 				}
-				cede_province = R96
 			}
+			cede_province = R96
 		}
 		every_owned_province = {
 			limit = {
@@ -975,8 +1114,8 @@ country_event = {
 					area = nakara_area
 					area = marudhoj_area
 				}
-				cede_province = R95
 			}
+			cede_province = R95
 		}
 		every_owned_province = {
 			limit = {
@@ -984,8 +1123,9 @@ country_event = {
 					area = khamarutar_area
 					area = ghatasak_area
 				}
-				cede_province = R94
+				
 			}
+			cede_province = R94
 		}
 	}
 }
@@ -1267,8 +1407,8 @@ country_event = {
 		name = flavor_ban.205.a
 		trigger = {
 			has_country_flag = no_oath
-			add_legitimacy = -20
 		}
+		add_legitimacy = -20
 	}
 	option = {
 		name = flavor_ban.205.b
@@ -1532,8 +1672,8 @@ country_event = {
 			max_random_adm = 5
 			max_random_dip = 5
 			max_random_mil = 5
-			set_ruler_flag = initialized_magic_flags
 		}
+		set_ruler_flag = initialized_magic_flags
 		custom_tooltip = Ban_tr_ne_tt
 		hidden_effect = {
 			add_ruler_personality = mage_personality
@@ -1598,7 +1738,7 @@ country_event = {
 	}
 	option = {
 		name = flavor_ban.601.e
-		add_presige = -20
+		add_prestige = -20
 		add_years_of_income = 2
 	}
 }
@@ -1691,19 +1831,11 @@ country_event = {
 		add_dip_power = 200
 		add_mil_power = 200
 		large_decrease_of_harpy_tolerance_effect = yes
-		hidden_effect = {
-			remove_country_modifier = Nire_gob_harpy_2 
-			remove_country_modifier = Nire_gob_harpy_1
-		}
 	}
 	option = {
 		name = flavor_ban.707.b
 		6840 = {
 			add_permanent_province_modifier = { name = Kezen_feathers duration = -1 }
-		}
-		hidden_effect = {
-			remove_country_modifier = Nire_gob_harpy_2 
-			remove_country_modifier = Nire_gob_harpy_1
 		}
 	}
 }
@@ -2168,21 +2300,7 @@ country_event = {
 	}
 }
 
-province_event = {
-	id = flavor_ban.67
-	title = flavor_ban.67.t
-	desc = flavor_ban.67.d
-	picture = EXCALIBUR_eventPicture
-	fire_only_once = no
-	hidden = yes
 
-	option = {
-		name = flavor_ban.67.a
-		location = {
-			change_trade_goods = precursor_relics
-		}
-	}
-}
 
 country_event = {
 	id = flavor_ban.901

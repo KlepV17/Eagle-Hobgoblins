@@ -4,7 +4,7 @@ New_Nire_missions_1_V11 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
-		tag = V11
+		is_or_was_tag = { tag = V11 }
 		has_country_flag = Nire_mission_part_1
 	}
 	Nire_1_6_V11 = {
@@ -120,7 +120,7 @@ New_Nire_missions_1_V12 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
-		tag = V12
+		is_or_was_tag = { tag = V12 }
 		has_country_flag = Nire_mission_part_1
 	}
 	Nire_1_6_V12 = {
@@ -236,7 +236,7 @@ New_Nire_missions_1_V13 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
-		tag = V13
+		is_or_was_tag = { tag = V13 }
 		has_country_flag = Nire_mission_part_1
 	}
 	Nire_1_6_V13 = {
@@ -352,7 +352,7 @@ New_Nire_missions_1_V14 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
-		tag = V14
+		is_or_was_tag = { tag = V14 }
 		has_country_flag = Nire_mission_part_1
 	}
 	Nire_1_6_V14 = {
@@ -468,7 +468,7 @@ New_Nire_missions_1_V20 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
-		tag = V20
+		is_or_was_tag = { tag = V20 }
 		has_country_flag = Nire_mission_part_1
 	}
 	Nire_1_6_V20 = {
@@ -761,7 +761,7 @@ New_Nire_missions_1 = {
 			add_mil_power = -250
 			if = {
 				limit = {
-					is_or_was_tag = V11
+					is_or_was_tag = { tag = V11 }
 				}
 				custom_tooltip = Nire_horn_V11_tt
 				hidden_effect = {
@@ -1361,8 +1361,13 @@ New_Nire_missions_1.3 = {
 			Nire_1_25 Nire_2_25
 		}
 		trigger = { 
-			custom_trigger_tooltip = {
-				tooltip = Nire_insyaa_tt
+			OR = {
+				any_owned_province = {
+					continent = oceania 
+				}
+				custom_trigger_tooltip = {
+					tooltip = Nire_insyaa_tt
+				}
 			}
 		}
 		effect = {
@@ -1391,8 +1396,13 @@ New_Nire_missions_1.4 = {
 			Nire_1_26 Nire_2_27
 		}
 		trigger = { 
-			custom_trigger_tooltip = {
-				tooltip = Nire_insyaa_tt
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = Nire_insyaa_tt
+				}
+				3675 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
 			}
 		}
 		effect = {
@@ -1406,8 +1416,18 @@ New_Nire_missions_1.4 = {
 			Nire_1_28
 		}
 		trigger = { 
-			custom_trigger_tooltip = {
-				tooltip = Nire_insyaa_tt
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = Nire_insyaa_tt
+				}
+				AND = {
+					NOT = {
+						any_country = {
+							has_country_modifier = mechanim_administration 
+						}
+					}
+					has_country_modifier = racial_pop_mechanim_purge 
+				}
 			}
 		}
 		effect = {
@@ -1423,7 +1443,7 @@ New_Nire_missions_2_V11 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
-		tag = V11
+		is_or_was_tag = { tag = V11 }
 		has_country_flag = Nire_mission_part_1
 	}
 	Nire_2_5_V11 = {
@@ -1467,7 +1487,7 @@ New_Nire_missions_2_V12 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
-		tag = V12
+		is_or_was_tag = { tag = V12 }
 		has_country_flag = Nire_mission_part_1
 	}
 	Nire_2_5_V12 = {
@@ -1511,7 +1531,7 @@ New_Nire_missions_2_V13 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
-		tag = V13
+		is_or_was_tag = { tag = V13 }
 		has_country_flag = Nire_mission_part_1
 	}
 	Nire_2_5_V13 = {
@@ -1555,7 +1575,7 @@ New_Nire_missions_2_V14 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
-		tag = V14
+		is_or_was_tag = { tag = V14 }
 		has_country_flag = Nire_mission_part_1
 	}
 	Nire_2_5_V14 = {
@@ -1600,7 +1620,7 @@ New_Nire_missions_2_V20 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
-		tag = V20
+		is_or_was_tag = { tag = V20 }
 		has_country_flag = Nire_mission_part_1
 	}
 	Nire_2_5_V20 = {
@@ -1746,8 +1766,6 @@ New_Nire_missions_2 = {
 				create_flagship = {
 					name = "Kite Kezen"
 					type = heavy_ship
-					mass_load_cannons  = yes
-					command_aftercastle = yes
 					captains_log = yes
 				}
 			}
@@ -1778,7 +1796,7 @@ New_Nire_missions_2.05 = {
 			NOT = {
 				num_of_units_in_province = {
 					amount = 50
-					owner = ROOT
+					who = ROOT
 				}
 			}
 		}
@@ -1793,7 +1811,7 @@ New_Nire_missions_2.05 = {
 			6836 = {
 				num_of_units_in_province = {
 					amount = 50
-					owner = ROOT
+					who = ROOT
 				}
 			}
 		}
@@ -1801,7 +1819,7 @@ New_Nire_missions_2.05 = {
 			6836 = {
 				kill_units = {
 					amount = 50
-					owner = ROOT
+					who = ROOT
 				}
 			}
 			exile_ruler_as = { name = Nire_poral_exile }
@@ -1866,19 +1884,19 @@ New_Nire_missions_2.05 = {
 						limit = {
 							has_terrain = desert
 						}
-						add_province_modifier = { name = Nire_desert_equilibrium dration = -1 }
+						add_province_modifier = { name = Nire_desert_equilibrium duration = -1 }
 					}
 					if = {
 						limit = {
 							has_terrain = glacier 
 						}
-						add_province_modifier = { name = Nire_glacier_equilibrium dration = -1 }
+						add_province_modifier = { name = Nire_glacier_equilibrium duration = -1 }
 					}
 					if = {
 						limit = {
 							has_terrain = drylands
 						}
-						add_province_modifier = { name = Nire_drylands_equilibrium dration = -1 }
+						add_province_modifier = { name = Nire_drylands_equilibrium duration = -1 }
 					}
 					if = {
 						limit = {
@@ -1941,11 +1959,11 @@ New_Nire_missions_2.1 = {
 					NOT = {
 						OR = {
 							is_in_war = {
-								attack_leader = ROOT
+								attacker_leader = ROOT
 								defender_leader = R62
 							}
 							is_in_war = {
-								attack_leader = R62
+								attacker_leader = R62
 								defender_leader = ROOT
 							}
 							NOT = {
@@ -2271,10 +2289,10 @@ New_Nire_missions_2.2 = {
 						has_elven_minority_trigger = yes
 						culture_group = elven
 					}
-				}
-				num_of_units_in_province = {
-					who = ROOT
-					amount = 60
+					num_of_units_in_province = {
+						who = ROOT
+						amount = 60
+					}
 				}
 				change_culture = sunset_elf
 			}
@@ -2457,7 +2475,21 @@ New_Nire_missions_2.3 = {
 		}
 		trigger = {
 			all_country = {
-				has_estate = estate_mages 
+				OR = {
+					AND = {
+						NOT = {
+							has_estate = estate_burghers 
+							has_estate = estate_church 
+							has_estate = estate_nobles
+						}
+					}
+					has_estate = estate_mages 
+				}
+			}
+			NOT = {
+				any_province = {
+					culture_group = mechanim
+				}
 			}
 		}
 		effect = {
@@ -2472,7 +2504,7 @@ New_Nire_missions_3_V11 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
-		tag = V11
+		is_or_was_tag = { tag = V11 }
 		has_country_flag = Nire_mission_part_1
 	}
 	Nire_3_5_V11 = {
@@ -2541,7 +2573,7 @@ New_Nire_missions_3_V12 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
-		tag = V12
+		is_or_was_tag = { tag = V12 }
 		has_country_flag = Nire_mission_part_1
 	}
 	Nire_3_5_V12 = {
@@ -2610,7 +2642,7 @@ New_Nire_missions_3_V13 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
-		tag = V13
+		is_or_was_tag = { tag = V13 }
 		has_country_flag = Nire_mission_part_1
 	}
 	Nire_3_5_V13 = {
@@ -2679,7 +2711,7 @@ New_Nire_missions_3_V14 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
-		tag = V14
+		is_or_was_tag = { tag = V14 }
 		has_country_flag = Nire_mission_part_1
 	}
 	Nire_3_5_V14 = {
@@ -2748,7 +2780,7 @@ New_Nire_missions_3_V20 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
-		tag = V20
+		is_or_was_tag = { tag = V20 }
 		has_country_flag = Nire_mission_part_1
 	}
 	Nire_3_5_V20 = {
@@ -2987,6 +3019,9 @@ New_Nire_missions_3 = {
 				set_country_flag = Nire_mission_part_2
 			}
 			swap_non_generic_missions = yes
+			hidden_effect = {
+				complete_mission = Nire_3_9
+			}
 		}
 	}
 }
@@ -3017,11 +3052,11 @@ New_Nire_missions_3.1 = {
 					NOT = {
 						OR = {
 							is_in_war = {
-								attack_leader = ROOT
+								attacker_leader = ROOT
 								defender_leader = R62
 							}
 							is_in_war = {
-								attack_leader = R62
+								attacker_leader = R62
 								defender_leader = ROOT
 							}
 							NOT = {
@@ -3128,10 +3163,10 @@ New_Nire_missions_3.1 = {
 							has_ruler_flag = evocation_2
 						}
 					}
-					add_adm_power = -300
-					add_dip_power = -300
-					add_mil_power = -300
 				}
+				add_adm_power = -300
+				add_dip_power = -300
+				add_mil_power = -300
 			}
 			else = {
 				add_adm_power = -150
@@ -3222,7 +3257,7 @@ New_Nire_missions_3.2 = {
 		}
 		trigger = {
 			overextension_percentage = 0
-			at_peace = yes
+			is_at_war = no
 			NOT = {
 				exists = R62
 			}
@@ -3342,7 +3377,6 @@ New_Nire_missions_3.2 = {
 				religion = eagle_worship
 			}
 			4527 = {
-				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 				has_building = mage_tower
 				religion = eagle_worship
@@ -3421,7 +3455,7 @@ New_Nire_missions_3.2 = {
 			4285 = {
 				add_province_modifier = { name = Nire_project_mod duration = -1 }
 			}
-			add_country_modifier = { name - Nire_dak_s duration = -1 }
+			add_country_modifier = { name = Nire_dak_s duration = -1 }
 		}
 	}
 	Nire_3_22 = {
@@ -3469,7 +3503,7 @@ New_Nire_missions_3.2 = {
 				4255 = {
 					add_province_modifier = { name = Nire_movement_mod duration = -1 }
 				}
-				ovdal_az_an = {
+				ovdal_az_an_area = {
 					add_province_modifier = { name = Nire_movement_mod duration = -1 }
 				}
 				drunken_pass_area = {
@@ -3541,14 +3575,7 @@ New_Nire_missions_3.2 = {
 		}
 		provinces_to_highlight = {
 			owner = {
-				OR = {
-					has_estate_privilege = estate_artificers_organization_international_gommo
-					has_estate_privilege = estate_artificers_organization_state 
-					has_estate_privilege = estate_artificers_organization_independent_unions 
-					has_estate_privilege = estate_artificers_organization_ravelian_control
-					has_estate_privilege = estate_artificers_organization_sun_elf
-					has_estate_privilege = estate_artificers_organization_covenant
-				}
+				has_estate = estate_artificers 
 				NOT = {
 					has_estate = estate_mages
 					trade_embargo_by = ROOT
@@ -3617,8 +3644,40 @@ New_Nire_missions_3.3 = {
 		provinces_to_highlight = {
 		}
 		trigger = {
+			any_known_country = {
+				OR = {
+					culture_group = gnomish
+					culture_group = kobold
+					culture_group = goblin
+				}
+				has_spy_network_from = {
+					who = ROOT
+					value = 50
+				}
+			}
+			OR = {
+				has_country_modifier = magic_estate_scrying_neighbours_1
+				has_country_modifier = magic_estate_scrying_neighbours_2
+				has_country_modifier = magic_estate_scrying_neighbours_3
+			}
 		}
 		effect = {
+			custom_tooltip = Nire_ggk_tt
+			hidden_effect = {
+				every_province = {
+					limit = {
+						OR = {
+							culture_group = gnomish
+							culture_group = kobold
+							culture_group = goblin
+						}
+						NOT = {
+							continent = serpentspine 
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
 		}
 	}
 }
@@ -3693,6 +3752,7 @@ New_Nire_missions_3.4 = {
 			add_mil_power = -900
 			custom_tooltip = Eagle_fin2_tt
 			set_global_flag = Nire_all_mages_flag
+			clr_country_flag = Nire_20_mages
 			hidden_effect = {
 				every_known_country = {
 					if = {
@@ -3930,7 +3990,7 @@ New_Nire_missions_4.05 = {
 		effect = {
 			if = {
 				limit = {
-					is_or_was_tag = V11
+					is_or_was_tag = { tag = V11 }
 				}
 				custom_tooltip = Nire_fat_V11_tt
 				hidden_effect = {
@@ -4270,7 +4330,7 @@ New_Nire_missions_4.2 = {
 			NOT = {
 				num_of_units_in_province = {
 					amount = 20
-					owner = ROOT
+					who = ROOT
 				}
 			}
 		}
@@ -4281,7 +4341,7 @@ New_Nire_missions_4.2 = {
 					province_group = temple_province_group 
 					num_of_units_in_province = {
 						amount = 20
-						owner = ROOT
+						who = ROOT
 					}
 				}
 			}
@@ -4471,10 +4531,41 @@ New_Nire_missions_4.4 = {
 			
 		}
 		trigger = {
+			any_owned_province = {
+				continent = asia
+				has_building = mage_tower
+			}
+			any_owned_province = {
+				continent = africa
+				has_building = mage_tower
+			}
+			any_owned_province = {
+				continent = europe
+				has_building = mage_tower
+			}
+			any_owned_province = {
+				continent = north_america
+				has_building = mage_tower
+			}
+			any_owned_province = {
+				continent = south_america
+				has_building = mage_tower
+			}
+			adm_power = 150
+			dip_power = 150
+			mil_power = 150
 			
 		}
 		effect = {
-			
+			add_adm_power = -150
+			add_dip_power = -150
+			add_mil_power = -150
+			custom_tooltip = Nire_discover_all_tt
+			hidden_effect = {
+				every_province = {
+					discover_country = ROOT
+				}
+			}
 		}
 	}
 	Nire_4_27 = {
@@ -4484,6 +4575,12 @@ New_Nire_missions_4.4 = {
 			Nire_3_26 Nire_4_26
 		}
 		trigger = { 
+			any_owned_province = {
+				culture_group = kobold
+			}
+			any_owned_province = {
+				culture_group = gnomish
+			}
 		}
 		effect = {
 		}
@@ -4574,28 +4671,53 @@ New_Nire_missions_4.4 = {
 		icon = mission_science
 		position = 29
 		required_missions = { 
-			Nire_4_28 Nire_5_28
+			Nire_4_28 
 		}
 		trigger = { 
+			is_conjuration_3 = yes
+			trade_goods_produced_amount = {
+				trade_goods = damestear
+				amount = 20
+			}
+			4976 = {
+				development = 30
+				has_building = mage_tower
+			}
 		}
 		effect = {
+			country_event = { id = flavor_ban.5006 }
+			custom_tooltip = Nire_kobold_tt
 		}
 	}
 	Nire_4_30 = {
 		icon = mission_solaris
 		position = 30
 		required_missions = { 
-			Nire_4_29
+			Nire_4_29 Nire_5_29
 		}
 		trigger = { 
 			calc_true_if = {
-				all_owned_province ={
-					amount = 100
+				amount = 300
+				all_province = {
 					has_building = mage_tower
 				}
 			}
 		}
 		effect = {
+			custom_tooltip = Nire_20_mages_tt
+			hidden_effect = {
+				set_global_flag = Nire_20_mages
+				every_known_country = {
+					random_list = {
+						80 = {
+							
+						}
+						20 = {
+							add_ruler_personality = mage_personality 
+						}
+					}
+				}
+			}
 		}
 	}
 }
@@ -5728,61 +5850,58 @@ New_Nire_missions_5.6 = {
 		has_country_flag = Nire_mission_part_4
 	}
 	Nire_5_28 = {
-		icon = mission_rice_farming
+		icon = mission_a_great_mandala
 		position = 28
 		required_missions = { 
 			Nire_4_27
 		}
 		trigger = { 
-		}
-		effect = {
-			custom_tooltip = Nire_gnome_bye_tt
-			hidden_effect = {
-				every_province = {
-					if = {
-						limit = {
-							culture = cliff_gnome 
-						}
-						change_culture = bluefoot_halfling 
-					}
-					if = {
-						limit = {
-							culture = creek_gnome  
-						}
-						change_culture = redfoot_halfling 
-					}
-					if = {
-						limit = {
-							culture = glacier_gnome  
-						}
-						change_culture = towerfoot_halfling 
-					}
-					if = {
-						limit = {
-							culture = imperial_gnome  
-						}
-						change_culture = imperial_halfling 
-					}
-					if = {
-						limit = {
-							culture = delta_gnome  
-						}
-						change_culture = newfoot_halfling 
-					}
-					if = {
-						limit = {
-							culture = tinker_gnome  
-						}
-						change_culture = towerfoot_halfling 
-					}
-					if = {
-						limit = {
-							culture = frontier_gnome   
-						}
-						change_culture = towerfoot_halfling 
-					}
+			146 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				has_building = mage_tower
+				has_building = university
+			}
+			custom_trigger_tooltip = {
+				tooltip = Nire_gnome_tt
+				OR = {
+					accepted_culture = cliff_gnome
+					accepted_culture = creek_gnome
+					accepted_culture = glacier_gnome
+					accepted_culture = imperial_gnome
+					accepted_culture = delta_gnome
+					accepted_culture = tinker_gnome
+					accepted_culture = frontier_gnome
 				}
 			}
+		}
+		effect = {
+			add_country_modifier = { name = Nire_gnome_wait duration = 3650 }
+			large_increase_of_gnomish_tolerance_effect = yes
+		}
+	}
+	Nire_5_29 = {
+		icon = mission_rice_farming
+		position = 29
+		required_missions = { 
+			Nire_5_28
+		}
+		trigger = { 
+			NOT = {
+				has_country_modifier = Nire_gnome_wait
+			}
+			is_transmutation_3 = yes
+			calc_true_if = {
+				amount = 15
+				all_owned_province = {
+					culture_group = gnomish
+					is_prosperous = yes
+					has_building = university
+				}
+			}
+		}
+		effect = {
+			country_event = { id = flavor_ban.5005 }
+			custom_tooltip = Nire_gnome_2_tt
 		}
 	}
 }

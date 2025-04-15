@@ -53,6 +53,24 @@ on_new_monarch = {
 		}
 		clear_witch_king_points = yes
 	}
+	
+	if = {
+		limit = {
+			has_global_flag = Nire_20_mages
+			NOT = {
+				has_global_flag = Nire_all_mages_flag
+			}
+		}
+		random_list = {
+			80 = {
+				
+			}
+			20 = {
+				add_ruler_personality = mage_personality 
+			}
+		}
+	}
+	
 	if = {
 		limit = {
 			has_global_flag = Nire_all_mages_flag
