@@ -4,13 +4,7 @@ Banbe_missions_1_part_0 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
-		OR = {
-			tag = V13
-			AND = {
-				tag = V17
-				was_tag = V13
-			}
-		}
+		is_or_was_tag = { tag = V13 }
 	}
 	
 	Banbe_1_1 = {
@@ -164,13 +158,7 @@ Banbe_missions_2_part_0 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
-		OR = {
-			tag = V13
-			AND = {
-				tag = V17
-				was_tag = V13
-			}
-		}
+		is_or_was_tag = { tag = V13 }
 	}
 	Banbe_2_2 = {
 		icon = mission_magnificent_castle
@@ -245,13 +233,7 @@ Banbe_missions_3_part_0 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
-		OR = {
-			tag = V13
-			AND = {
-				tag = V17
-				was_tag = V13
-			}
-		}
+		is_or_was_tag = { tag = V13 }
 	}
 	
 	Banbe_3_1 = {
@@ -344,13 +326,7 @@ Banbe_missions_4_part_0 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
-		OR = {
-			tag = V13
-			AND = {
-				tag = V17
-				was_tag = V13
-			}
-		}
+		is_or_was_tag = { tag = V13 }
 	}
 	Banbe_4_2 = {
 		icon = mission_burning_castle
@@ -446,13 +422,7 @@ Banbe_missions_5_part_0 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
-		OR = {
-			tag = V13
-			AND = {
-				tag = V17
-				was_tag = V13
-			}
-		}
+		is_or_was_tag = { tag = V13 }
 	}
 	Banbe_5_1 = {
 		icon = mission_armor_choice

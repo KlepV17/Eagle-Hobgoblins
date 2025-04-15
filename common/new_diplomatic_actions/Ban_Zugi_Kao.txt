@@ -259,7 +259,7 @@ make_pronoia_inheritable_elevate = {
 				tooltip = Ban_has_inherit_tt
 				NOT = {
 					any_subject_country = {
-						as_global_flag = Kuenan_inherited_$COUNTRY$
+						has_global_flag = Kuenan_inherited_$COUNTRY$
 					}
 				}
 			}

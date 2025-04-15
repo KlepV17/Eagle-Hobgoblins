@@ -4,7 +4,7 @@ Kezen_missions_1_part_0 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
-		tag = V14
+		is_or_was_tag = { tag = V14 }
 	}
 	
 	Kezen_1_1 = {
@@ -115,7 +115,7 @@ Kezen_missions_2_part_0 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
-		tag = V14
+		is_or_was_tag = { tag = V14 }
 	}
 	
 	Kezen_2_2 = {
@@ -195,7 +195,7 @@ Kezen_missions_3_part_0 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
-		tag = V14
+		is_or_was_tag = { tag = V14 }
 	}
 	
 	Kezen_3_1 = {
@@ -310,7 +310,7 @@ Kezen_missions_4_part_0 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
-		tag = V14
+		is_or_was_tag = { tag = V14 }
 	}
 	
 	Kezen_4_1 = {
@@ -426,7 +426,7 @@ Kezen_missions_5_part_0 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
-		tag = V14
+		is_or_was_tag = { tag = V14 }
 	}
 	
 	Kezen_5_2 = {
