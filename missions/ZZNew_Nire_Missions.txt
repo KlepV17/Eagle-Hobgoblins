@@ -1396,6 +1396,7 @@ New_Nire_missions_1.4 = {
 			Nire_1_26 Nire_2_27
 		}
 		trigger = { 
+			is_abjuration_3 = yes
 			OR = {
 				custom_trigger_tooltip = {
 					tooltip = Nire_insyaa_tt
@@ -1416,6 +1417,7 @@ New_Nire_missions_1.4 = {
 			Nire_1_28
 		}
 		trigger = { 
+			is_evocation_3 = yes
 			OR = {
 				custom_trigger_tooltip = {
 					tooltip = Nire_insyaa_tt
@@ -2399,7 +2401,7 @@ New_Nire_missions_2.3 = {
 			
 		}
 		trigger = {
-			
+			is_illusion_3 = yes
 		}
 		effect = {
 			
@@ -2415,7 +2417,7 @@ New_Nire_missions_2.3 = {
 
 		}
 		trigger = {
-
+			is_necromancy_3 = yes
 		}
 		effect = {
 			custom_tooltip = Nire_dak_bak_tt
@@ -3190,21 +3192,24 @@ New_Nire_missions_3.1 = {
 		}
 		
 		trigger = {
-			all_province = {
-				OR = {
-					AND = {
-						OR = {
-							culture = wolf_command
-							culture = lion_command
-							culture = boar_command
+			custom_trigger_tooltip = {
+				tooltip = Nire_clearer_tt
+				all_province = {
+					OR = {
+						AND = {
+							OR = {
+								culture = wolf_command
+								culture = lion_command
+								culture = boar_command
+							}
+							country_or_non_sovereign_subject_holds = ROOT
 						}
-						country_or_non_sovereign_subject_holds = ROOT
-					}
-					NOT = {
-						OR = {
-							culture = wolf_command
-							culture = lion_command
-							culture = boar_command
+						NOT = {
+							OR = {
+								culture = wolf_command
+								culture = lion_command
+								culture = boar_command
+							}
 						}
 					}
 				}
@@ -4605,6 +4610,7 @@ New_Nire_missions_4.4 = {
 			}
 		}
 		trigger = { 
+			is_enchantment_3 = yes
 			custom_trigger_tooltip = {
 				tooltip = Nire_kobold_therapy_t0_tt
 				always = yes
@@ -5856,6 +5862,7 @@ New_Nire_missions_5.6 = {
 			Nire_4_27
 		}
 		trigger = { 
+			is_divination_3 = yes
 			146 = {
 				country_or_non_sovereign_subject_holds = ROOT
 				has_building = mage_tower
