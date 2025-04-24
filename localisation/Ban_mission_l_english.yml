@@ -355,6 +355,8 @@
  Nire_harmony_tt:0 "All §YXia School Origin§! provinces are §YBanbe Anen§! and have §Y0§! unrest"
  Nire_stab_war:0 "Flight and Fight"
  Nire_harpy_dev_tt:0 "Every province in the §YNomsyulhan§! region with a §YHarpy§! minority will gain §G+1§! base tax, production, and manpower. Provinces of §YHarpy§! culture will gain §G+3§! instead"
+ Nire_clearer_tt:0 "All provinces of §YBoar§!, §YLion§!, and §YWolf Hobgoblin§! culture are owned by youor your non-tributary subject."
+ 
  
  flavor_ban.2.t:0 "Subjugation of the Valley"
  
@@ -877,3 +879,10 @@
  That-Which-Binds, Keeper of the Law of Force - Effelai
     Evocation - Greater Fireball, Earthquake
     Necromancy - Life Drain
+
+
+ Indelbury MT
+ - Form Small country
+ - Own any province in Sarhal with Goblin culture
+ - Have Lizard Admin
+ - 
