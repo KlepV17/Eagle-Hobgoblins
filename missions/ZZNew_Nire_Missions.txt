@@ -837,7 +837,7 @@ New_Nire_missions_1.05 = {
 			province_id = 4323
 		}
 		trigger = {
-			has_ruler_modifier = magic_realm_divination_scrying_affairs
+			has_country_modifier = magic_realm_divination_scrying_affairs
 			4323 = {
 				owned_by = ROOT
 			}
@@ -2093,7 +2093,7 @@ New_Nire_missions_2.2 = {
 		}
 		trigger = { 
 			4633 = {
-				has_supply_depot = yes
+				has_supply_depot = ROOT
 			}
 			R78 = {
 				has_subsidize_armies = yes
