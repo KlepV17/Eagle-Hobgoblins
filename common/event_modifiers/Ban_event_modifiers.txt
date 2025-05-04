@@ -273,7 +273,7 @@ Nire_project_mod = {
 	local_great_project_upgrade_time = -0.5
 }
 Nire_path_mod = {
-	movement_speed = -3
+	local_movement_speed = -3
 }
 
 Nire_movement_mod = {
