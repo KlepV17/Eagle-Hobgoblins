@@ -15,6 +15,40 @@ country_decisions = {
 			factor = 400
 		}
 	}
+	
+	
+	Nire_renovate_mage_tower = {
+		major = yes
+		potential = {
+			any_owned_province = {
+				has_building = mage_tower
+				NOT = {
+					has_province_modifier = Nire_mage_tower_mod
+				}
+			}
+			has_country_flag = Nire_OP_mage_tower
+		}
+		allow = {
+			treasury = 200
+		}
+		
+		effect = {
+			random_owned_province = {
+				limit = {
+					has_building = mage_tower
+					NOT = {
+						has_province_modifier = Nire_mage_tower_mod
+					}
+				}
+				add_province_modifier = { name = Nire_mage_tower_mod duration = -1 }
+			}
+		}	
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	
 
 	Nire_do_temple = {
 		major = yes

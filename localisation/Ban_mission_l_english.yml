@@ -142,16 +142,16 @@
  
  
  flavor_ban.8008.t:0 "The Denunransunin Convocation of $YEAR$"
- flavor_ban.8008.d:0 "Your ruler sits on a rock, thinks about life, and reieves a blessing from one of the High Gods of Magic"
- flavor_ban.8008.a:0 "YOU get a War Wizard, and YOU get a War Wizard...""
- flavor_ban.8008.b:0 "Knowledge is Power"
- flavor_ban.8008.c:0 "Enhance our administrative focus"
- flavor_ban.8008.e:0 "Enhance our diplomatic focus"
- flavor_ban.8008.f:0 "Enhance our militaristic focus"
+ flavor_ban.8008.d:0 "Your ruler sits on a rock, thinks about life, and reieves a blessing from one of the High Gods of Magic."
+ flavor_ban.8008.a:0 "Focus: Warfare"
+ flavor_ban.8008.b:0 "Focus: Knowledge"
+ flavor_ban.8008.c:0 "Shift Focus: Order"
+ flavor_ban.8008.e:0 "Shift Focus: Balance"
+ flavor_ban.8008.f:0 "Shift Focus: Chaos"
  flavor_ban.8008.i:0 "Exit"
  
  flavor_ban.8009.t:0 "The Denunransunin Convocation of $YEAR$"
- flavor_ban.8009.d:0 "You now have access to the 'Convoke the Denunransunin' fervor action in the Religion tab. Activating it will cause an event to pop after a few in game days. The 'Can NOT build buildings' modifier is only for activation purposes as is not intended to impact gameplay. The fervor effect can be disabled once the Convocation event fires."
+ flavor_ban.8009.d:0 "You now have access to Chaos, Order, and Balance fervor actions. The set of actions available is determined by the options below, and can be swapped by the 'Convoke the Denunransunin' fervor action in the Religion tab. Activating it will cause an event to pop after a few in game days. The 'Can NOT build buildings' modifier is only for activation purposes as is not intended to impact gameplay. The fervor effect can be disabled once the Convocation event fires."
  flavor_ban.8009.a:0 "I understand, on with the show."
  
  eagle_hobgoblins_zugi_base:0 "Followers of the Black Crane"
@@ -218,13 +218,23 @@
  Nire_red_reg_tt:0 "The §YReduced Research Regulations§! estate privlidge will no longer reduce your diplomatic reputation."
  Forbidden_estate_mod_tt:0 "Every owned §YEagle Hobgoblin§! or §YSoulseeker Ogre§! province in the Forbidden Lands Subcontinent which is not on Yarikhoi gains the following modifier:"
  Not_mages_tt:0 "Provinces with a §YMage Tower§! will not revieve the monthly devastation."
- Nire_mag_eng_tt:0 "Every province in the §YNomsyulhan§! region gets '§YA Rising Chorus§!' for §Y50 years§!, giving the following effects:\nLocal Development Cost: §G-15.0%§!"
+ Nire_mag_eng_tt:0 "Every province with a §YMage Tower§! gets '§YNexus of Order§!' until the end of the game, giving the following effects:\nMonthly Fervor: §G+0.01§!\nWar Exhaustion: §G-0.002§!\nLocal Defensiveness: §G+15%§!\n\nThis modifier will be added to all mage towers §Yyou§! construct."
  Nire_integrate_cb_tt:0 "The §YIntegrate Command§! peace option will now be available whenever we are at war with §YThe Command§!, allowing us to dismantle them in a single war. More territory can be potentially be gained by completing the mission §YThe Enemy of my Enemy§! before the war."
  Nire_90_improve_relations_tt:0 "The Command has at least §Y90§! opinion of us from §Yimprove relations§!"
  Nire_kobold_therapy_e_tt:0 "Every province in the §YDragon Coast§! region that has §YKobold§! culture gets:\nGain §G1§! base Tax.\nLose §R2§! Base Production.\nGain §G1§! Base Manpower.\nThe religion changes to §YBanbe Anen§!."
  Nire_fat_tt:0 "Every owned province with §YFathide Ogre§! culture will recieve the following effects:\nThe culture changes to §YSoulseeker Ogre§!\nThe religion changes to §YBanbe Anen§! \nLose §R1§! Base Tax \nLose §R1§! Base Production \nLose §R1§! Base Manpower \nGain §R100§! devastation, intentionally"
  Nire_fat_V11_tt:0 "Every owned province with §YFathide Ogre§! culture will recieve the following effects:\nThe culture changes to §YEagle Hobgobli2§!\nThe religion changes to §YBanbe Anen§! \nLose §R2§! Base Tax \nLose §R2§! Base Production \nLose §R2§! Base Manpower \nGain §R100§! devastation, intentionally"
  Nire_harpy_hight_tt:0 "Is recieving knowledge sharing for the §YFeudalism§! institution"
+ 
+ Nire_mage_tower_mod:0 "Nexus of Order"
+ Nire_renovate_mage_tower:0 "Renovate Mage Tower"
+ 
+ 
+ 
+ Nire_goblin_mode_tt:0 "We shall offer the goblins of the §YSerpentspine§! a better life in §YAelantir§!.\n\nEvery §YGoblin§! administered country with their capital in the §YSerpentspine§! continent will lose §R-5/-5/-5§! from every owned province. If they have greater than §G50§! opinion of us, their provinces will be decolonized instead.\n\n [Root.GetName] gets '§YGoblins of the Serpentspine§!' until the end of the game, giving the following effects:\nGlobal Manpower: §G+6,000,000§!\nDiscipline: §R-25%§!\nAdministrative Efficency: §R-50%§!\n\nGain §G5,000,000§! Manpower."
+ Nire_goin_goblin_mode:0 "Goblins of the Serpentspine"
+ 
+ Nire_Xfix_tt:0 "[Root.Monarch.GetName] is §OLegendary§! in Illusion\n\nEvery province in the §YDragon Coast§! region that has §YKobold§! culture must:"
  
  Nire_imperial_scum_tt:0 "Unlock the §YImperialism§! Casus Belli.\n"
  
@@ -254,8 +264,8 @@
  Nire_non_agro2_tt:0 "The owner of Bianfang either: Has a spy network of size §Y30§! from us, has §Y100§! opinion of us, or the province is owned by us."
  Nire_non_agro3_tt:0 "The owner of Dhenijansar either: Has a spy network of size §Y30§! from us, has §Y100§! opinion of us, or the province is owned by us."
  
- Nire_kobold_tt:0 "§TEvent Insight§!\nKobolds will be able to attain their true destiny with the power of magic and will rightfully lend us their new founds power."
- Nire_gnome_2_tt:0 "§TEvent Insight§!\nWe will finally cure all §YGnomes§! of their affliction and return them to their natural §YHalfling§! state."
+ Nire_kobold_tt:0 "§TEvent Insight§!\nKobolds will be able to attain their true destiny with the power of magic and will rightfully lend us their new found power."
+ Nire_gnome_2_tt:0 "§TEvent Insight§!\nWe will finally cure all §YGnomes§! of their affliction."
  Nire_ggk_tt:0 "[Root.GetName] gains a permanent claim on all provinces of §YGnomish§!, §YKobold§!, or §YGoblin§! culture that is not on the §YSerpentspine§! continent."
  
  Nire_enemy_of_enemy1_tt:0 "Following our war with The Command, only the northern most areas of Shamakhad will be subject to us, with the three Commands falling under our rule. The rest of The Command will be released into indipendent states; however the Command remnants will be much easier to integrate."
@@ -299,6 +309,8 @@
  Nire_gnome_tt:0 "Has accepted any §YGnomish§! culture"
  
  unlock_merc_sir_anti_mages_tt:0 "Unlock the mercenary company §YSir Chaos Branded§! to recruit."
+ Zugi_help_1:0 "STOP EXPLODING PLEASE"
+ 
  
  Nun_wood:0 "Ever-Burning Wood"
  Ban_mis1:0 "The Eagle Guides"
@@ -347,7 +359,7 @@
  Nire_NO_COLONIZATION_desc:0 "Modifier to prevent lake fed colonization during the Eagle Hobgoblin takeover of democracy"
  Nire_lore_tt:0 "Your ruler has recently cast the §YLoreseeker§! Divination spell"
  Nire_abandon_tt:0 "Every province that produces §YPrecursor Relics§! on the Cannor or Sarhal continents will now produce §YGrain§! instead."
- Nire_eschaton_tt:0 "\n -Has banned mages because of their investment in artificery\n -Is embergoed by §YNirenun Syul§!\n -Has been insulted by §YNirenun Syul§!"
+ Nire_eschaton_tt:0 "Has banned mages because of their investment in artificery\nIs embergoed by [Root.GetName]\nHas been insulted by §YNirenun Syul§!"
  Nire_jiang_tt:0 "We have harmonized with the Accretive Path"
  Nire_jiang_mission_tt:0 "We will now be able to use and upgrade §YThe Jiangliubao§! Great Project\n\nEvery §YXia School Origin§! province will gain a Hobgoblin minority"
  Nire_gate_tt:0 "Every province in the §YXianjie§! region that is not owned by you or your non-tributary subjects gets '§YA Broken Flow§!' for §Y30 years§!, giving the following effects:\nLocal Defensiveness: §R-30.0%§!"
@@ -356,6 +368,10 @@
  Nire_stab_war:0 "Flight and Fight"
  Nire_harpy_dev_tt:0 "Every province in the §YNomsyulhan§! region with a §YHarpy§! minority will gain §G+1§! base tax, production, and manpower. Provinces of §YHarpy§! culture will gain §G+3§! instead"
  Nire_clearer_tt:0 "All provinces of §YBoar§!, §YLion§!, and §YWolf Hobgoblin§! culture are owned by youor your non-tributary subject."
+ 
+ Nire_stromwall_tt:0 "The §MStormwall§! will fall"
+ Nire_mechim_dame_tt:0 "All §YMechanim§! will be §RPurged§! and their soulless shells harvested, changing the trade good of the province to §YDamestear§!."
+ 
  
  
  flavor_ban.2.t:0 "Subjugation of the Valley"
@@ -461,6 +477,8 @@
  
  flavor_ban.402.t:0 "Misplaced Faith"
  
+ flavor_ban.408.t:0 "Envy, Pride, & Gluttony"
+ 
  flavor_ban.501.t:0 "A Deal with the Devil"
  flavor_ban.501.d:0 "DESC"
  flavor_ban.501.a:0 "The Command is our only enemy here"
@@ -504,12 +522,34 @@
  
  fervor_magic:0 "Convoke the Denunransunin"
  fervor_magic_short:0 "Convoke"
- fervor_conversion:0 "Uplift the Fallen"
- fervor_conversion_short:0 "Uplift"
- fervor_enlighten:0 "Nourish the Soul"
- fervor_enlighten_short:0 "Nourish"
- fervor_crusade:0 "War For Order"
- fervor_crusade_short:0 "Order"
+ 
+ 
+ fervor_balance_1:0 "Cosmic Balance"
+ fervor_balance_1_short:0 "Balance"
+ fervor_balance_2:0 "Uplift the Fallen"
+ fervor_balance_2_short:0 "Uplift"
+ 
+ fervor_chaos_1:0 "Harness Chaos"
+ fervor_chaos_1_short:0 "Chaos"
+ fervor_chaos_2:0 "Conquest in Order's Name"
+ fervor_chaos_2_short:0 "Conquest"
+ 
+ fervor_order_1:0 "Stratify Society"
+ fervor_order_1_short:0 "Stratify"
+ fervor_order_2:0 "Enforce Order"
+ fervor_order_2_short:0 "Order"
+ 
+ 
+ fervor_crusade:0 "Ponder Enlightenment"
+ fervor_crusade_short:0 "Enlighten"
+ 
+ Nire_balance_focus:0 "Balance in All Things"
+ Nire_order_focus:0 "Rule of Order"
+ Nire_chaos_focus:0 "Harnessing Chaos"
+ 
+ Nire_new_fervor_chaos_tt:0 "Swap to §RChaos§! fervor abilities"
+ Nire_new_fervor_order_tt:0 "Swap to §YOrder§! fervor abilities"
+ Nire_new_fervor_balance_tt:0 "Swap to §GBalance§! fervor abilities"
  
  
  Zoherin_1_1_title:0 "Knowledge from on High"
@@ -738,7 +778,7 @@
  Nire_4_28_title:0 "The Hermit"
  Nire_5_28_title:0 "Dyscrasia"
  
- Nire_1_29_title:0 "Containment"
+ Nire_1_29_title:0 "Fission"
  Nire_2_29_title:0 "Covenant"
  Nire_4_29_title:0 "Temperance"
  Nire_5_29_title:0 "Physis"
@@ -882,7 +922,10 @@
 
 
  Indelbury MT
- - Form Small country
- - Own any province in Sarhal with Goblin culture
- - Have Lizard Admin
- - 
+ Find the Small Country - Form Small country - > swap red/blue foot cultures
+ The One Place - Own any province in Sarhal with Goblin culture - > swamp trolls become swamp goblins
+ Lizards in Government - Have Lizard Admin - > Lorent gets renamed to 666 lizard empire and becomes lizard culture
+ - Own 50 dev wine province with harimari culture - > All wine and grain trade goods are swapped
+ - Have largest trade share in Mteibas - > Every single metal province becomes coalition
+ Portalmancy - Open the deepwoods portal - > Random Cannor OPM gets +10/10/10 tech
+ -

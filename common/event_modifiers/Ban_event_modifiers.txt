@@ -273,7 +273,10 @@ Nire_project_mod = {
 	local_great_project_upgrade_time = -0.5
 }
 Nire_path_mod = {
-	local_movement_speed = -3
+	local_friendly_movement_speed = -0.9
+	local_hostile_movement_speed = -0.9
+	supply_limit = -1000
+	fort_level = -10
 }
 
 Nire_movement_mod = {
@@ -549,4 +552,30 @@ Kezen_ogre_build = {
 
 Nire_kobolds = {
 	can_bypass_forts = yes
+}
+
+Nire_mage_tower_mod = {
+	monthly_fervor_increase = 0.1
+	war_exhaustion = -0.005
+	local_defensiveness = 0.15
+}
+
+Nire_goin_goblin_mode = {
+	global_manpower = 6000
+	discipline = -0.25
+	administrative_efficiency = -0.5
+}
+
+Nire_balance_focus = {
+	all_power_cost = -0.025
+}
+
+Nire_order_focus = {
+	stability_cost_modifier = -0.3
+	administrative_efficiency = -0.05
+}
+
+Nire_chaos_focus = {
+	warscore_cost_vs_other_religion = -0.25
+	religious_unity = -0.5
 }
