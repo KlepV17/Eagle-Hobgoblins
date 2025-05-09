@@ -304,14 +304,16 @@ country_event = {
 	}
 	immediate = {
 		set_country_flag = Nire_convoke_session
-		add_fervor = -100
+		hidden_effect = {
+			add_fervor = -100
+		}
 	}
 	option = {
 		name = flavor_ban.8008.a
 		create_war_wizard_effect = yes
 		create_war_wizard_effect = yes
 		hidden_effect = {
-			add_country_modifier = { name = Nire_convoke_mages duration = 1825 }
+			#add_country_modifier = { name = Nire_convoke_mages duration = 1825 }
 			clr_country_flag = Nire_convoke_session
 		}
 	}
@@ -322,32 +324,56 @@ country_event = {
 			magic_ruler_give_random_spell_school = yes
 		}
 		hidden_effect = {
-			add_country_modifier = { name = Nire_convoke_mages duration = 1825 }
+			#add_country_modifier = { name = Nire_convoke_mages duration = 1825 }
 			clr_country_flag = Nire_convoke_session
 		}
 	}
 	option = {
 		name = flavor_ban.8008.c
-		add_country_modifier = { name = Nire_adm_magic duration = 1825 }
+		trigger = {
+			NOT = {
+				has_country_modifier = Nire_order_focus
+			}
+		}
+		custom_tooltip = Nire_new_fervor_order_tt
+		add_country_modifier = { name = Nire_order_focus duration = -1 }
+		remove_country_modifier = Nire_balance_focus
+		remove_country_modifier = Nire_chaos_focus
 		hidden_effect = {
-			add_country_modifier = { name = Nire_convoke_mages duration = 1825 }
+			#add_country_modifier = { name = Nire_convoke_mages duration = 1825 }
 			clr_country_flag = Nire_convoke_session
 		}
 	}
 	option = {
 		name = flavor_ban.8008.e
-		add_country_modifier = { name = Nire_dip_magic duration = 1825 }
+		trigger = {
+			NOT = {
+				has_country_modifier = Nire_balance_focus
+			}
+		}
+		custom_tooltip = Nire_new_fervor_balance_tt
+		add_country_modifier = { name = Nire_balance_focus duration = -1 }
+		remove_country_modifier = Nire_order_focus
+		remove_country_modifier = Nire_chaos_focus
 		hidden_effect = {
-			add_country_modifier = { name = Nire_convoke_mages duration = 1825 }
+			#add_country_modifier = { name = Nire_convoke_mages duration = 1825 }
 			clr_country_flag = Nire_convoke_session
 		}
 		clr_country_flag = Nire_convoke_session
 	}
 	option = {
 		name = flavor_ban.8008.f
-		add_country_modifier = { name = Nire_mil_magic duration = 1825 }
+		trigger = {
+			NOT = {
+				has_country_modifier = Nire_chaos_focus
+			}
+		}
+		custom_tooltip = Nire_new_fervor_chaos_tt
+		add_country_modifier = { name = Nire_chaos_focus duration = -1 }
+		remove_country_modifier = Nire_order_focus
+		remove_country_modifier = Nire_balance_focus
 		hidden_effect = {
-			add_country_modifier = { name = Nire_convoke_mages duration = 1825 }
+			#add_country_modifier = { name = Nire_convoke_mages duration = 1825 }
 			clr_country_flag = Nire_convoke_session
 		}
 	}
@@ -369,8 +395,53 @@ country_event = {
 		always = yes
 	}
 	option = {
-		name = flavor_ban.8009.a
-		add_fervor = 100
+		name = flavor_ban.8008.c
+		trigger = {
+			NOT = {
+				has_country_modifier = Nire_order_focus
+			}
+		}
+		custom_tooltip = Nire_new_fervor_order_tt
+		add_country_modifier = { name = Nire_order_focus duration = -1 }
+		remove_country_modifier = Nire_balance_focus
+		remove_country_modifier = Nire_chaos_focus
+		hidden_effect = {
+			# add_country_modifier = { name = Nire_convoke_mages duration = 1825 }
+			clr_country_flag = Nire_convoke_session
+		}
+	}
+	option = {
+		name = flavor_ban.8008.e
+		trigger = {
+			NOT = {
+				has_country_modifier = Nire_balance_focus
+			}
+		}
+		custom_tooltip = Nire_new_fervor_balance_tt
+		add_country_modifier = { name = Nire_balance_focus duration = -1 }
+		remove_country_modifier = Nire_order_focus
+		remove_country_modifier = Nire_chaos_focus
+		hidden_effect = {
+			# add_country_modifier = { name = Nire_convoke_mages duration = 1825 }
+			clr_country_flag = Nire_convoke_session
+		}
+		clr_country_flag = Nire_convoke_session
+	}
+	option = {
+		name = flavor_ban.8008.f
+		trigger = {
+			NOT = {
+				has_country_modifier = Nire_chaos_focus
+			}
+		}
+		custom_tooltip = Nire_new_fervor_chaos_tt
+		add_country_modifier = { name = Nire_chaos_focus duration = -1 }
+		remove_country_modifier = Nire_order_focus
+		remove_country_modifier = Nire_balance_focus
+		hidden_effect = {
+			# add_country_modifier = { name = Nire_convoke_mages duration = 1825 }
+			clr_country_flag = Nire_convoke_session
+		}
 	}
 }
 
@@ -1798,6 +1869,38 @@ country_event = {
 		set_estate_privilege = estate_angry_philo_priv
 	}
 }
+
+country_event = {
+	id = flavor_ban.408
+	title = flavor_ban.408.t
+	desc = flavor_ban.408.d
+	picture = EXCALIBUR_eventPicture
+	
+	is_triggered_only = yes
+	trigger = { always = yes }
+	
+	option = {
+		name = flavor_ban.408.b
+		custom_tooltip = Nire_ggk_tt
+		hidden_effect = {
+			every_province = {
+				limit = {
+					OR = {
+						culture_group = gnomish
+						culture_group = kobold
+						culture_group = goblin
+					}
+					NOT = {
+						continent = serpentspine 
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+
 
 country_event = {
 	id = flavor_ban.901
